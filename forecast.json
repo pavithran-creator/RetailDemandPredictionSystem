@@ -1,0 +1,3782 @@
+[
+  {
+    "product_id":"P01",
+    "date":"2028-01-01",
+    "predicted_demand":44.5141,
+    "baseline_used":44.0,
+    "day_factor_used":1.1554,
+    "event_multiplier_used":0.8756,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by outliers detected in history."
+  },
+  {
+    "product_id":"P01",
+    "date":"2028-01-02",
+    "predicted_demand":46.0742,
+    "baseline_used":44.0,
+    "day_factor_used":1.0659,
+    "event_multiplier_used":0.9824,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by outliers detected in history."
+  },
+  {
+    "product_id":"P01",
+    "date":"2028-01-03",
+    "predicted_demand":39.9405,
+    "baseline_used":44.0,
+    "day_factor_used":0.924,
+    "event_multiplier_used":0.9824,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by outliers detected in history."
+  },
+  {
+    "product_id":"P01",
+    "date":"2028-01-04",
+    "predicted_demand":40.4159,
+    "baseline_used":44.0,
+    "day_factor_used":0.935,
+    "event_multiplier_used":0.9824,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by outliers detected in history."
+  },
+  {
+    "product_id":"P01",
+    "date":"2028-01-05",
+    "predicted_demand":41.9332,
+    "baseline_used":44.0,
+    "day_factor_used":0.9701,
+    "event_multiplier_used":0.9824,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by outliers detected in history."
+  },
+  {
+    "product_id":"P01",
+    "date":"2028-01-06",
+    "predicted_demand":43.7832,
+    "baseline_used":44.0,
+    "day_factor_used":1.0129,
+    "event_multiplier_used":0.9824,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by outliers detected in history."
+  },
+  {
+    "product_id":"P01",
+    "date":"2028-01-07",
+    "predicted_demand":44.1117,
+    "baseline_used":44.0,
+    "day_factor_used":1.0205,
+    "event_multiplier_used":0.9824,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by outliers detected in history."
+  },
+  {
+    "product_id":"P01",
+    "date":"2028-01-08",
+    "predicted_demand":49.9429,
+    "baseline_used":44.0,
+    "day_factor_used":1.1554,
+    "event_multiplier_used":0.9824,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by outliers detected in history."
+  },
+  {
+    "product_id":"P01",
+    "date":"2028-01-09",
+    "predicted_demand":46.0742,
+    "baseline_used":44.0,
+    "day_factor_used":1.0659,
+    "event_multiplier_used":0.9824,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by outliers detected in history."
+  },
+  {
+    "product_id":"P01",
+    "date":"2028-01-10",
+    "predicted_demand":39.9405,
+    "baseline_used":44.0,
+    "day_factor_used":0.924,
+    "event_multiplier_used":0.9824,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by outliers detected in history."
+  },
+  {
+    "product_id":"P01",
+    "date":"2028-01-11",
+    "predicted_demand":40.4159,
+    "baseline_used":44.0,
+    "day_factor_used":0.935,
+    "event_multiplier_used":0.9824,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by outliers detected in history."
+  },
+  {
+    "product_id":"P01",
+    "date":"2028-01-12",
+    "predicted_demand":41.9332,
+    "baseline_used":44.0,
+    "day_factor_used":0.9701,
+    "event_multiplier_used":0.9824,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by outliers detected in history."
+  },
+  {
+    "product_id":"P01",
+    "date":"2028-01-13",
+    "predicted_demand":51.454,
+    "baseline_used":44.0,
+    "day_factor_used":1.0129,
+    "event_multiplier_used":1.1545,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by outliers detected in history."
+  },
+  {
+    "product_id":"P01",
+    "date":"2028-01-14",
+    "predicted_demand":51.8401,
+    "baseline_used":44.0,
+    "day_factor_used":1.0205,
+    "event_multiplier_used":1.1545,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by outliers detected in history."
+  },
+  {
+    "product_id":"P02",
+    "date":"2028-01-01",
+    "predicted_demand":63.3295,
+    "baseline_used":75.0,
+    "day_factor_used":1.146,
+    "event_multiplier_used":0.7368,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P02",
+    "date":"2028-01-02",
+    "predicted_demand":78.7337,
+    "baseline_used":75.0,
+    "day_factor_used":1.0925,
+    "event_multiplier_used":0.9609,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P02",
+    "date":"2028-01-03",
+    "predicted_demand":66.2444,
+    "baseline_used":75.0,
+    "day_factor_used":0.9192,
+    "event_multiplier_used":0.9609,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P02",
+    "date":"2028-01-04",
+    "predicted_demand":68.4641,
+    "baseline_used":75.0,
+    "day_factor_used":0.95,
+    "event_multiplier_used":0.9609,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P02",
+    "date":"2028-01-05",
+    "predicted_demand":69.2929,
+    "baseline_used":75.0,
+    "day_factor_used":0.9615,
+    "event_multiplier_used":0.9609,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P02",
+    "date":"2028-01-06",
+    "predicted_demand":70.6117,
+    "baseline_used":75.0,
+    "day_factor_used":0.9798,
+    "event_multiplier_used":0.9609,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P02",
+    "date":"2028-01-07",
+    "predicted_demand":74.8277,
+    "baseline_used":75.0,
+    "day_factor_used":1.0383,
+    "event_multiplier_used":0.9609,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P02",
+    "date":"2028-01-08",
+    "predicted_demand":82.5894,
+    "baseline_used":75.0,
+    "day_factor_used":1.146,
+    "event_multiplier_used":0.9609,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P02",
+    "date":"2028-01-09",
+    "predicted_demand":78.7337,
+    "baseline_used":75.0,
+    "day_factor_used":1.0925,
+    "event_multiplier_used":0.9609,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P02",
+    "date":"2028-01-10",
+    "predicted_demand":66.2444,
+    "baseline_used":75.0,
+    "day_factor_used":0.9192,
+    "event_multiplier_used":0.9609,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P02",
+    "date":"2028-01-11",
+    "predicted_demand":68.4641,
+    "baseline_used":75.0,
+    "day_factor_used":0.95,
+    "event_multiplier_used":0.9609,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P02",
+    "date":"2028-01-12",
+    "predicted_demand":69.2929,
+    "baseline_used":75.0,
+    "day_factor_used":0.9615,
+    "event_multiplier_used":0.9609,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P02",
+    "date":"2028-01-13",
+    "predicted_demand":79.1981,
+    "baseline_used":75.0,
+    "day_factor_used":0.9798,
+    "event_multiplier_used":1.0777,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P02",
+    "date":"2028-01-14",
+    "predicted_demand":83.9267,
+    "baseline_used":75.0,
+    "day_factor_used":1.0383,
+    "event_multiplier_used":1.0777,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P03",
+    "date":"2028-01-01",
+    "predicted_demand":27.0569,
+    "baseline_used":36.0,
+    "day_factor_used":1.1371,
+    "event_multiplier_used":0.661,
+    "confidence_score":0.95,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by gaps in history."
+  },
+  {
+    "product_id":"P03",
+    "date":"2028-01-02",
+    "predicted_demand":35.9453,
+    "baseline_used":36.0,
+    "day_factor_used":1.0428,
+    "event_multiplier_used":0.9575,
+    "confidence_score":0.95,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by gaps in history."
+  },
+  {
+    "product_id":"P03",
+    "date":"2028-01-03",
+    "predicted_demand":31.3884,
+    "baseline_used":36.0,
+    "day_factor_used":0.9106,
+    "event_multiplier_used":0.9575,
+    "confidence_score":0.95,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by gaps in history."
+  },
+  {
+    "product_id":"P03",
+    "date":"2028-01-04",
+    "predicted_demand":33.4014,
+    "baseline_used":36.0,
+    "day_factor_used":0.969,
+    "event_multiplier_used":0.9575,
+    "confidence_score":0.95,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by gaps in history."
+  },
+  {
+    "product_id":"P03",
+    "date":"2028-01-05",
+    "predicted_demand":33.7461,
+    "baseline_used":36.0,
+    "day_factor_used":0.979,
+    "event_multiplier_used":0.9575,
+    "confidence_score":0.95,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by gaps in history."
+  },
+  {
+    "product_id":"P03",
+    "date":"2028-01-06",
+    "predicted_demand":34.0253,
+    "baseline_used":36.0,
+    "day_factor_used":0.9871,
+    "event_multiplier_used":0.9575,
+    "confidence_score":0.95,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by gaps in history."
+  },
+  {
+    "product_id":"P03",
+    "date":"2028-01-07",
+    "predicted_demand":36.2831,
+    "baseline_used":36.0,
+    "day_factor_used":1.0526,
+    "event_multiplier_used":0.9575,
+    "confidence_score":0.95,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by gaps in history."
+  },
+  {
+    "product_id":"P03",
+    "date":"2028-01-08",
+    "predicted_demand":39.1958,
+    "baseline_used":36.0,
+    "day_factor_used":1.1371,
+    "event_multiplier_used":0.9575,
+    "confidence_score":0.95,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by gaps in history."
+  },
+  {
+    "product_id":"P03",
+    "date":"2028-01-09",
+    "predicted_demand":35.9453,
+    "baseline_used":36.0,
+    "day_factor_used":1.0428,
+    "event_multiplier_used":0.9575,
+    "confidence_score":0.95,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by gaps in history."
+  },
+  {
+    "product_id":"P03",
+    "date":"2028-01-10",
+    "predicted_demand":31.3884,
+    "baseline_used":36.0,
+    "day_factor_used":0.9106,
+    "event_multiplier_used":0.9575,
+    "confidence_score":0.95,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by gaps in history."
+  },
+  {
+    "product_id":"P03",
+    "date":"2028-01-11",
+    "predicted_demand":33.4014,
+    "baseline_used":36.0,
+    "day_factor_used":0.969,
+    "event_multiplier_used":0.9575,
+    "confidence_score":0.95,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by gaps in history."
+  },
+  {
+    "product_id":"P03",
+    "date":"2028-01-12",
+    "predicted_demand":33.7461,
+    "baseline_used":36.0,
+    "day_factor_used":0.979,
+    "event_multiplier_used":0.9575,
+    "confidence_score":0.95,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by gaps in history."
+  },
+  {
+    "product_id":"P03",
+    "date":"2028-01-13",
+    "predicted_demand":39.745,
+    "baseline_used":36.0,
+    "day_factor_used":0.9871,
+    "event_multiplier_used":1.1185,
+    "confidence_score":0.95,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by gaps in history."
+  },
+  {
+    "product_id":"P03",
+    "date":"2028-01-14",
+    "predicted_demand":42.3823,
+    "baseline_used":36.0,
+    "day_factor_used":1.0526,
+    "event_multiplier_used":1.1185,
+    "confidence_score":0.95,
+    "confidence_reason":"High confidence: sufficient history (730 days), though dampened by gaps in history."
+  },
+  {
+    "product_id":"P04",
+    "date":"2028-01-01",
+    "predicted_demand":39.6087,
+    "baseline_used":51.0,
+    "day_factor_used":1.1456,
+    "event_multiplier_used":0.6779,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P04",
+    "date":"2028-01-02",
+    "predicted_demand":53.7374,
+    "baseline_used":51.0,
+    "day_factor_used":1.0945,
+    "event_multiplier_used":0.9627,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P04",
+    "date":"2028-01-03",
+    "predicted_demand":44.7722,
+    "baseline_used":51.0,
+    "day_factor_used":0.9119,
+    "event_multiplier_used":0.9627,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P04",
+    "date":"2028-01-04",
+    "predicted_demand":46.2697,
+    "baseline_used":51.0,
+    "day_factor_used":0.9424,
+    "event_multiplier_used":0.9627,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P04",
+    "date":"2028-01-05",
+    "predicted_demand":47.8163,
+    "baseline_used":51.0,
+    "day_factor_used":0.9739,
+    "event_multiplier_used":0.9627,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P04",
+    "date":"2028-01-06",
+    "predicted_demand":48.5233,
+    "baseline_used":51.0,
+    "day_factor_used":0.9883,
+    "event_multiplier_used":0.9627,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P04",
+    "date":"2028-01-07",
+    "predicted_demand":50.4724,
+    "baseline_used":51.0,
+    "day_factor_used":1.028,
+    "event_multiplier_used":0.9627,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P04",
+    "date":"2028-01-08",
+    "predicted_demand":56.2463,
+    "baseline_used":51.0,
+    "day_factor_used":1.1456,
+    "event_multiplier_used":0.9627,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P04",
+    "date":"2028-01-09",
+    "predicted_demand":53.7374,
+    "baseline_used":51.0,
+    "day_factor_used":1.0945,
+    "event_multiplier_used":0.9627,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P04",
+    "date":"2028-01-10",
+    "predicted_demand":44.7722,
+    "baseline_used":51.0,
+    "day_factor_used":0.9119,
+    "event_multiplier_used":0.9627,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P04",
+    "date":"2028-01-11",
+    "predicted_demand":46.2697,
+    "baseline_used":51.0,
+    "day_factor_used":0.9424,
+    "event_multiplier_used":0.9627,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P04",
+    "date":"2028-01-12",
+    "predicted_demand":47.8163,
+    "baseline_used":51.0,
+    "day_factor_used":0.9739,
+    "event_multiplier_used":0.9627,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P04",
+    "date":"2028-01-13",
+    "predicted_demand":55.991,
+    "baseline_used":51.0,
+    "day_factor_used":0.9883,
+    "event_multiplier_used":1.1109,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P04",
+    "date":"2028-01-14",
+    "predicted_demand":58.2401,
+    "baseline_used":51.0,
+    "day_factor_used":1.028,
+    "event_multiplier_used":1.1109,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P05",
+    "date":"2028-01-01",
+    "predicted_demand":49.3632,
+    "baseline_used":54.0,
+    "day_factor_used":1.1217,
+    "event_multiplier_used":0.815,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P05",
+    "date":"2028-01-02",
+    "predicted_demand":58.521,
+    "baseline_used":54.0,
+    "day_factor_used":1.1028,
+    "event_multiplier_used":0.9827,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P05",
+    "date":"2028-01-03",
+    "predicted_demand":48.3695,
+    "baseline_used":54.0,
+    "day_factor_used":0.9115,
+    "event_multiplier_used":0.9827,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P05",
+    "date":"2028-01-04",
+    "predicted_demand":49.919,
+    "baseline_used":54.0,
+    "day_factor_used":0.9407,
+    "event_multiplier_used":0.9827,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P05",
+    "date":"2028-01-05",
+    "predicted_demand":51.3412,
+    "baseline_used":54.0,
+    "day_factor_used":0.9675,
+    "event_multiplier_used":0.9827,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P05",
+    "date":"2028-01-06",
+    "predicted_demand":52.2061,
+    "baseline_used":54.0,
+    "day_factor_used":0.9838,
+    "event_multiplier_used":0.9827,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P05",
+    "date":"2028-01-07",
+    "predicted_demand":55.9791,
+    "baseline_used":54.0,
+    "day_factor_used":1.0549,
+    "event_multiplier_used":0.9827,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P05",
+    "date":"2028-01-08",
+    "predicted_demand":59.5239,
+    "baseline_used":54.0,
+    "day_factor_used":1.1217,
+    "event_multiplier_used":0.9827,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P05",
+    "date":"2028-01-09",
+    "predicted_demand":58.521,
+    "baseline_used":54.0,
+    "day_factor_used":1.1028,
+    "event_multiplier_used":0.9827,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P05",
+    "date":"2028-01-10",
+    "predicted_demand":48.3695,
+    "baseline_used":54.0,
+    "day_factor_used":0.9115,
+    "event_multiplier_used":0.9827,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P05",
+    "date":"2028-01-11",
+    "predicted_demand":49.919,
+    "baseline_used":54.0,
+    "day_factor_used":0.9407,
+    "event_multiplier_used":0.9827,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P05",
+    "date":"2028-01-12",
+    "predicted_demand":51.3412,
+    "baseline_used":54.0,
+    "day_factor_used":0.9675,
+    "event_multiplier_used":0.9827,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P05",
+    "date":"2028-01-13",
+    "predicted_demand":62.1305,
+    "baseline_used":54.0,
+    "day_factor_used":0.9838,
+    "event_multiplier_used":1.1695,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P05",
+    "date":"2028-01-14",
+    "predicted_demand":66.6207,
+    "baseline_used":54.0,
+    "day_factor_used":1.0549,
+    "event_multiplier_used":1.1695,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P06",
+    "date":"2028-01-01",
+    "predicted_demand":49.874,
+    "baseline_used":59.0,
+    "day_factor_used":1.1574,
+    "event_multiplier_used":0.7304,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P06",
+    "date":"2028-01-02",
+    "predicted_demand":60.9209,
+    "baseline_used":59.0,
+    "day_factor_used":1.0828,
+    "event_multiplier_used":0.9536,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P06",
+    "date":"2028-01-03",
+    "predicted_demand":51.8458,
+    "baseline_used":59.0,
+    "day_factor_used":0.9215,
+    "event_multiplier_used":0.9536,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P06",
+    "date":"2028-01-04",
+    "predicted_demand":52.9879,
+    "baseline_used":59.0,
+    "day_factor_used":0.9418,
+    "event_multiplier_used":0.9536,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P06",
+    "date":"2028-01-05",
+    "predicted_demand":52.9879,
+    "baseline_used":59.0,
+    "day_factor_used":0.9418,
+    "event_multiplier_used":0.9536,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P06",
+    "date":"2028-01-06",
+    "predicted_demand":57.5958,
+    "baseline_used":59.0,
+    "day_factor_used":1.0237,
+    "event_multiplier_used":0.9536,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P06",
+    "date":"2028-01-07",
+    "predicted_demand":57.1007,
+    "baseline_used":59.0,
+    "day_factor_used":1.0149,
+    "event_multiplier_used":0.9536,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P06",
+    "date":"2028-01-08",
+    "predicted_demand":65.1181,
+    "baseline_used":59.0,
+    "day_factor_used":1.1574,
+    "event_multiplier_used":0.9536,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P06",
+    "date":"2028-01-09",
+    "predicted_demand":60.9209,
+    "baseline_used":59.0,
+    "day_factor_used":1.0828,
+    "event_multiplier_used":0.9536,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P06",
+    "date":"2028-01-10",
+    "predicted_demand":51.8458,
+    "baseline_used":59.0,
+    "day_factor_used":0.9215,
+    "event_multiplier_used":0.9536,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P06",
+    "date":"2028-01-11",
+    "predicted_demand":52.9879,
+    "baseline_used":59.0,
+    "day_factor_used":0.9418,
+    "event_multiplier_used":0.9536,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P06",
+    "date":"2028-01-12",
+    "predicted_demand":52.9879,
+    "baseline_used":59.0,
+    "day_factor_used":0.9418,
+    "event_multiplier_used":0.9536,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P06",
+    "date":"2028-01-13",
+    "predicted_demand":62.4742,
+    "baseline_used":59.0,
+    "day_factor_used":1.0237,
+    "event_multiplier_used":1.0344,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P06",
+    "date":"2028-01-14",
+    "predicted_demand":61.9371,
+    "baseline_used":59.0,
+    "day_factor_used":1.0149,
+    "event_multiplier_used":1.0344,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P07",
+    "date":"2028-01-01",
+    "predicted_demand":26.4223,
+    "baseline_used":33.0,
+    "day_factor_used":1.1202,
+    "event_multiplier_used":0.7148,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P07",
+    "date":"2028-01-02",
+    "predicted_demand":33.6502,
+    "baseline_used":33.0,
+    "day_factor_used":1.0841,
+    "event_multiplier_used":0.9406,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P07",
+    "date":"2028-01-03",
+    "predicted_demand":28.5939,
+    "baseline_used":33.0,
+    "day_factor_used":0.9212,
+    "event_multiplier_used":0.9406,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P07",
+    "date":"2028-01-04",
+    "predicted_demand":29.4257,
+    "baseline_used":33.0,
+    "day_factor_used":0.948,
+    "event_multiplier_used":0.9406,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P07",
+    "date":"2028-01-05",
+    "predicted_demand":29.5685,
+    "baseline_used":33.0,
+    "day_factor_used":0.9526,
+    "event_multiplier_used":0.9406,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P07",
+    "date":"2028-01-06",
+    "predicted_demand":30.8939,
+    "baseline_used":33.0,
+    "day_factor_used":0.9953,
+    "event_multiplier_used":0.9406,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P07",
+    "date":"2028-01-07",
+    "predicted_demand":32.8494,
+    "baseline_used":33.0,
+    "day_factor_used":1.0583,
+    "event_multiplier_used":0.9406,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P07",
+    "date":"2028-01-08",
+    "predicted_demand":34.7708,
+    "baseline_used":33.0,
+    "day_factor_used":1.1202,
+    "event_multiplier_used":0.9406,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P07",
+    "date":"2028-01-09",
+    "predicted_demand":33.6502,
+    "baseline_used":33.0,
+    "day_factor_used":1.0841,
+    "event_multiplier_used":0.9406,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P07",
+    "date":"2028-01-10",
+    "predicted_demand":28.5939,
+    "baseline_used":33.0,
+    "day_factor_used":0.9212,
+    "event_multiplier_used":0.9406,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P07",
+    "date":"2028-01-11",
+    "predicted_demand":29.4257,
+    "baseline_used":33.0,
+    "day_factor_used":0.948,
+    "event_multiplier_used":0.9406,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P07",
+    "date":"2028-01-12",
+    "predicted_demand":29.5685,
+    "baseline_used":33.0,
+    "day_factor_used":0.9526,
+    "event_multiplier_used":0.9406,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P07",
+    "date":"2028-01-13",
+    "predicted_demand":33.8103,
+    "baseline_used":33.0,
+    "day_factor_used":0.9953,
+    "event_multiplier_used":1.0294,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P07",
+    "date":"2028-01-14",
+    "predicted_demand":35.9504,
+    "baseline_used":33.0,
+    "day_factor_used":1.0583,
+    "event_multiplier_used":1.0294,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P08",
+    "date":"2028-01-01",
+    "predicted_demand":26.6881,
+    "baseline_used":42.0,
+    "day_factor_used":1.1902,
+    "event_multiplier_used":0.5339,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P08",
+    "date":"2028-01-02",
+    "predicted_demand":44.7923,
+    "baseline_used":42.0,
+    "day_factor_used":1.0753,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P08",
+    "date":"2028-01-03",
+    "predicted_demand":38.0815,
+    "baseline_used":42.0,
+    "day_factor_used":0.9142,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P08",
+    "date":"2028-01-04",
+    "predicted_demand":37.6817,
+    "baseline_used":42.0,
+    "day_factor_used":0.9046,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P08",
+    "date":"2028-01-05",
+    "predicted_demand":40.4892,
+    "baseline_used":42.0,
+    "day_factor_used":0.972,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P08",
+    "date":"2028-01-06",
+    "predicted_demand":40.4851,
+    "baseline_used":42.0,
+    "day_factor_used":0.9719,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P08",
+    "date":"2028-01-07",
+    "predicted_demand":45.2546,
+    "baseline_used":42.0,
+    "day_factor_used":1.0864,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P08",
+    "date":"2028-01-08",
+    "predicted_demand":49.5785,
+    "baseline_used":42.0,
+    "day_factor_used":1.1902,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P08",
+    "date":"2028-01-09",
+    "predicted_demand":44.7923,
+    "baseline_used":42.0,
+    "day_factor_used":1.0753,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P08",
+    "date":"2028-01-10",
+    "predicted_demand":38.0815,
+    "baseline_used":42.0,
+    "day_factor_used":0.9142,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P08",
+    "date":"2028-01-11",
+    "predicted_demand":37.6817,
+    "baseline_used":42.0,
+    "day_factor_used":0.9046,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P08",
+    "date":"2028-01-12",
+    "predicted_demand":40.4892,
+    "baseline_used":42.0,
+    "day_factor_used":0.972,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P08",
+    "date":"2028-01-13",
+    "predicted_demand":48.4363,
+    "baseline_used":42.0,
+    "day_factor_used":0.9719,
+    "event_multiplier_used":1.1866,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P08",
+    "date":"2028-01-14",
+    "predicted_demand":54.1427,
+    "baseline_used":42.0,
+    "day_factor_used":1.0864,
+    "event_multiplier_used":1.1866,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P09",
+    "date":"2028-01-01",
+    "predicted_demand":28.2649,
+    "baseline_used":37.0,
+    "day_factor_used":1.1045,
+    "event_multiplier_used":0.6916,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P09",
+    "date":"2028-01-02",
+    "predicted_demand":36.2314,
+    "baseline_used":37.0,
+    "day_factor_used":1.0518,
+    "event_multiplier_used":0.931,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P09",
+    "date":"2028-01-03",
+    "predicted_demand":31.8221,
+    "baseline_used":37.0,
+    "day_factor_used":0.9238,
+    "event_multiplier_used":0.931,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P09",
+    "date":"2028-01-04",
+    "predicted_demand":33.7891,
+    "baseline_used":37.0,
+    "day_factor_used":0.9809,
+    "event_multiplier_used":0.931,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P09",
+    "date":"2028-01-05",
+    "predicted_demand":34.3816,
+    "baseline_used":37.0,
+    "day_factor_used":0.9981,
+    "event_multiplier_used":0.931,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P09",
+    "date":"2028-01-06",
+    "predicted_demand":33.4205,
+    "baseline_used":37.0,
+    "day_factor_used":0.9702,
+    "event_multiplier_used":0.931,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P09",
+    "date":"2028-01-07",
+    "predicted_demand":35.5424,
+    "baseline_used":37.0,
+    "day_factor_used":1.0318,
+    "event_multiplier_used":0.931,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P09",
+    "date":"2028-01-08",
+    "predicted_demand":38.0467,
+    "baseline_used":37.0,
+    "day_factor_used":1.1045,
+    "event_multiplier_used":0.931,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P09",
+    "date":"2028-01-09",
+    "predicted_demand":36.2314,
+    "baseline_used":37.0,
+    "day_factor_used":1.0518,
+    "event_multiplier_used":0.931,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P09",
+    "date":"2028-01-10",
+    "predicted_demand":31.8221,
+    "baseline_used":37.0,
+    "day_factor_used":0.9238,
+    "event_multiplier_used":0.931,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P09",
+    "date":"2028-01-11",
+    "predicted_demand":33.7891,
+    "baseline_used":37.0,
+    "day_factor_used":0.9809,
+    "event_multiplier_used":0.931,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P09",
+    "date":"2028-01-12",
+    "predicted_demand":34.3816,
+    "baseline_used":37.0,
+    "day_factor_used":0.9981,
+    "event_multiplier_used":0.931,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P09",
+    "date":"2028-01-13",
+    "predicted_demand":37.4844,
+    "baseline_used":37.0,
+    "day_factor_used":0.9702,
+    "event_multiplier_used":1.0442,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P09",
+    "date":"2028-01-14",
+    "predicted_demand":39.8644,
+    "baseline_used":37.0,
+    "day_factor_used":1.0318,
+    "event_multiplier_used":1.0442,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P10",
+    "date":"2028-01-01",
+    "predicted_demand":57.2114,
+    "baseline_used":49.0,
+    "day_factor_used":1.1479,
+    "event_multiplier_used":1.0171,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P10",
+    "date":"2028-01-02",
+    "predicted_demand":52.0921,
+    "baseline_used":49.0,
+    "day_factor_used":1.0733,
+    "event_multiplier_used":0.9905,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P10",
+    "date":"2028-01-03",
+    "predicted_demand":44.3994,
+    "baseline_used":49.0,
+    "day_factor_used":0.9148,
+    "event_multiplier_used":0.9905,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P10",
+    "date":"2028-01-04",
+    "predicted_demand":45.6321,
+    "baseline_used":49.0,
+    "day_factor_used":0.9402,
+    "event_multiplier_used":0.9905,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P10",
+    "date":"2028-01-05",
+    "predicted_demand":47.2677,
+    "baseline_used":49.0,
+    "day_factor_used":0.9739,
+    "event_multiplier_used":0.9905,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P10",
+    "date":"2028-01-06",
+    "predicted_demand":47.9133,
+    "baseline_used":49.0,
+    "day_factor_used":0.9872,
+    "event_multiplier_used":0.9905,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P10",
+    "date":"2028-01-07",
+    "predicted_demand":50.9515,
+    "baseline_used":49.0,
+    "day_factor_used":1.0498,
+    "event_multiplier_used":0.9905,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P10",
+    "date":"2028-01-08",
+    "predicted_demand":55.7128,
+    "baseline_used":49.0,
+    "day_factor_used":1.1479,
+    "event_multiplier_used":0.9905,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P10",
+    "date":"2028-01-09",
+    "predicted_demand":52.0921,
+    "baseline_used":49.0,
+    "day_factor_used":1.0733,
+    "event_multiplier_used":0.9905,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P10",
+    "date":"2028-01-10",
+    "predicted_demand":44.3994,
+    "baseline_used":49.0,
+    "day_factor_used":0.9148,
+    "event_multiplier_used":0.9905,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P10",
+    "date":"2028-01-11",
+    "predicted_demand":45.6321,
+    "baseline_used":49.0,
+    "day_factor_used":0.9402,
+    "event_multiplier_used":0.9905,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P10",
+    "date":"2028-01-12",
+    "predicted_demand":47.2677,
+    "baseline_used":49.0,
+    "day_factor_used":0.9739,
+    "event_multiplier_used":0.9905,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P10",
+    "date":"2028-01-13",
+    "predicted_demand":57.8505,
+    "baseline_used":49.0,
+    "day_factor_used":0.9872,
+    "event_multiplier_used":1.1959,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P10",
+    "date":"2028-01-14",
+    "predicted_demand":61.5189,
+    "baseline_used":49.0,
+    "day_factor_used":1.0498,
+    "event_multiplier_used":1.1959,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P11",
+    "date":"2028-01-01",
+    "predicted_demand":14.7139,
+    "baseline_used":16.0,
+    "day_factor_used":1.1289,
+    "event_multiplier_used":0.8146,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P11",
+    "date":"2028-01-02",
+    "predicted_demand":17.6546,
+    "baseline_used":16.0,
+    "day_factor_used":1.1,
+    "event_multiplier_used":1.0031,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P11",
+    "date":"2028-01-03",
+    "predicted_demand":14.9807,
+    "baseline_used":16.0,
+    "day_factor_used":0.9334,
+    "event_multiplier_used":1.0031,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P11",
+    "date":"2028-01-04",
+    "predicted_demand":15.5521,
+    "baseline_used":16.0,
+    "day_factor_used":0.969,
+    "event_multiplier_used":1.0031,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P11",
+    "date":"2028-01-05",
+    "predicted_demand":15.1733,
+    "baseline_used":16.0,
+    "day_factor_used":0.9454,
+    "event_multiplier_used":1.0031,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P11",
+    "date":"2028-01-06",
+    "predicted_demand":15.6114,
+    "baseline_used":16.0,
+    "day_factor_used":0.9727,
+    "event_multiplier_used":1.0031,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P11",
+    "date":"2028-01-07",
+    "predicted_demand":16.5391,
+    "baseline_used":16.0,
+    "day_factor_used":1.0305,
+    "event_multiplier_used":1.0031,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P11",
+    "date":"2028-01-08",
+    "predicted_demand":18.1184,
+    "baseline_used":16.0,
+    "day_factor_used":1.1289,
+    "event_multiplier_used":1.0031,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P11",
+    "date":"2028-01-09",
+    "predicted_demand":17.6546,
+    "baseline_used":16.0,
+    "day_factor_used":1.1,
+    "event_multiplier_used":1.0031,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P11",
+    "date":"2028-01-10",
+    "predicted_demand":14.9807,
+    "baseline_used":16.0,
+    "day_factor_used":0.9334,
+    "event_multiplier_used":1.0031,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P11",
+    "date":"2028-01-11",
+    "predicted_demand":15.5521,
+    "baseline_used":16.0,
+    "day_factor_used":0.969,
+    "event_multiplier_used":1.0031,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P11",
+    "date":"2028-01-12",
+    "predicted_demand":15.1733,
+    "baseline_used":16.0,
+    "day_factor_used":0.9454,
+    "event_multiplier_used":1.0031,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P11",
+    "date":"2028-01-13",
+    "predicted_demand":19.1646,
+    "baseline_used":16.0,
+    "day_factor_used":0.9727,
+    "event_multiplier_used":1.2314,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P11",
+    "date":"2028-01-14",
+    "predicted_demand":20.3034,
+    "baseline_used":16.0,
+    "day_factor_used":1.0305,
+    "event_multiplier_used":1.2314,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P12",
+    "date":"2028-01-01",
+    "predicted_demand":13.939,
+    "baseline_used":17.0,
+    "day_factor_used":1.1808,
+    "event_multiplier_used":0.6944,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P12",
+    "date":"2028-01-02",
+    "predicted_demand":17.8724,
+    "baseline_used":17.0,
+    "day_factor_used":1.1084,
+    "event_multiplier_used":0.9485,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P12",
+    "date":"2028-01-03",
+    "predicted_demand":14.87,
+    "baseline_used":17.0,
+    "day_factor_used":0.9222,
+    "event_multiplier_used":0.9485,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P12",
+    "date":"2028-01-04",
+    "predicted_demand":15.049,
+    "baseline_used":17.0,
+    "day_factor_used":0.9333,
+    "event_multiplier_used":0.9485,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P12",
+    "date":"2028-01-05",
+    "predicted_demand":15.3957,
+    "baseline_used":17.0,
+    "day_factor_used":0.9548,
+    "event_multiplier_used":0.9485,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P12",
+    "date":"2028-01-06",
+    "predicted_demand":15.6488,
+    "baseline_used":17.0,
+    "day_factor_used":0.9705,
+    "event_multiplier_used":0.9485,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P12",
+    "date":"2028-01-07",
+    "predicted_demand":16.6695,
+    "baseline_used":17.0,
+    "day_factor_used":1.0338,
+    "event_multiplier_used":0.9485,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P12",
+    "date":"2028-01-08",
+    "predicted_demand":19.0398,
+    "baseline_used":17.0,
+    "day_factor_used":1.1808,
+    "event_multiplier_used":0.9485,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P12",
+    "date":"2028-01-09",
+    "predicted_demand":17.8724,
+    "baseline_used":17.0,
+    "day_factor_used":1.1084,
+    "event_multiplier_used":0.9485,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P12",
+    "date":"2028-01-10",
+    "predicted_demand":14.87,
+    "baseline_used":17.0,
+    "day_factor_used":0.9222,
+    "event_multiplier_used":0.9485,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P12",
+    "date":"2028-01-11",
+    "predicted_demand":15.049,
+    "baseline_used":17.0,
+    "day_factor_used":0.9333,
+    "event_multiplier_used":0.9485,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P12",
+    "date":"2028-01-12",
+    "predicted_demand":15.3957,
+    "baseline_used":17.0,
+    "day_factor_used":0.9548,
+    "event_multiplier_used":0.9485,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P12",
+    "date":"2028-01-13",
+    "predicted_demand":20.0149,
+    "baseline_used":17.0,
+    "day_factor_used":0.9705,
+    "event_multiplier_used":1.2131,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P12",
+    "date":"2028-01-14",
+    "predicted_demand":21.3203,
+    "baseline_used":17.0,
+    "day_factor_used":1.0338,
+    "event_multiplier_used":1.2131,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P13",
+    "date":"2028-01-01",
+    "predicted_demand":18.507,
+    "baseline_used":23.0,
+    "day_factor_used":1.1655,
+    "event_multiplier_used":0.6904,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P13",
+    "date":"2028-01-02",
+    "predicted_demand":25.7792,
+    "baseline_used":23.0,
+    "day_factor_used":1.1301,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P13",
+    "date":"2028-01-03",
+    "predicted_demand":20.0421,
+    "baseline_used":23.0,
+    "day_factor_used":0.8786,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P13",
+    "date":"2028-01-04",
+    "predicted_demand":21.6412,
+    "baseline_used":23.0,
+    "day_factor_used":0.9487,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P13",
+    "date":"2028-01-05",
+    "predicted_demand":21.8145,
+    "baseline_used":23.0,
+    "day_factor_used":0.9563,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P13",
+    "date":"2028-01-06",
+    "predicted_demand":22.5285,
+    "baseline_used":23.0,
+    "day_factor_used":0.9876,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P13",
+    "date":"2028-01-07",
+    "predicted_demand":23.5915,
+    "baseline_used":23.0,
+    "day_factor_used":1.0342,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P13",
+    "date":"2028-01-08",
+    "predicted_demand":26.5867,
+    "baseline_used":23.0,
+    "day_factor_used":1.1655,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P13",
+    "date":"2028-01-09",
+    "predicted_demand":25.7792,
+    "baseline_used":23.0,
+    "day_factor_used":1.1301,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P13",
+    "date":"2028-01-10",
+    "predicted_demand":20.0421,
+    "baseline_used":23.0,
+    "day_factor_used":0.8786,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P13",
+    "date":"2028-01-11",
+    "predicted_demand":21.6412,
+    "baseline_used":23.0,
+    "day_factor_used":0.9487,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P13",
+    "date":"2028-01-12",
+    "predicted_demand":21.8145,
+    "baseline_used":23.0,
+    "day_factor_used":0.9563,
+    "event_multiplier_used":0.9918,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P13",
+    "date":"2028-01-13",
+    "predicted_demand":26.7436,
+    "baseline_used":23.0,
+    "day_factor_used":0.9876,
+    "event_multiplier_used":1.1774,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P13",
+    "date":"2028-01-14",
+    "predicted_demand":28.0055,
+    "baseline_used":23.0,
+    "day_factor_used":1.0342,
+    "event_multiplier_used":1.1774,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P14",
+    "date":"2028-01-01",
+    "predicted_demand":51.6416,
+    "baseline_used":66.0,
+    "day_factor_used":1.1453,
+    "event_multiplier_used":0.6832,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P14",
+    "date":"2028-01-02",
+    "predicted_demand":71.0102,
+    "baseline_used":66.0,
+    "day_factor_used":1.1035,
+    "event_multiplier_used":0.975,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P14",
+    "date":"2028-01-03",
+    "predicted_demand":58.8996,
+    "baseline_used":66.0,
+    "day_factor_used":0.9153,
+    "event_multiplier_used":0.975,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P14",
+    "date":"2028-01-04",
+    "predicted_demand":60.3732,
+    "baseline_used":66.0,
+    "day_factor_used":0.9382,
+    "event_multiplier_used":0.975,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P14",
+    "date":"2028-01-05",
+    "predicted_demand":60.9201,
+    "baseline_used":66.0,
+    "day_factor_used":0.9467,
+    "event_multiplier_used":0.975,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P14",
+    "date":"2028-01-06",
+    "predicted_demand":64.7747,
+    "baseline_used":66.0,
+    "day_factor_used":1.0066,
+    "event_multiplier_used":0.975,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P14",
+    "date":"2028-01-07",
+    "predicted_demand":66.3642,
+    "baseline_used":66.0,
+    "day_factor_used":1.0313,
+    "event_multiplier_used":0.975,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P14",
+    "date":"2028-01-08",
+    "predicted_demand":73.7001,
+    "baseline_used":66.0,
+    "day_factor_used":1.1453,
+    "event_multiplier_used":0.975,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P14",
+    "date":"2028-01-09",
+    "predicted_demand":71.0102,
+    "baseline_used":66.0,
+    "day_factor_used":1.1035,
+    "event_multiplier_used":0.975,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P14",
+    "date":"2028-01-10",
+    "predicted_demand":58.8996,
+    "baseline_used":66.0,
+    "day_factor_used":0.9153,
+    "event_multiplier_used":0.975,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P14",
+    "date":"2028-01-11",
+    "predicted_demand":60.3732,
+    "baseline_used":66.0,
+    "day_factor_used":0.9382,
+    "event_multiplier_used":0.975,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P14",
+    "date":"2028-01-12",
+    "predicted_demand":60.9201,
+    "baseline_used":66.0,
+    "day_factor_used":0.9467,
+    "event_multiplier_used":0.975,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P14",
+    "date":"2028-01-13",
+    "predicted_demand":72.3663,
+    "baseline_used":66.0,
+    "day_factor_used":1.0066,
+    "event_multiplier_used":1.0893,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P14",
+    "date":"2028-01-14",
+    "predicted_demand":74.142,
+    "baseline_used":66.0,
+    "day_factor_used":1.0313,
+    "event_multiplier_used":1.0893,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P15",
+    "date":"2028-01-01",
+    "predicted_demand":23.0073,
+    "baseline_used":36.0,
+    "day_factor_used":1.0854,
+    "event_multiplier_used":0.5888,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P15",
+    "date":"2028-01-02",
+    "predicted_demand":36.4899,
+    "baseline_used":36.0,
+    "day_factor_used":1.0828,
+    "event_multiplier_used":0.9361,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P15",
+    "date":"2028-01-03",
+    "predicted_demand":31.0744,
+    "baseline_used":36.0,
+    "day_factor_used":0.9221,
+    "event_multiplier_used":0.9361,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P15",
+    "date":"2028-01-04",
+    "predicted_demand":32.5572,
+    "baseline_used":36.0,
+    "day_factor_used":0.9661,
+    "event_multiplier_used":0.9361,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P15",
+    "date":"2028-01-05",
+    "predicted_demand":31.927,
+    "baseline_used":36.0,
+    "day_factor_used":0.9474,
+    "event_multiplier_used":0.9361,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P15",
+    "date":"2028-01-06",
+    "predicted_demand":33.3356,
+    "baseline_used":36.0,
+    "day_factor_used":0.9892,
+    "event_multiplier_used":0.9361,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P15",
+    "date":"2028-01-07",
+    "predicted_demand":36.2776,
+    "baseline_used":36.0,
+    "day_factor_used":1.0765,
+    "event_multiplier_used":0.9361,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P15",
+    "date":"2028-01-08",
+    "predicted_demand":36.5775,
+    "baseline_used":36.0,
+    "day_factor_used":1.0854,
+    "event_multiplier_used":0.9361,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P15",
+    "date":"2028-01-09",
+    "predicted_demand":36.4899,
+    "baseline_used":36.0,
+    "day_factor_used":1.0828,
+    "event_multiplier_used":0.9361,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P15",
+    "date":"2028-01-10",
+    "predicted_demand":31.0744,
+    "baseline_used":36.0,
+    "day_factor_used":0.9221,
+    "event_multiplier_used":0.9361,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P15",
+    "date":"2028-01-11",
+    "predicted_demand":32.5572,
+    "baseline_used":36.0,
+    "day_factor_used":0.9661,
+    "event_multiplier_used":0.9361,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P15",
+    "date":"2028-01-12",
+    "predicted_demand":31.927,
+    "baseline_used":36.0,
+    "day_factor_used":0.9474,
+    "event_multiplier_used":0.9361,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P15",
+    "date":"2028-01-13",
+    "predicted_demand":34.5491,
+    "baseline_used":36.0,
+    "day_factor_used":0.9892,
+    "event_multiplier_used":0.9702,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P15",
+    "date":"2028-01-14",
+    "predicted_demand":37.5981,
+    "baseline_used":36.0,
+    "day_factor_used":1.0765,
+    "event_multiplier_used":0.9702,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P16",
+    "date":"2028-01-01",
+    "predicted_demand":41.2724,
+    "baseline_used":46.0,
+    "day_factor_used":1.1731,
+    "event_multiplier_used":0.7648,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P16",
+    "date":"2028-01-02",
+    "predicted_demand":49.8003,
+    "baseline_used":46.0,
+    "day_factor_used":1.1055,
+    "event_multiplier_used":0.9793,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P16",
+    "date":"2028-01-03",
+    "predicted_demand":40.8629,
+    "baseline_used":46.0,
+    "day_factor_used":0.9071,
+    "event_multiplier_used":0.9793,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P16",
+    "date":"2028-01-04",
+    "predicted_demand":41.2683,
+    "baseline_used":46.0,
+    "day_factor_used":0.9161,
+    "event_multiplier_used":0.9793,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P16",
+    "date":"2028-01-05",
+    "predicted_demand":45.0793,
+    "baseline_used":46.0,
+    "day_factor_used":1.0007,
+    "event_multiplier_used":0.9793,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P16",
+    "date":"2028-01-06",
+    "predicted_demand":44.1694,
+    "baseline_used":46.0,
+    "day_factor_used":0.9805,
+    "event_multiplier_used":0.9793,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P16",
+    "date":"2028-01-07",
+    "predicted_demand":45.5298,
+    "baseline_used":46.0,
+    "day_factor_used":1.0107,
+    "event_multiplier_used":0.9793,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P16",
+    "date":"2028-01-08",
+    "predicted_demand":52.8456,
+    "baseline_used":46.0,
+    "day_factor_used":1.1731,
+    "event_multiplier_used":0.9793,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P16",
+    "date":"2028-01-09",
+    "predicted_demand":49.8003,
+    "baseline_used":46.0,
+    "day_factor_used":1.1055,
+    "event_multiplier_used":0.9793,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P16",
+    "date":"2028-01-10",
+    "predicted_demand":40.8629,
+    "baseline_used":46.0,
+    "day_factor_used":0.9071,
+    "event_multiplier_used":0.9793,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P16",
+    "date":"2028-01-11",
+    "predicted_demand":41.2683,
+    "baseline_used":46.0,
+    "day_factor_used":0.9161,
+    "event_multiplier_used":0.9793,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P16",
+    "date":"2028-01-12",
+    "predicted_demand":45.0793,
+    "baseline_used":46.0,
+    "day_factor_used":1.0007,
+    "event_multiplier_used":0.9793,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P16",
+    "date":"2028-01-13",
+    "predicted_demand":50.9008,
+    "baseline_used":46.0,
+    "day_factor_used":0.9805,
+    "event_multiplier_used":1.1285,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P16",
+    "date":"2028-01-14",
+    "predicted_demand":52.4686,
+    "baseline_used":46.0,
+    "day_factor_used":1.0107,
+    "event_multiplier_used":1.1285,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P17",
+    "date":"2028-01-01",
+    "predicted_demand":12.9155,
+    "baseline_used":14.0,
+    "day_factor_used":1.1952,
+    "event_multiplier_used":0.7719,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P17",
+    "date":"2028-01-02",
+    "predicted_demand":16.3903,
+    "baseline_used":14.0,
+    "day_factor_used":1.1318,
+    "event_multiplier_used":1.0344,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P17",
+    "date":"2028-01-03",
+    "predicted_demand":13.0566,
+    "baseline_used":14.0,
+    "day_factor_used":0.9016,
+    "event_multiplier_used":1.0344,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P17",
+    "date":"2028-01-04",
+    "predicted_demand":13.6359,
+    "baseline_used":14.0,
+    "day_factor_used":0.9416,
+    "event_multiplier_used":1.0344,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P17",
+    "date":"2028-01-05",
+    "predicted_demand":14.0631,
+    "baseline_used":14.0,
+    "day_factor_used":0.9711,
+    "event_multiplier_used":1.0344,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P17",
+    "date":"2028-01-06",
+    "predicted_demand":13.6185,
+    "baseline_used":14.0,
+    "day_factor_used":0.9404,
+    "event_multiplier_used":1.0344,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P17",
+    "date":"2028-01-07",
+    "predicted_demand":14.9479,
+    "baseline_used":14.0,
+    "day_factor_used":1.0322,
+    "event_multiplier_used":1.0344,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P17",
+    "date":"2028-01-08",
+    "predicted_demand":17.3084,
+    "baseline_used":14.0,
+    "day_factor_used":1.1952,
+    "event_multiplier_used":1.0344,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P17",
+    "date":"2028-01-09",
+    "predicted_demand":16.3903,
+    "baseline_used":14.0,
+    "day_factor_used":1.1318,
+    "event_multiplier_used":1.0344,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P17",
+    "date":"2028-01-10",
+    "predicted_demand":13.0566,
+    "baseline_used":14.0,
+    "day_factor_used":0.9016,
+    "event_multiplier_used":1.0344,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P17",
+    "date":"2028-01-11",
+    "predicted_demand":13.6359,
+    "baseline_used":14.0,
+    "day_factor_used":0.9416,
+    "event_multiplier_used":1.0344,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P17",
+    "date":"2028-01-12",
+    "predicted_demand":14.0631,
+    "baseline_used":14.0,
+    "day_factor_used":0.9711,
+    "event_multiplier_used":1.0344,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P17",
+    "date":"2028-01-13",
+    "predicted_demand":16.0617,
+    "baseline_used":14.0,
+    "day_factor_used":0.9404,
+    "event_multiplier_used":1.22,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P17",
+    "date":"2028-01-14",
+    "predicted_demand":17.6296,
+    "baseline_used":14.0,
+    "day_factor_used":1.0322,
+    "event_multiplier_used":1.22,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P18",
+    "date":"2028-01-01",
+    "predicted_demand":47.3573,
+    "baseline_used":51.0,
+    "day_factor_used":1.1285,
+    "event_multiplier_used":0.8228,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P18",
+    "date":"2028-01-02",
+    "predicted_demand":55.242,
+    "baseline_used":51.0,
+    "day_factor_used":1.098,
+    "event_multiplier_used":0.9865,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P18",
+    "date":"2028-01-03",
+    "predicted_demand":45.2753,
+    "baseline_used":51.0,
+    "day_factor_used":0.8999,
+    "event_multiplier_used":0.9865,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P18",
+    "date":"2028-01-04",
+    "predicted_demand":48.1783,
+    "baseline_used":51.0,
+    "day_factor_used":0.9576,
+    "event_multiplier_used":0.9865,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P18",
+    "date":"2028-01-05",
+    "predicted_demand":48.8525,
+    "baseline_used":51.0,
+    "day_factor_used":0.971,
+    "event_multiplier_used":0.9865,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P18",
+    "date":"2028-01-06",
+    "predicted_demand":50.2058,
+    "baseline_used":51.0,
+    "day_factor_used":0.9979,
+    "event_multiplier_used":0.9865,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P18",
+    "date":"2028-01-07",
+    "predicted_demand":51.524,
+    "baseline_used":51.0,
+    "day_factor_used":1.0241,
+    "event_multiplier_used":0.9865,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P18",
+    "date":"2028-01-08",
+    "predicted_demand":56.7765,
+    "baseline_used":51.0,
+    "day_factor_used":1.1285,
+    "event_multiplier_used":0.9865,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P18",
+    "date":"2028-01-09",
+    "predicted_demand":55.242,
+    "baseline_used":51.0,
+    "day_factor_used":1.098,
+    "event_multiplier_used":0.9865,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P18",
+    "date":"2028-01-10",
+    "predicted_demand":45.2753,
+    "baseline_used":51.0,
+    "day_factor_used":0.8999,
+    "event_multiplier_used":0.9865,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P18",
+    "date":"2028-01-11",
+    "predicted_demand":48.1783,
+    "baseline_used":51.0,
+    "day_factor_used":0.9576,
+    "event_multiplier_used":0.9865,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P18",
+    "date":"2028-01-12",
+    "predicted_demand":48.8525,
+    "baseline_used":51.0,
+    "day_factor_used":0.971,
+    "event_multiplier_used":0.9865,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P18",
+    "date":"2028-01-13",
+    "predicted_demand":60.498,
+    "baseline_used":51.0,
+    "day_factor_used":0.9979,
+    "event_multiplier_used":1.1887,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P18",
+    "date":"2028-01-14",
+    "predicted_demand":62.0864,
+    "baseline_used":51.0,
+    "day_factor_used":1.0241,
+    "event_multiplier_used":1.1887,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P19",
+    "date":"2028-01-01",
+    "predicted_demand":33.8268,
+    "baseline_used":44.0,
+    "day_factor_used":1.1191,
+    "event_multiplier_used":0.687,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P19",
+    "date":"2028-01-02",
+    "predicted_demand":44.6585,
+    "baseline_used":44.0,
+    "day_factor_used":1.0809,
+    "event_multiplier_used":0.939,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P19",
+    "date":"2028-01-03",
+    "predicted_demand":38.1677,
+    "baseline_used":44.0,
+    "day_factor_used":0.9238,
+    "event_multiplier_used":0.939,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P19",
+    "date":"2028-01-04",
+    "predicted_demand":38.9114,
+    "baseline_used":44.0,
+    "day_factor_used":0.9418,
+    "event_multiplier_used":0.939,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P19",
+    "date":"2028-01-05",
+    "predicted_demand":39.5601,
+    "baseline_used":44.0,
+    "day_factor_used":0.9575,
+    "event_multiplier_used":0.939,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P19",
+    "date":"2028-01-06",
+    "predicted_demand":40.9813,
+    "baseline_used":44.0,
+    "day_factor_used":0.9919,
+    "event_multiplier_used":0.939,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P19",
+    "date":"2028-01-07",
+    "predicted_demand":44.0222,
+    "baseline_used":44.0,
+    "day_factor_used":1.0655,
+    "event_multiplier_used":0.939,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P19",
+    "date":"2028-01-08",
+    "predicted_demand":46.2367,
+    "baseline_used":44.0,
+    "day_factor_used":1.1191,
+    "event_multiplier_used":0.939,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P19",
+    "date":"2028-01-09",
+    "predicted_demand":44.6585,
+    "baseline_used":44.0,
+    "day_factor_used":1.0809,
+    "event_multiplier_used":0.939,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P19",
+    "date":"2028-01-10",
+    "predicted_demand":38.1677,
+    "baseline_used":44.0,
+    "day_factor_used":0.9238,
+    "event_multiplier_used":0.939,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P19",
+    "date":"2028-01-11",
+    "predicted_demand":38.9114,
+    "baseline_used":44.0,
+    "day_factor_used":0.9418,
+    "event_multiplier_used":0.939,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P19",
+    "date":"2028-01-12",
+    "predicted_demand":39.5601,
+    "baseline_used":44.0,
+    "day_factor_used":0.9575,
+    "event_multiplier_used":0.939,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P19",
+    "date":"2028-01-13",
+    "predicted_demand":45.7925,
+    "baseline_used":44.0,
+    "day_factor_used":0.9919,
+    "event_multiplier_used":1.0492,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P19",
+    "date":"2028-01-14",
+    "predicted_demand":49.1904,
+    "baseline_used":44.0,
+    "day_factor_used":1.0655,
+    "event_multiplier_used":1.0492,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P20",
+    "date":"2028-01-01",
+    "predicted_demand":19.5845,
+    "baseline_used":18.0,
+    "day_factor_used":1.1644,
+    "event_multiplier_used":0.9344,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P20",
+    "date":"2028-01-02",
+    "predicted_demand":19.2729,
+    "baseline_used":18.0,
+    "day_factor_used":1.106,
+    "event_multiplier_used":0.9681,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P20",
+    "date":"2028-01-03",
+    "predicted_demand":15.6083,
+    "baseline_used":18.0,
+    "day_factor_used":0.8957,
+    "event_multiplier_used":0.9681,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P20",
+    "date":"2028-01-04",
+    "predicted_demand":16.1311,
+    "baseline_used":18.0,
+    "day_factor_used":0.9257,
+    "event_multiplier_used":0.9681,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P20",
+    "date":"2028-01-05",
+    "predicted_demand":16.5963,
+    "baseline_used":18.0,
+    "day_factor_used":0.9524,
+    "event_multiplier_used":0.9681,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P20",
+    "date":"2028-01-06",
+    "predicted_demand":17.3578,
+    "baseline_used":18.0,
+    "day_factor_used":0.9961,
+    "event_multiplier_used":0.9681,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P20",
+    "date":"2028-01-07",
+    "predicted_demand":18.5219,
+    "baseline_used":18.0,
+    "day_factor_used":1.0629,
+    "event_multiplier_used":0.9681,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P20",
+    "date":"2028-01-08",
+    "predicted_demand":20.2906,
+    "baseline_used":18.0,
+    "day_factor_used":1.1644,
+    "event_multiplier_used":0.9681,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P20",
+    "date":"2028-01-09",
+    "predicted_demand":19.2729,
+    "baseline_used":18.0,
+    "day_factor_used":1.106,
+    "event_multiplier_used":0.9681,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P20",
+    "date":"2028-01-10",
+    "predicted_demand":15.6083,
+    "baseline_used":18.0,
+    "day_factor_used":0.8957,
+    "event_multiplier_used":0.9681,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P20",
+    "date":"2028-01-11",
+    "predicted_demand":16.1311,
+    "baseline_used":18.0,
+    "day_factor_used":0.9257,
+    "event_multiplier_used":0.9681,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P20",
+    "date":"2028-01-12",
+    "predicted_demand":16.5963,
+    "baseline_used":18.0,
+    "day_factor_used":0.9524,
+    "event_multiplier_used":0.9681,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P20",
+    "date":"2028-01-13",
+    "predicted_demand":20.5968,
+    "baseline_used":18.0,
+    "day_factor_used":0.9961,
+    "event_multiplier_used":1.1487,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P20",
+    "date":"2028-01-14",
+    "predicted_demand":21.9781,
+    "baseline_used":18.0,
+    "day_factor_used":1.0629,
+    "event_multiplier_used":1.1487,
+    "confidence_score":1.0,
+    "confidence_reason":"High confidence: long, clean history with 730 days of observations."
+  },
+  {
+    "product_id":"P21",
+    "date":"2028-01-01",
+    "predicted_demand":10.1535,
+    "baseline_used":7.0,
+    "day_factor_used":1.1259,
+    "event_multiplier_used":1.2883,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: long, clean history with 657 days of observations."
+  },
+  {
+    "product_id":"P21",
+    "date":"2028-01-02",
+    "predicted_demand":8.7226,
+    "baseline_used":7.0,
+    "day_factor_used":1.1038,
+    "event_multiplier_used":1.1289,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: long, clean history with 657 days of observations."
+  },
+  {
+    "product_id":"P21",
+    "date":"2028-01-03",
+    "predicted_demand":7.7996,
+    "baseline_used":7.0,
+    "day_factor_used":0.987,
+    "event_multiplier_used":1.1289,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: long, clean history with 657 days of observations."
+  },
+  {
+    "product_id":"P21",
+    "date":"2028-01-04",
+    "predicted_demand":7.3436,
+    "baseline_used":7.0,
+    "day_factor_used":0.9293,
+    "event_multiplier_used":1.1289,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: long, clean history with 657 days of observations."
+  },
+  {
+    "product_id":"P21",
+    "date":"2028-01-05",
+    "predicted_demand":7.828,
+    "baseline_used":7.0,
+    "day_factor_used":0.9906,
+    "event_multiplier_used":1.1289,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: long, clean history with 657 days of observations."
+  },
+  {
+    "product_id":"P21",
+    "date":"2028-01-06",
+    "predicted_demand":7.2393,
+    "baseline_used":7.0,
+    "day_factor_used":0.9161,
+    "event_multiplier_used":1.1289,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: long, clean history with 657 days of observations."
+  },
+  {
+    "product_id":"P21",
+    "date":"2028-01-07",
+    "predicted_demand":8.2026,
+    "baseline_used":7.0,
+    "day_factor_used":1.038,
+    "event_multiplier_used":1.1289,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: long, clean history with 657 days of observations."
+  },
+  {
+    "product_id":"P21",
+    "date":"2028-01-08",
+    "predicted_demand":8.8972,
+    "baseline_used":7.0,
+    "day_factor_used":1.1259,
+    "event_multiplier_used":1.1289,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: long, clean history with 657 days of observations."
+  },
+  {
+    "product_id":"P21",
+    "date":"2028-01-09",
+    "predicted_demand":8.7226,
+    "baseline_used":7.0,
+    "day_factor_used":1.1038,
+    "event_multiplier_used":1.1289,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: long, clean history with 657 days of observations."
+  },
+  {
+    "product_id":"P21",
+    "date":"2028-01-10",
+    "predicted_demand":7.7996,
+    "baseline_used":7.0,
+    "day_factor_used":0.987,
+    "event_multiplier_used":1.1289,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: long, clean history with 657 days of observations."
+  },
+  {
+    "product_id":"P21",
+    "date":"2028-01-11",
+    "predicted_demand":7.3436,
+    "baseline_used":7.0,
+    "day_factor_used":0.9293,
+    "event_multiplier_used":1.1289,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: long, clean history with 657 days of observations."
+  },
+  {
+    "product_id":"P21",
+    "date":"2028-01-12",
+    "predicted_demand":7.828,
+    "baseline_used":7.0,
+    "day_factor_used":0.9906,
+    "event_multiplier_used":1.1289,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: long, clean history with 657 days of observations."
+  },
+  {
+    "product_id":"P21",
+    "date":"2028-01-13",
+    "predicted_demand":10.2863,
+    "baseline_used":7.0,
+    "day_factor_used":0.9161,
+    "event_multiplier_used":1.6041,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: long, clean history with 657 days of observations."
+  },
+  {
+    "product_id":"P21",
+    "date":"2028-01-14",
+    "predicted_demand":11.6551,
+    "baseline_used":7.0,
+    "day_factor_used":1.038,
+    "event_multiplier_used":1.6041,
+    "confidence_score":0.9,
+    "confidence_reason":"High confidence: long, clean history with 657 days of observations."
+  },
+  {
+    "product_id":"P22",
+    "date":"2028-01-01",
+    "predicted_demand":36.4629,
+    "baseline_used":34.0,
+    "day_factor_used":1.0891,
+    "event_multiplier_used":0.9847,
+    "confidence_score":0.7671,
+    "confidence_reason":"Medium confidence: moderate history (560 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P22",
+    "date":"2028-01-02",
+    "predicted_demand":39.963,
+    "baseline_used":34.0,
+    "day_factor_used":1.0738,
+    "event_multiplier_used":1.0946,
+    "confidence_score":0.7671,
+    "confidence_reason":"Medium confidence: moderate history (560 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P22",
+    "date":"2028-01-03",
+    "predicted_demand":34.8494,
+    "baseline_used":34.0,
+    "day_factor_used":0.9364,
+    "event_multiplier_used":1.0946,
+    "confidence_score":0.7671,
+    "confidence_reason":"Medium confidence: moderate history (560 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P22",
+    "date":"2028-01-04",
+    "predicted_demand":34.5778,
+    "baseline_used":34.0,
+    "day_factor_used":0.9291,
+    "event_multiplier_used":1.0946,
+    "confidence_score":0.7671,
+    "confidence_reason":"Medium confidence: moderate history (560 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P22",
+    "date":"2028-01-05",
+    "predicted_demand":37.0638,
+    "baseline_used":34.0,
+    "day_factor_used":0.9959,
+    "event_multiplier_used":1.0946,
+    "confidence_score":0.7671,
+    "confidence_reason":"Medium confidence: moderate history (560 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P22",
+    "date":"2028-01-06",
+    "predicted_demand":37.0005,
+    "baseline_used":34.0,
+    "day_factor_used":0.9942,
+    "event_multiplier_used":1.0946,
+    "confidence_score":0.7671,
+    "confidence_reason":"Medium confidence: moderate history (560 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P22",
+    "date":"2028-01-07",
+    "predicted_demand":38.5078,
+    "baseline_used":34.0,
+    "day_factor_used":1.0347,
+    "event_multiplier_used":1.0946,
+    "confidence_score":0.7671,
+    "confidence_reason":"Medium confidence: moderate history (560 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P22",
+    "date":"2028-01-08",
+    "predicted_demand":40.5324,
+    "baseline_used":34.0,
+    "day_factor_used":1.0891,
+    "event_multiplier_used":1.0946,
+    "confidence_score":0.7671,
+    "confidence_reason":"Medium confidence: moderate history (560 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P22",
+    "date":"2028-01-09",
+    "predicted_demand":39.963,
+    "baseline_used":34.0,
+    "day_factor_used":1.0738,
+    "event_multiplier_used":1.0946,
+    "confidence_score":0.7671,
+    "confidence_reason":"Medium confidence: moderate history (560 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P22",
+    "date":"2028-01-10",
+    "predicted_demand":34.8494,
+    "baseline_used":34.0,
+    "day_factor_used":0.9364,
+    "event_multiplier_used":1.0946,
+    "confidence_score":0.7671,
+    "confidence_reason":"Medium confidence: moderate history (560 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P22",
+    "date":"2028-01-11",
+    "predicted_demand":34.5778,
+    "baseline_used":34.0,
+    "day_factor_used":0.9291,
+    "event_multiplier_used":1.0946,
+    "confidence_score":0.7671,
+    "confidence_reason":"Medium confidence: moderate history (560 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P22",
+    "date":"2028-01-12",
+    "predicted_demand":37.0638,
+    "baseline_used":34.0,
+    "day_factor_used":0.9959,
+    "event_multiplier_used":1.0946,
+    "confidence_score":0.7671,
+    "confidence_reason":"Medium confidence: moderate history (560 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P22",
+    "date":"2028-01-13",
+    "predicted_demand":51.8674,
+    "baseline_used":34.0,
+    "day_factor_used":0.9942,
+    "event_multiplier_used":1.5344,
+    "confidence_score":0.7671,
+    "confidence_reason":"Medium confidence: moderate history (560 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P22",
+    "date":"2028-01-14",
+    "predicted_demand":53.9802,
+    "baseline_used":34.0,
+    "day_factor_used":1.0347,
+    "event_multiplier_used":1.5344,
+    "confidence_score":0.7671,
+    "confidence_reason":"Medium confidence: moderate history (560 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P23",
+    "date":"2028-01-01",
+    "predicted_demand":49.062,
+    "baseline_used":46.0,
+    "day_factor_used":1.1291,
+    "event_multiplier_used":0.9446,
+    "confidence_score":0.6548,
+    "confidence_reason":"Medium confidence: moderate history (478 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P23",
+    "date":"2028-01-02",
+    "predicted_demand":51.5632,
+    "baseline_used":46.0,
+    "day_factor_used":1.0553,
+    "event_multiplier_used":1.0622,
+    "confidence_score":0.6548,
+    "confidence_reason":"Medium confidence: moderate history (478 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P23",
+    "date":"2028-01-03",
+    "predicted_demand":45.3725,
+    "baseline_used":46.0,
+    "day_factor_used":0.9286,
+    "event_multiplier_used":1.0622,
+    "confidence_score":0.6548,
+    "confidence_reason":"Medium confidence: moderate history (478 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P23",
+    "date":"2028-01-04",
+    "predicted_demand":46.0957,
+    "baseline_used":46.0,
+    "day_factor_used":0.9434,
+    "event_multiplier_used":1.0622,
+    "confidence_score":0.6548,
+    "confidence_reason":"Medium confidence: moderate history (478 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P23",
+    "date":"2028-01-05",
+    "predicted_demand":46.6527,
+    "baseline_used":46.0,
+    "day_factor_used":0.9548,
+    "event_multiplier_used":1.0622,
+    "confidence_score":0.6548,
+    "confidence_reason":"Medium confidence: moderate history (478 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P23",
+    "date":"2028-01-06",
+    "predicted_demand":48.827,
+    "baseline_used":46.0,
+    "day_factor_used":0.9993,
+    "event_multiplier_used":1.0622,
+    "confidence_score":0.6548,
+    "confidence_reason":"Medium confidence: moderate history (478 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P23",
+    "date":"2028-01-07",
+    "predicted_demand":51.9101,
+    "baseline_used":46.0,
+    "day_factor_used":1.0624,
+    "event_multiplier_used":1.0622,
+    "confidence_score":0.6548,
+    "confidence_reason":"Medium confidence: moderate history (478 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P23",
+    "date":"2028-01-08",
+    "predicted_demand":55.1692,
+    "baseline_used":46.0,
+    "day_factor_used":1.1291,
+    "event_multiplier_used":1.0622,
+    "confidence_score":0.6548,
+    "confidence_reason":"Medium confidence: moderate history (478 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P23",
+    "date":"2028-01-09",
+    "predicted_demand":51.5632,
+    "baseline_used":46.0,
+    "day_factor_used":1.0553,
+    "event_multiplier_used":1.0622,
+    "confidence_score":0.6548,
+    "confidence_reason":"Medium confidence: moderate history (478 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P23",
+    "date":"2028-01-10",
+    "predicted_demand":45.3725,
+    "baseline_used":46.0,
+    "day_factor_used":0.9286,
+    "event_multiplier_used":1.0622,
+    "confidence_score":0.6548,
+    "confidence_reason":"Medium confidence: moderate history (478 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P23",
+    "date":"2028-01-11",
+    "predicted_demand":46.0957,
+    "baseline_used":46.0,
+    "day_factor_used":0.9434,
+    "event_multiplier_used":1.0622,
+    "confidence_score":0.6548,
+    "confidence_reason":"Medium confidence: moderate history (478 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P23",
+    "date":"2028-01-12",
+    "predicted_demand":46.6527,
+    "baseline_used":46.0,
+    "day_factor_used":0.9548,
+    "event_multiplier_used":1.0622,
+    "confidence_score":0.6548,
+    "confidence_reason":"Medium confidence: moderate history (478 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P23",
+    "date":"2028-01-13",
+    "predicted_demand":74.5198,
+    "baseline_used":46.0,
+    "day_factor_used":0.9993,
+    "event_multiplier_used":1.6211,
+    "confidence_score":0.6548,
+    "confidence_reason":"Medium confidence: moderate history (478 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P23",
+    "date":"2028-01-14",
+    "predicted_demand":79.2253,
+    "baseline_used":46.0,
+    "day_factor_used":1.0624,
+    "event_multiplier_used":1.6211,
+    "confidence_score":0.6548,
+    "confidence_reason":"Medium confidence: moderate history (478 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P24",
+    "date":"2028-01-01",
+    "predicted_demand":21.3944,
+    "baseline_used":19.0,
+    "day_factor_used":1.1212,
+    "event_multiplier_used":1.0043,
+    "confidence_score":0.4521,
+    "confidence_reason":"Medium confidence: moderate history (330 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P24",
+    "date":"2028-01-02",
+    "predicted_demand":20.5853,
+    "baseline_used":19.0,
+    "day_factor_used":1.0788,
+    "event_multiplier_used":1.0043,
+    "confidence_score":0.4521,
+    "confidence_reason":"Medium confidence: moderate history (330 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P24",
+    "date":"2028-01-03",
+    "predicted_demand":16.8663,
+    "baseline_used":19.0,
+    "day_factor_used":0.8839,
+    "event_multiplier_used":1.0043,
+    "confidence_score":0.4521,
+    "confidence_reason":"Medium confidence: moderate history (330 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P24",
+    "date":"2028-01-04",
+    "predicted_demand":19.4633,
+    "baseline_used":19.0,
+    "day_factor_used":1.02,
+    "event_multiplier_used":1.0043,
+    "confidence_score":0.4521,
+    "confidence_reason":"Medium confidence: moderate history (330 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P24",
+    "date":"2028-01-05",
+    "predicted_demand":18.4425,
+    "baseline_used":19.0,
+    "day_factor_used":0.9665,
+    "event_multiplier_used":1.0043,
+    "confidence_score":0.4521,
+    "confidence_reason":"Medium confidence: moderate history (330 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P24",
+    "date":"2028-01-06",
+    "predicted_demand":19.2172,
+    "baseline_used":19.0,
+    "day_factor_used":1.0071,
+    "event_multiplier_used":1.0043,
+    "confidence_score":0.4521,
+    "confidence_reason":"Medium confidence: moderate history (330 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P24",
+    "date":"2028-01-07",
+    "predicted_demand":18.8852,
+    "baseline_used":19.0,
+    "day_factor_used":0.9897,
+    "event_multiplier_used":1.0043,
+    "confidence_score":0.4521,
+    "confidence_reason":"Medium confidence: moderate history (330 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P24",
+    "date":"2028-01-08",
+    "predicted_demand":21.3944,
+    "baseline_used":19.0,
+    "day_factor_used":1.1212,
+    "event_multiplier_used":1.0043,
+    "confidence_score":0.4521,
+    "confidence_reason":"Medium confidence: moderate history (330 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P24",
+    "date":"2028-01-09",
+    "predicted_demand":20.5853,
+    "baseline_used":19.0,
+    "day_factor_used":1.0788,
+    "event_multiplier_used":1.0043,
+    "confidence_score":0.4521,
+    "confidence_reason":"Medium confidence: moderate history (330 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P24",
+    "date":"2028-01-10",
+    "predicted_demand":16.8663,
+    "baseline_used":19.0,
+    "day_factor_used":0.8839,
+    "event_multiplier_used":1.0043,
+    "confidence_score":0.4521,
+    "confidence_reason":"Medium confidence: moderate history (330 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P24",
+    "date":"2028-01-11",
+    "predicted_demand":19.4633,
+    "baseline_used":19.0,
+    "day_factor_used":1.02,
+    "event_multiplier_used":1.0043,
+    "confidence_score":0.4521,
+    "confidence_reason":"Medium confidence: moderate history (330 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P24",
+    "date":"2028-01-12",
+    "predicted_demand":18.4425,
+    "baseline_used":19.0,
+    "day_factor_used":0.9665,
+    "event_multiplier_used":1.0043,
+    "confidence_score":0.4521,
+    "confidence_reason":"Medium confidence: moderate history (330 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P24",
+    "date":"2028-01-13",
+    "predicted_demand":19.2172,
+    "baseline_used":19.0,
+    "day_factor_used":1.0071,
+    "event_multiplier_used":1.0043,
+    "confidence_score":0.4521,
+    "confidence_reason":"Medium confidence: moderate history (330 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P24",
+    "date":"2028-01-14",
+    "predicted_demand":18.8852,
+    "baseline_used":19.0,
+    "day_factor_used":0.9897,
+    "event_multiplier_used":1.0043,
+    "confidence_score":0.4521,
+    "confidence_reason":"Medium confidence: moderate history (330 days) limits seasonality learning."
+  },
+  {
+    "product_id":"P25",
+    "date":"2028-01-01",
+    "predicted_demand":51.2286,
+    "baseline_used":37.0,
+    "day_factor_used":1.1436,
+    "event_multiplier_used":1.2107,
+    "confidence_score":0.3123,
+    "confidence_reason":"Low confidence: very short history (228 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P25",
+    "date":"2028-01-02",
+    "predicted_demand":52.4426,
+    "baseline_used":37.0,
+    "day_factor_used":1.1707,
+    "event_multiplier_used":1.2107,
+    "confidence_score":0.3123,
+    "confidence_reason":"Low confidence: very short history (228 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P25",
+    "date":"2028-01-03",
+    "predicted_demand":40.8942,
+    "baseline_used":37.0,
+    "day_factor_used":0.9129,
+    "event_multiplier_used":1.2107,
+    "confidence_score":0.3123,
+    "confidence_reason":"Low confidence: very short history (228 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P25",
+    "date":"2028-01-04",
+    "predicted_demand":41.4228,
+    "baseline_used":37.0,
+    "day_factor_used":0.9247,
+    "event_multiplier_used":1.2107,
+    "confidence_score":0.3123,
+    "confidence_reason":"Low confidence: very short history (228 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P25",
+    "date":"2028-01-05",
+    "predicted_demand":40.0923,
+    "baseline_used":37.0,
+    "day_factor_used":0.895,
+    "event_multiplier_used":1.2107,
+    "confidence_score":0.3123,
+    "confidence_reason":"Low confidence: very short history (228 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P25",
+    "date":"2028-01-06",
+    "predicted_demand":43.3132,
+    "baseline_used":37.0,
+    "day_factor_used":0.9669,
+    "event_multiplier_used":1.2107,
+    "confidence_score":0.3123,
+    "confidence_reason":"Low confidence: very short history (228 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P25",
+    "date":"2028-01-07",
+    "predicted_demand":47.7659,
+    "baseline_used":37.0,
+    "day_factor_used":1.0663,
+    "event_multiplier_used":1.2107,
+    "confidence_score":0.3123,
+    "confidence_reason":"Low confidence: very short history (228 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P25",
+    "date":"2028-01-08",
+    "predicted_demand":51.2286,
+    "baseline_used":37.0,
+    "day_factor_used":1.1436,
+    "event_multiplier_used":1.2107,
+    "confidence_score":0.3123,
+    "confidence_reason":"Low confidence: very short history (228 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P25",
+    "date":"2028-01-09",
+    "predicted_demand":52.4426,
+    "baseline_used":37.0,
+    "day_factor_used":1.1707,
+    "event_multiplier_used":1.2107,
+    "confidence_score":0.3123,
+    "confidence_reason":"Low confidence: very short history (228 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P25",
+    "date":"2028-01-10",
+    "predicted_demand":40.8942,
+    "baseline_used":37.0,
+    "day_factor_used":0.9129,
+    "event_multiplier_used":1.2107,
+    "confidence_score":0.3123,
+    "confidence_reason":"Low confidence: very short history (228 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P25",
+    "date":"2028-01-11",
+    "predicted_demand":41.4228,
+    "baseline_used":37.0,
+    "day_factor_used":0.9247,
+    "event_multiplier_used":1.2107,
+    "confidence_score":0.3123,
+    "confidence_reason":"Low confidence: very short history (228 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P25",
+    "date":"2028-01-12",
+    "predicted_demand":40.0923,
+    "baseline_used":37.0,
+    "day_factor_used":0.895,
+    "event_multiplier_used":1.2107,
+    "confidence_score":0.3123,
+    "confidence_reason":"Low confidence: very short history (228 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P25",
+    "date":"2028-01-13",
+    "predicted_demand":43.3132,
+    "baseline_used":37.0,
+    "day_factor_used":0.9669,
+    "event_multiplier_used":1.2107,
+    "confidence_score":0.3123,
+    "confidence_reason":"Low confidence: very short history (228 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P25",
+    "date":"2028-01-14",
+    "predicted_demand":47.7659,
+    "baseline_used":37.0,
+    "day_factor_used":1.0663,
+    "event_multiplier_used":1.2107,
+    "confidence_score":0.3123,
+    "confidence_reason":"Low confidence: very short history (228 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P26",
+    "date":"2028-01-01",
+    "predicted_demand":68.6984,
+    "baseline_used":49.0,
+    "day_factor_used":1.0897,
+    "event_multiplier_used":1.2866,
+    "confidence_score":0.1945,
+    "confidence_reason":"Low confidence: very short history (142 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P26",
+    "date":"2028-01-02",
+    "predicted_demand":72.1027,
+    "baseline_used":49.0,
+    "day_factor_used":1.1437,
+    "event_multiplier_used":1.2866,
+    "confidence_score":0.1945,
+    "confidence_reason":"Low confidence: very short history (142 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P26",
+    "date":"2028-01-03",
+    "predicted_demand":54.9234,
+    "baseline_used":49.0,
+    "day_factor_used":0.8712,
+    "event_multiplier_used":1.2866,
+    "confidence_score":0.1945,
+    "confidence_reason":"Low confidence: very short history (142 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P26",
+    "date":"2028-01-04",
+    "predicted_demand":58.9708,
+    "baseline_used":49.0,
+    "day_factor_used":0.9354,
+    "event_multiplier_used":1.2866,
+    "confidence_score":0.1945,
+    "confidence_reason":"Low confidence: very short history (142 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P26",
+    "date":"2028-01-05",
+    "predicted_demand":61.0512,
+    "baseline_used":49.0,
+    "day_factor_used":0.9684,
+    "event_multiplier_used":1.2866,
+    "confidence_score":0.1945,
+    "confidence_reason":"Low confidence: very short history (142 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P26",
+    "date":"2028-01-06",
+    "predicted_demand":62.8227,
+    "baseline_used":49.0,
+    "day_factor_used":0.9965,
+    "event_multiplier_used":1.2866,
+    "confidence_score":0.1945,
+    "confidence_reason":"Low confidence: very short history (142 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P26",
+    "date":"2028-01-07",
+    "predicted_demand":63.2767,
+    "baseline_used":49.0,
+    "day_factor_used":1.0037,
+    "event_multiplier_used":1.2866,
+    "confidence_score":0.1945,
+    "confidence_reason":"Low confidence: very short history (142 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P26",
+    "date":"2028-01-08",
+    "predicted_demand":68.6984,
+    "baseline_used":49.0,
+    "day_factor_used":1.0897,
+    "event_multiplier_used":1.2866,
+    "confidence_score":0.1945,
+    "confidence_reason":"Low confidence: very short history (142 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P26",
+    "date":"2028-01-09",
+    "predicted_demand":72.1027,
+    "baseline_used":49.0,
+    "day_factor_used":1.1437,
+    "event_multiplier_used":1.2866,
+    "confidence_score":0.1945,
+    "confidence_reason":"Low confidence: very short history (142 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P26",
+    "date":"2028-01-10",
+    "predicted_demand":54.9234,
+    "baseline_used":49.0,
+    "day_factor_used":0.8712,
+    "event_multiplier_used":1.2866,
+    "confidence_score":0.1945,
+    "confidence_reason":"Low confidence: very short history (142 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P26",
+    "date":"2028-01-11",
+    "predicted_demand":58.9708,
+    "baseline_used":49.0,
+    "day_factor_used":0.9354,
+    "event_multiplier_used":1.2866,
+    "confidence_score":0.1945,
+    "confidence_reason":"Low confidence: very short history (142 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P26",
+    "date":"2028-01-12",
+    "predicted_demand":61.0512,
+    "baseline_used":49.0,
+    "day_factor_used":0.9684,
+    "event_multiplier_used":1.2866,
+    "confidence_score":0.1945,
+    "confidence_reason":"Low confidence: very short history (142 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P26",
+    "date":"2028-01-13",
+    "predicted_demand":62.8227,
+    "baseline_used":49.0,
+    "day_factor_used":0.9965,
+    "event_multiplier_used":1.2866,
+    "confidence_score":0.1945,
+    "confidence_reason":"Low confidence: very short history (142 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P26",
+    "date":"2028-01-14",
+    "predicted_demand":63.2767,
+    "baseline_used":49.0,
+    "day_factor_used":1.0037,
+    "event_multiplier_used":1.2866,
+    "confidence_score":0.1945,
+    "confidence_reason":"Low confidence: very short history (142 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P27",
+    "date":"2028-01-01",
+    "predicted_demand":61.4285,
+    "baseline_used":46.0,
+    "day_factor_used":1.2107,
+    "event_multiplier_used":1.103,
+    "confidence_score":0.126,
+    "confidence_reason":"Low confidence: very short history (92 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P27",
+    "date":"2028-01-02",
+    "predicted_demand":56.7758,
+    "baseline_used":46.0,
+    "day_factor_used":1.119,
+    "event_multiplier_used":1.103,
+    "confidence_score":0.126,
+    "confidence_reason":"Low confidence: very short history (92 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P27",
+    "date":"2028-01-03",
+    "predicted_demand":41.732,
+    "baseline_used":46.0,
+    "day_factor_used":0.8225,
+    "event_multiplier_used":1.103,
+    "confidence_score":0.126,
+    "confidence_reason":"Low confidence: very short history (92 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P27",
+    "date":"2028-01-04",
+    "predicted_demand":46.816,
+    "baseline_used":46.0,
+    "day_factor_used":0.9227,
+    "event_multiplier_used":1.103,
+    "confidence_score":0.126,
+    "confidence_reason":"Low confidence: very short history (92 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P27",
+    "date":"2028-01-05",
+    "predicted_demand":46.7094,
+    "baseline_used":46.0,
+    "day_factor_used":0.9206,
+    "event_multiplier_used":1.103,
+    "confidence_score":0.126,
+    "confidence_reason":"Low confidence: very short history (92 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P27",
+    "date":"2028-01-06",
+    "predicted_demand":46.6333,
+    "baseline_used":46.0,
+    "day_factor_used":0.9191,
+    "event_multiplier_used":1.103,
+    "confidence_score":0.126,
+    "confidence_reason":"Low confidence: very short history (92 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P27",
+    "date":"2028-01-07",
+    "predicted_demand":59.815,
+    "baseline_used":46.0,
+    "day_factor_used":1.1789,
+    "event_multiplier_used":1.103,
+    "confidence_score":0.126,
+    "confidence_reason":"Low confidence: very short history (92 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P27",
+    "date":"2028-01-08",
+    "predicted_demand":61.4285,
+    "baseline_used":46.0,
+    "day_factor_used":1.2107,
+    "event_multiplier_used":1.103,
+    "confidence_score":0.126,
+    "confidence_reason":"Low confidence: very short history (92 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P27",
+    "date":"2028-01-09",
+    "predicted_demand":56.7758,
+    "baseline_used":46.0,
+    "day_factor_used":1.119,
+    "event_multiplier_used":1.103,
+    "confidence_score":0.126,
+    "confidence_reason":"Low confidence: very short history (92 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P27",
+    "date":"2028-01-10",
+    "predicted_demand":41.732,
+    "baseline_used":46.0,
+    "day_factor_used":0.8225,
+    "event_multiplier_used":1.103,
+    "confidence_score":0.126,
+    "confidence_reason":"Low confidence: very short history (92 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P27",
+    "date":"2028-01-11",
+    "predicted_demand":46.816,
+    "baseline_used":46.0,
+    "day_factor_used":0.9227,
+    "event_multiplier_used":1.103,
+    "confidence_score":0.126,
+    "confidence_reason":"Low confidence: very short history (92 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P27",
+    "date":"2028-01-12",
+    "predicted_demand":46.7094,
+    "baseline_used":46.0,
+    "day_factor_used":0.9206,
+    "event_multiplier_used":1.103,
+    "confidence_score":0.126,
+    "confidence_reason":"Low confidence: very short history (92 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P27",
+    "date":"2028-01-13",
+    "predicted_demand":46.6333,
+    "baseline_used":46.0,
+    "day_factor_used":0.9191,
+    "event_multiplier_used":1.103,
+    "confidence_score":0.126,
+    "confidence_reason":"Low confidence: very short history (92 days), causing high uncertainty in seasonality."
+  },
+  {
+    "product_id":"P27",
+    "date":"2028-01-14",
+    "predicted_demand":59.815,
+    "baseline_used":46.0,
+    "day_factor_used":1.1789,
+    "event_multiplier_used":1.103,
+    "confidence_score":0.126,
+    "confidence_reason":"Low confidence: very short history (92 days), causing high uncertainty in seasonality."
+  }
+]

@@ -1,0 +1,245 @@
+[
+  {
+    "product_id":"P01",
+    "alert_type":"NORMAL",
+    "current_stock":135,
+    "predicted_demand_over_lead_time":130.53,
+    "recommended_action":"Stock level is healthy \u2014 covers 3.0 days of demand.",
+    "recommended_quantity":0,
+    "urgency_level":"LOW"
+  },
+  {
+    "product_id":"P02",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":106,
+    "predicted_demand_over_lead_time":208.31,
+    "recommended_action":"Reorder 910 units within 1 days to prevent stock-out.",
+    "recommended_quantity":910,
+    "urgency_level":"HIGH"
+  },
+  {
+    "product_id":"P03",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":73,
+    "predicted_demand_over_lead_time":94.39,
+    "recommended_action":"Reorder 420 units within 2 days to prevent stock-out.",
+    "recommended_quantity":420,
+    "urgency_level":"MEDIUM"
+  },
+  {
+    "product_id":"P04",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":134,
+    "predicted_demand_over_lead_time":138.12,
+    "recommended_action":"Reorder 560 units within 2 days to prevent stock-out.",
+    "recommended_quantity":560,
+    "urgency_level":"MEDIUM"
+  },
+  {
+    "product_id":"P05",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":99,
+    "predicted_demand_over_lead_time":156.25,
+    "recommended_action":"Reorder 660 units within 1 days to prevent stock-out.",
+    "recommended_quantity":660,
+    "urgency_level":"HIGH"
+  },
+  {
+    "product_id":"P06",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":83,
+    "predicted_demand_over_lead_time":162.64,
+    "recommended_action":"Reorder 710 units within 1 days to prevent stock-out.",
+    "recommended_quantity":710,
+    "urgency_level":"HIGH"
+  },
+  {
+    "product_id":"P07",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":49,
+    "predicted_demand_over_lead_time":88.67,
+    "recommended_action":"Reorder 330 units within 1 days to prevent stock-out.",
+    "recommended_quantity":330,
+    "urgency_level":"HIGH"
+  },
+  {
+    "product_id":"P08",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":82,
+    "predicted_demand_over_lead_time":109.56,
+    "recommended_action":"Reorder 420 units within 1 days to prevent stock-out.",
+    "recommended_quantity":420,
+    "urgency_level":"HIGH"
+  },
+  {
+    "product_id":"P09",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":58,
+    "predicted_demand_over_lead_time":96.32,
+    "recommended_action":"Reorder 430 units within 1 days to prevent stock-out.",
+    "recommended_quantity":430,
+    "urgency_level":"HIGH"
+  },
+  {
+    "product_id":"P10",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":89,
+    "predicted_demand_over_lead_time":153.7,
+    "recommended_action":"Reorder 620 units within 1 days to prevent stock-out.",
+    "recommended_quantity":620,
+    "urgency_level":"HIGH"
+  },
+  {
+    "product_id":"P11",
+    "alert_type":"NORMAL",
+    "current_stock":76,
+    "predicted_demand_over_lead_time":47.35,
+    "recommended_action":"Stock level is healthy \u2014 covers 4.6 days of demand.",
+    "recommended_quantity":0,
+    "urgency_level":"LOW"
+  },
+  {
+    "product_id":"P12",
+    "alert_type":"NORMAL",
+    "current_stock":65,
+    "predicted_demand_over_lead_time":46.68,
+    "recommended_action":"Stock level is healthy \u2014 covers 3.9 days of demand.",
+    "recommended_quantity":0,
+    "urgency_level":"LOW"
+  },
+  {
+    "product_id":"P13",
+    "alert_type":"NORMAL",
+    "current_stock":106,
+    "predicted_demand_over_lead_time":64.33,
+    "recommended_action":"Stock level is healthy \u2014 covers 4.6 days of demand.",
+    "recommended_quantity":0,
+    "urgency_level":"LOW"
+  },
+  {
+    "product_id":"P14",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":88,
+    "predicted_demand_over_lead_time":181.55,
+    "recommended_action":"Reorder 690 units within 1 days to prevent stock-out.",
+    "recommended_quantity":690,
+    "urgency_level":"HIGH"
+  },
+  {
+    "product_id":"P15",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":53,
+    "predicted_demand_over_lead_time":90.57,
+    "recommended_action":"Reorder 350 units within 1 days to prevent stock-out.",
+    "recommended_quantity":350,
+    "urgency_level":"HIGH"
+  },
+  {
+    "product_id":"P16",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":63,
+    "predicted_demand_over_lead_time":131.94,
+    "recommended_action":"Reorder 490 units within 1 days to prevent stock-out.",
+    "recommended_quantity":490,
+    "urgency_level":"HIGH"
+  },
+  {
+    "product_id":"P17",
+    "alert_type":"NORMAL",
+    "current_stock":56,
+    "predicted_demand_over_lead_time":42.36,
+    "recommended_action":"Stock level is healthy \u2014 covers 3.8 days of demand.",
+    "recommended_quantity":0,
+    "urgency_level":"LOW"
+  },
+  {
+    "product_id":"P18",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":105,
+    "predicted_demand_over_lead_time":147.87,
+    "recommended_action":"Reorder 620 units within 2 days to prevent stock-out.",
+    "recommended_quantity":620,
+    "urgency_level":"MEDIUM"
+  },
+  {
+    "product_id":"P19",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":63,
+    "predicted_demand_over_lead_time":116.65,
+    "recommended_action":"Reorder 520 units within 1 days to prevent stock-out.",
+    "recommended_quantity":520,
+    "urgency_level":"HIGH"
+  },
+  {
+    "product_id":"P20",
+    "alert_type":"NORMAL",
+    "current_stock":88,
+    "predicted_demand_over_lead_time":54.47,
+    "recommended_action":"Stock level is healthy \u2014 covers 4.9 days of demand.",
+    "recommended_quantity":0,
+    "urgency_level":"LOW"
+  },
+  {
+    "product_id":"P21",
+    "alert_type":"OVERSTOCK",
+    "current_stock":104,
+    "predicted_demand_over_lead_time":26.68,
+    "recommended_action":"Reduce next order by 45 units \u2014 1.7 weeks of cover remaining.",
+    "recommended_quantity":45,
+    "urgency_level":"LOW"
+  },
+  {
+    "product_id":"P22",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":68,
+    "predicted_demand_over_lead_time":111.28,
+    "recommended_action":"Reorder 400 units within 1 days to prevent stock-out.",
+    "recommended_quantity":400,
+    "urgency_level":"HIGH"
+  },
+  {
+    "product_id":"P23",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":123,
+    "predicted_demand_over_lead_time":146.0,
+    "recommended_action":"Reorder 510 units within 2 days to prevent stock-out.",
+    "recommended_quantity":510,
+    "urgency_level":"MEDIUM"
+  },
+  {
+    "product_id":"P24",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":55,
+    "predicted_demand_over_lead_time":58.85,
+    "recommended_action":"Reorder 180 units within 2 days to prevent stock-out.",
+    "recommended_quantity":180,
+    "urgency_level":"MEDIUM"
+  },
+  {
+    "product_id":"P25",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":125,
+    "predicted_demand_over_lead_time":144.57,
+    "recommended_action":"Reorder 510 units within 2 days to prevent stock-out.",
+    "recommended_quantity":510,
+    "urgency_level":"MEDIUM"
+  },
+  {
+    "product_id":"P26",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":64,
+    "predicted_demand_over_lead_time":195.72,
+    "recommended_action":"Reorder 820 units within 1 days to prevent stock-out.",
+    "recommended_quantity":820,
+    "urgency_level":"HIGH"
+  },
+  {
+    "product_id":"P27",
+    "alert_type":"STOCKOUT_RISK",
+    "current_stock":117,
+    "predicted_demand_over_lead_time":159.94,
+    "recommended_action":"Reorder 500 units within 2 days to prevent stock-out.",
+    "recommended_quantity":500,
+    "urgency_level":"MEDIUM"
+  }
+]

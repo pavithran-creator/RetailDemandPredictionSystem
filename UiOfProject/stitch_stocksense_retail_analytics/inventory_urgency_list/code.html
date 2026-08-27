@@ -1,0 +1,346 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Inventory Management - GroceryStore Pro</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#054a78",
+                        "tertiary-fixed": "#ffdbce",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#386664",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#195483",
+                        "secondary": "#2c6292",
+                        "tertiary-fixed-dim": "#f5b9a2",
+                        "inverse-primary": "#a0cfcc",
+                        "on-tertiary-container": "#e2a891",
+                        "surface-dim": "#d6dae5",
+                        "secondary-fixed": "#d0e4ff",
+                        "primary-fixed-dim": "#a0cfcc",
+                        "tertiary": "#4c2617",
+                        "surface-bright": "#f8f9ff",
+                        "surface-variant": "#dee2ee",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#001d34",
+                        "background": "#f8f9ff",
+                        "surface-container-low": "#eff3ff",
+                        "inverse-surface": "#2c3139",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#96c8fe",
+                        "on-surface": "#171c24",
+                        "primary": "#003735",
+                        "outline-variant": "#c0c8c7",
+                        "on-surface-variant": "#404848",
+                        "surface-container-high": "#e4e8f3",
+                        "on-background": "#171c24",
+                        "surface-container-highest": "#dee2ee",
+                        "on-tertiary-fixed-variant": "#663c2b",
+                        "on-primary-fixed": "#00201f",
+                        "on-tertiary-fixed": "#321205",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f8f9ff",
+                        "outline": "#707978",
+                        "on-primary-container": "#8fbebb",
+                        "primary-container": "#1f4e4c",
+                        "inverse-on-surface": "#edf1fc",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#9bcbff",
+                        "surface-container": "#eaeef9",
+                        "on-primary-fixed-variant": "#1f4e4c",
+                        "tertiary-container": "#663c2b",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#bcece8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "stack-md": "16px",
+                        "container-max": "1200px",
+                        "sidebar-width": "240px",
+                        "gutter-tight": "16px",
+                        "padding-card": "20px",
+                        "gutter-default": "24px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter"],
+                        "h2": ["Inter"],
+                        "h3": ["Inter"],
+                        "data-tabular": ["JetBrains Mono"],
+                        "body-sm": ["Inter"],
+                        "h1": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "h2": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "h3": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+                        "data-tabular": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "h1": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Base application styles */
+        body { @apply bg-background text-on-background font-body-md; }
+    </style>
+</head>
+<body class="flex h-screen overflow-hidden">
+<!-- Shared Component: SideNavBar -->
+<nav class="bg-surface-container-lowest dark:bg-surface-container-low text-primary dark:text-primary-fixed font-body-md text-body-md fixed left-0 top-0 h-full w-[240px] border-r border-outline-variant dark:border-outline flex flex-col h-screen py-gutter-default z-20">
+<!-- Header -->
+<div class="px-6 pb-6">
+<h2 class="font-h2 text-h2 font-bold text-primary dark:text-primary-fixed">GroceryStore Pro</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">ID: #48291</p>
+</div>
+<!-- Main Navigation Tabs -->
+<div class="flex-1 overflow-y-auto w-full">
+<ul class="flex flex-col space-y-1 w-full">
+<!-- Dashboard -->
+<li>
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined mr-3">dashboard</span>
+<span>Dashboard</span>
+</a>
+</li>
+<!-- Products -->
+<li>
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined mr-3">inventory_2</span>
+<span>Products</span>
+</a>
+</li>
+<!-- Sales -->
+<li>
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined mr-3">trending_up</span>
+<span>Sales</span>
+</a>
+</li>
+<!-- Demand Forecast -->
+<li>
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined mr-3">query_stats</span>
+<span>Demand Forecast</span>
+</a>
+</li>
+<!-- Inventory (ACTIVE) -->
+<li>
+<a class="flex items-center px-6 py-3 w-full border-l-4 border-primary bg-primary/10 text-primary dark:bg-primary-container/20 dark:text-primary-fixed-dim font-semibold hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined mr-3" style="font-variation-settings: 'FILL' 1;">warehouse</span>
+<span>Inventory</span>
+</a>
+</li>
+<!-- Events & Promotions -->
+<li>
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined mr-3">campaign</span>
+<span>Events &amp; Promotions</span>
+</a>
+</li>
+<!-- What-If Simulator -->
+<li>
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined mr-3">science</span>
+<span>What-If Simulator</span>
+</a>
+</li>
+</ul>
+</div>
+<!-- CTA -->
+<div class="px-6 py-4">
+<button class="w-full bg-primary text-on-primary font-body-md text-body-md py-2 rounded flex justify-center items-center cursor-pointer active:scale-95 duration-150 shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined mr-2 text-sm">add</span>
+                New Simulation
+            </button>
+</div>
+<!-- Footer Tabs -->
+<div class="mt-auto border-t border-outline-variant pt-2">
+<ul class="flex flex-col space-y-1">
+<li>
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined mr-3">settings</span>
+<span>Settings</span>
+</a>
+</li>
+<li>
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined mr-3">help</span>
+<span>Support</span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 ml-[240px] flex flex-col relative w-[calc(100%-240px)] h-screen overflow-hidden">
+<!-- Shared Component: TopAppBar -->
+<header class="bg-surface dark:bg-background text-primary dark:text-primary-fixed font-body-sm text-body-sm docked full-width top-0 border-b border-outline-variant dark:border-outline flex justify-between items-center h-16 px-gutter-default w-full z-10 shrink-0">
+<!-- Brand / Product Name -->
+<div class="flex items-center gap-4">
+<h1 class="font-h3 text-h3 text-on-surface dark:text-on-surface font-bold">Westside Organic Market</h1>
+</div>
+<!-- Navigation Links (Centered-ish) -->
+<div class="hidden md:flex items-center gap-6">
+<span class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-opacity cursor-pointer duration-200">Last Updated: 2 mins ago</span>
+<span class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-opacity cursor-pointer duration-200">Oct 24, 2023</span>
+</div>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-4">
+<button class="text-primary font-body-sm text-body-sm font-semibold hover:text-primary-container transition-colors">
+                    Refresh Data
+                </button>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<button class="hover:text-primary dark:hover:text-primary-fixed transition-opacity cursor-pointer duration-200 p-1 rounded-full hover:bg-surface-variant">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="hover:text-primary dark:hover:text-primary-fixed transition-opacity cursor-pointer duration-200 p-1 rounded-full hover:bg-surface-variant">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Page Content Canvas -->
+<div class="flex-1 overflow-y-auto p-gutter-default bg-background">
+<div class="max-w-container-max mx-auto w-full flex flex-col gap-stack-md">
+<!-- Page Title & Actions -->
+<div class="flex justify-between items-end mb-4">
+<div>
+<h2 class="font-h1 text-h1 text-on-surface">Inventory Status</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Manage stock levels and review automated replenishment recommendations.</p>
+</div>
+<!-- Filter Chips -->
+<div class="flex gap-2">
+<button class="px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps border border-primary">All</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface border border-outline-variant font-label-caps text-label-caps hover:bg-surface-variant transition-colors">Stock-out Risk</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface border border-outline-variant font-label-caps text-label-caps hover:bg-surface-variant transition-colors">Overstock</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface border border-outline-variant font-label-caps text-label-caps hover:bg-surface-variant transition-colors">Healthy</button>
+</div>
+</div>
+<!-- Data Table Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col shadow-sm">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface border-b border-outline-variant">
+<th class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant font-semibold">Product</th>
+<th class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant font-semibold text-right">Current Stock</th>
+<th class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant font-semibold text-right">Predicted Demand (7d)</th>
+<th class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant font-semibold text-center">Risk Status</th>
+<th class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant font-semibold">Recommended Action</th>
+<th class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant font-semibold text-right">Rec. Qty</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md">
+<!-- Row 1: Stock-out Risk (Urgent) -->
+<tr class="border-b border-outline-variant/50 hover:bg-surface-container-low transition-colors h-10 group">
+<td class="py-2 px-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-variant overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="A modern, high-quality product shot of organic avocados arranged neatly in a minimalist grocery display. Soft, natural light-mode aesthetic highlighting fresh green tones against a clean, neutral white background. Professional retail inventory photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4ceqeTv-W3daLTgJgQy0IXc8dzentl4JkA0r9Y77n9u50DKAR1kMS83c5r2LHclGKaG19wjWkbE7lMIDK0_5F_if_WS8WyklBIsr-suZnA0t1Lbo_IY4WMxaPhAJ-OG-9jpHzKNrpMRQUnS8bGhFy6kt3zWje3gc9LIqnoCp9gvYGsG6BfM5IdXAO2MlGFmAqgtV1a3KjHwI6NH3dXviHAK0w5wBY9WZu0uEfUMvhRFEfJCWmEQNY_g">
+</div>
+<div>
+<div class="font-semibold text-on-surface">Organic Avocados</div>
+<div class="text-[10px] text-on-surface-variant">SKU: 902-AVO-ORG</div>
+</div>
+</td>
+<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-error font-semibold">12</td>
+<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-on-surface">145</td>
+<td class="py-2 px-4 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-caps text-label-caps">Stock-out Imminent</span>
+</td>
+<td class="py-2 px-4 text-on-surface">Expedite Order</td>
+<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-primary font-semibold">+150</td>
+</tr>
+<!-- Row 2: Stock-out Risk (Warning) -->
+<tr class="border-b border-outline-variant/50 bg-surface-bright hover:bg-surface-container-low transition-colors h-10 group">
+<td class="py-2 px-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-variant overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="A minimalist overhead shot of artisanal sourdough bread loaves on a pristine white marble counter. Bright, airy lighting typical of a high-end corporate application. Clean composition emphasizing texture and freshness in a structured environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmT2HATaxxg2RZYkbT1rPrJVfKty5POEdjF9-ClZIu7Pal39FhEUsiww6O85EUciLsTvhX5XLhOgAbQq9gT15hcNpmGfqmdv8S4JvRK-zna9yE6V7NMnUcrkeun1Q4BSwdFnmxpcKuYBg7eZK-XPZ_lts7iP0fQMHpZL3pOHmC_4-ezyvHRwzOcxUlS8AIFeQd8AK3y1rKKjVg4Rst_Ju5g8gywGx_hxZkSFZU_XXAQFFNhdThFh-tfA">
+</div>
+<div>
+<div class="font-semibold text-on-surface">Artisan Sourdough</div>
+<div class="text-[10px] text-on-surface-variant">SKU: 441-BAK-SOU</div>
+</div>
+</td>
+<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-tertiary-container font-semibold">45</td>
+<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-on-surface">90</td>
+<td class="py-2 px-4 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-caps text-label-caps">Low Stock</span>
+</td>
+<td class="py-2 px-4 text-on-surface">Standard Restock</td>
+<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-primary font-semibold">+60</td>
+</tr>
+<!-- Row 3: Overstock -->
+<tr class="border-b border-outline-variant/50 hover:bg-surface-container-low transition-colors h-10 group">
+<td class="py-2 px-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-variant overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Neatly stacked boxes of premium coconut water on modern warehouse shelving. High-key lighting, desaturated background colors to emphasize the product packaging. Professional supply chain and inventory management aesthetic, clean lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkA42o1XXSIItWKQMWHf3Ow7vzIHtxL55JsyAZB8mwh94WmgtJvElG68c1tm4Lpgh6MXiVPRYwIKlLcR-Pzru__x30AQMiQ9XtUQI267LH9J0C5EsK9KVQr5Ih7kSKz7vgJYNvKnP4ivhiN52GUI7oNe61PKlMyWgzR-ky-1MbPVM5GZucFsK1-7Q4EbT8OW5OK_Nid7qB4jl2kV5LTa1lOuBjEOW4bwN6DqFVaXJN5N0rbOXIkHWfJg">
+</div>
+<div>
+<div class="font-semibold text-on-surface">Premium Coconut Water</div>
+<div class="text-[10px] text-on-surface-variant">SKU: 112-BEV-COC</div>
+</div>
+</td>
+<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-secondary font-semibold">850</td>
+<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-on-surface">120</td>
+<td class="py-2 px-4 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps">Overstock</span>
+</td>
+<td class="py-2 px-4 text-on-surface">Apply Discount</td>
+<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-on-surface-variant">0</td>
+</tr>
+<!-- Row 4: Healthy -->
+<tr class="border-b border-outline-variant/50 bg-surface-bright hover:bg-surface-container-low transition-colors h-10 group">
+<td class="py-2 px-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-variant overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="A clean, isolated image of a carton of organic free-range eggs. Shot from a slight angle against a pure white background. Even, diffuse lighting creating a clinical yet appealing look suitable for a modern inventory management dashboard." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQRY2Lx_uPmFXpiXYuyVwXG5KwxLeOpi1qOeXzmbzBRG1vks9QcRTZp0S_6IOqkt4G0q0n43-tkNdMtcCCcKNp_eUZx6X0p83570ceNexWaXG_IHJ6X2i8syjj_jlu70h95gNq-sV9IdOfwO0uDXun3jY_w7u5rj7niRepNqLVPBRfUM1zAyRtwZ7ODWG2hdTDjao1MyXekqPNYkL18RHqzoLIiUh27U4JUwEG4IcrFwyapFC-8VrCRA">
+</div>
+<div>
+<div class="font-semibold text-on-surface">Free Range Eggs (Dozen)</div>
+<div class="text-[10px] text-on-surface-variant">SKU: 304-DAI-EGG</div>
+</div>
+</td>
+<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-on-surface">240</td>
+<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-on-surface">225</td>
+<td class="py-2 px-4 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-label-caps text-label-caps">Healthy</span>
+</td>
+<td class="py-2 px-4 text-on-surface-variant">Monitor</td>
+<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-on-surface-variant">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer/Pagination placeholder -->
+<div class="bg-surface py-3 px-4 border-t border-outline-variant flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant">
+<span>Showing 1-4 of 1,248 items</span>
+<div class="flex gap-2">
+<button class="p-1 hover:bg-surface-variant rounded"><span class="material-symbols-outlined text-sm">chevron_left</span></button>
+<button class="p-1 hover:bg-surface-variant rounded"><span class="material-symbols-outlined text-sm">chevron_right</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>What-If Simulator - GroceryStore Pro</title>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed-variant": "#054a78",
+                      "tertiary-fixed": "#ffdbce",
+                      "on-secondary": "#ffffff",
+                      "surface-tint": "#386664",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-container": "#195483",
+                      "secondary": "#2c6292",
+                      "tertiary-fixed-dim": "#f5b9a2",
+                      "inverse-primary": "#a0cfcc",
+                      "on-tertiary-container": "#e2a891",
+                      "surface-dim": "#d6dae5",
+                      "secondary-fixed": "#d0e4ff",
+                      "primary-fixed-dim": "#a0cfcc",
+                      "tertiary": "#4c2617",
+                      "surface-bright": "#f8f9ff",
+                      "surface-variant": "#dee2ee",
+                      "error-container": "#ffdad6",
+                      "on-secondary-fixed": "#001d34",
+                      "background": "#f8f9ff",
+                      "surface-container-low": "#eff3ff",
+                      "inverse-surface": "#2c3139",
+                      "on-primary": "#ffffff",
+                      "secondary-container": "#96c8fe",
+                      "on-surface": "#171c24",
+                      "primary": "#003735",
+                      "outline-variant": "#c0c8c7",
+                      "on-surface-variant": "#404848",
+                      "surface-container-high": "#e4e8f3",
+                      "on-background": "#171c24",
+                      "surface-container-highest": "#dee2ee",
+                      "on-tertiary-fixed-variant": "#663c2b",
+                      "on-primary-fixed": "#00201f",
+                      "on-tertiary-fixed": "#321205",
+                      "on-error-container": "#93000a",
+                      "surface-container-lowest": "#ffffff",
+                      "surface": "#f8f9ff",
+                      "outline": "#707978",
+                      "on-primary-container": "#8fbebb",
+                      "primary-container": "#1f4e4c",
+                      "inverse-on-surface": "#edf1fc",
+                      "error": "#ba1a1a",
+                      "secondary-fixed-dim": "#9bcbff",
+                      "surface-container": "#eaeef9",
+                      "on-primary-fixed-variant": "#1f4e4c",
+                      "tertiary-container": "#663c2b",
+                      "on-error": "#ffffff",
+                      "primary-fixed": "#bcece8"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-sm": "8px",
+                      "stack-md": "16px",
+                      "container-max": "1200px",
+                      "sidebar-width": "240px",
+                      "gutter-tight": "16px",
+                      "padding-card": "20px",
+                      "gutter-default": "24px"
+              },
+              "fontFamily": {
+                      "label-caps": ["Inter"],
+                      "h2": ["Inter"],
+                      "h3": ["Inter"],
+                      "data-tabular": ["JetBrains Mono"],
+                      "body-sm": ["Inter"],
+                      "h1": ["Inter"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "h2": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "h3": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                      "data-tabular": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                      "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                      "h1": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        /* Custom scrollbar for better UI */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #d6dae5; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #c0c8c7; }
+        
+        /* Material symbols setup */
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen">
+<!-- Shared Component: SideNavBar -->
+<nav class="fixed left-0 top-0 h-full w-[240px] bg-surface-container-lowest border-r border-outline-variant flex flex-col py-gutter-default z-20">
+<!-- Brand / Header -->
+<div class="px-6 mb-8 flex items-center gap-3">
+<div class="w-10 h-10 rounded bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">storefront</span>
+</div>
+<div>
+<h2 class="font-h3 text-h3 font-bold text-primary truncate leading-tight">GroceryStore Pro</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ID: #48291</span>
+</div>
+</div>
+<!-- Navigation Links -->
+<ul class="flex flex-col flex-1">
+<li class="px-3 mb-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-body-md text-body-md">Dashboard</span>
+</a>
+</li>
+<li class="px-3 mb-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span class="font-body-md text-body-md">Products</span>
+</a>
+</li>
+<li class="px-3 mb-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+<span class="font-body-md text-body-md">Sales</span>
+</a>
+</li>
+<li class="px-3 mb-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="query_stats">query_stats</span>
+<span class="font-body-md text-body-md">Demand Forecast</span>
+</a>
+</li>
+<li class="px-3 mb-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="warehouse">warehouse</span>
+<span class="font-body-md text-body-md">Inventory</span>
+</a>
+</li>
+<li class="px-3 mb-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="campaign">campaign</span>
+<span class="font-body-md text-body-md">Events &amp; Promotions</span>
+</a>
+</li>
+<!-- ACTIVE TAB -->
+<li class="px-3 mb-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg border-l-4 border-primary bg-primary/10 text-primary font-semibold cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined icon-fill" data-icon="science">science</span>
+<span class="font-body-md text-body-md">What-If Simulator</span>
+</a>
+</li>
+</ul>
+<!-- CTA & Footer -->
+<div class="px-6 mt-auto">
+<button class="w-full bg-primary text-on-primary py-2 px-4 rounded font-body-md text-body-md font-medium hover:opacity-90 transition-opacity flex items-center justify-center gap-2 mb-6">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                New Simulation
+            </button>
+<div class="border-t border-outline-variant pt-4 flex flex-col gap-2">
+<a class="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="settings">settings</span>
+<span class="font-body-sm text-body-sm">Settings</span>
+</a>
+<a class="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="help">help</span>
+<span class="font-body-sm text-body-sm">Support</span>
+</a>
+</div>
+</div>
+</nav>
+<!-- Shared Component: TopAppBar -->
+<header class="fixed top-0 flex justify-between items-center h-16 px-gutter-default ml-[240px] w-[calc(100%-240px)] bg-surface border-b border-outline-variant z-10">
+<div class="flex items-center gap-6">
+<h1 class="font-h3 text-h3 text-on-surface">Westside Organic Market</h1>
+<!-- Nav Links / Status -->
+<div class="hidden lg:flex items-center gap-4 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">sync</span> Last Updated: 2 mins ago</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>Oct 24, 2023</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:text-primary transition-opacity font-body-sm text-body-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">refresh</span> Refresh Data
+            </button>
+<div class="h-6 w-px bg-outline-variant mx-2"></div>
+<button class="text-on-surface-variant hover:text-primary transition-opacity cursor-pointer duration-200">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-opacity cursor-pointer duration-200">
+<span class="material-symbols-outlined text-[28px]" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="ml-[240px] mt-16 p-gutter-default">
+<div class="max-w-container-max mx-auto">
+<div class="mb-6 flex justify-between items-end">
+<div>
+<h2 class="font-h2 text-h2 text-on-surface mb-1">Predictive Simulation Environment</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Adjust parameters to forecast impact on inventory and sales.</p>
+</div>
+</div>
+<!-- Dashboard Grid -->
+<div class="grid grid-cols-12 gap-gutter-default">
+<!-- Left Panel: Controls -->
+<aside class="col-span-12 lg:col-span-4 flex flex-col gap-stack-md">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-padding-card shadow-sm">
+<h3 class="font-h3 text-h3 text-on-surface border-b border-outline-variant pb-3 mb-4">Simulation Parameters</h3>
+<form class="space-y-5" onsubmit="event.preventDefault();">
+<!-- Product Select -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-2">Target Product Category</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface border border-outline-variant rounded-md py-2 pl-3 pr-10 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary">
+<option>Organic Avocados (Hass)</option>
+<option>Almond Milk 1L</option>
+<option>Free-Range Eggs (Dozen)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Date Range -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-2">Forecast Horizon</label>
+<div class="flex gap-2">
+<input class="w-full bg-surface border border-outline-variant rounded-md py-2 px-3 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary" type="date" value="2023-10-25">
+<input class="w-full bg-surface border border-outline-variant rounded-md py-2 px-3 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary" type="date" value="2023-11-08">
+</div>
+</div>
+<!-- Event Overrides -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-2">Event Overrides</label>
+<div class="space-y-2">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded border-outline-variant text-primary focus:ring-primary h-4 w-4" type="checkbox">
+<span class="font-body-md text-body-md text-on-surface">Local Festival Weekend</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary h-4 w-4" type="checkbox">
+<span class="font-body-md text-body-md text-on-surface">Competitor Promotion Active</span>
+</label>
+</div>
+</div>
+<!-- Discount Slider -->
+<div>
+<div class="flex justify-between mb-2">
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase">Proposed Discount</label>
+<span class="font-data-tabular text-data-tabular text-primary font-bold">15%</span>
+</div>
+<input class="w-full h-2 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary" max="50" min="0" type="range" value="15">
+<div class="flex justify-between text-xs text-outline mt-1 font-data-tabular">
+<span>0%</span>
+<span>50%</span>
+</div>
+</div>
+<!-- Action -->
+<div class="pt-4 mt-4 border-t border-outline-variant">
+<button class="w-full bg-primary text-on-primary py-3 px-4 rounded-md font-body-md text-body-md font-semibold hover:bg-primary-container hover:text-on-primary-container transition-colors flex justify-center items-center gap-2 shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.05)]" type="button">
+<span class="material-symbols-outlined">play_arrow</span>
+                                    Run Simulation
+                                </button>
+</div>
+</form>
+</div>
+</aside>
+<!-- Right Panel: Results Comparison -->
+<section class="col-span-12 lg:col-span-8 flex flex-col gap-stack-md">
+<!-- Top Highlight / Summary -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[24px]">compare_arrows</span>
+</div>
+<div>
+<h3 class="font-h3 text-h3 text-on-surface">Simulation Impact</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Projected difference over 14-day horizon</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="bg-surface-variant rounded py-1.5 px-3 flex items-center gap-2 border border-outline-variant">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Units</span>
+<span class="font-data-tabular text-data-tabular text-on-surface font-bold">+240</span>
+</div>
+<div class="bg-surface-variant rounded py-1.5 px-3 flex items-center gap-2 border border-outline-variant">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Revenue</span>
+<span class="font-data-tabular text-data-tabular text-on-surface font-bold">+$1,450</span>
+</div>
+</div>
+</div>
+<!-- Comparison Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<!-- Normal Prediction -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-padding-card flex flex-col h-full relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-outline-variant"></div>
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-h3 text-h3 text-on-surface">Baseline Prediction</h3>
+<span class="bg-surface-container px-2 py-1 rounded text-xs font-medium text-on-surface-variant border border-outline-variant">Current Strategy</span>
+</div>
+<div class="space-y-6 flex-1">
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Expected Demand</p>
+<p class="font-data-tabular text-[24px] leading-tight font-semibold text-on-surface">1,200 <span class="text-sm font-normal text-outline">units</span></p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Projected Revenue</p>
+<p class="font-data-tabular text-[24px] leading-tight font-semibold text-on-surface">$5,400.00</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Stockout Risk</p>
+<div class="flex items-center gap-2 mt-1">
+<div class="flex-1 h-2 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-outline w-[12%]"></div>
+</div>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant">12%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Simulated Prediction -->
+<div class="bg-surface-container-lowest border border-primary/30 rounded-lg p-padding-card flex flex-col h-full relative overflow-hidden shadow-[0px_4px_12px_-2px_rgba(0,55,53,0.08)]">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-h3 text-h3 text-primary">Simulated Prediction</h3>
+<span class="bg-primary/10 px-2 py-1 rounded text-xs font-medium text-primary border border-primary/20 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">science</span> Active
+                                </span>
+</div>
+<div class="space-y-6 flex-1">
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Expected Demand</p>
+<div class="flex items-end gap-3">
+<p class="font-data-tabular text-[24px] leading-tight font-semibold text-on-surface">1,440 <span class="text-sm font-normal text-outline">units</span></p>
+<span class="font-data-tabular text-xs font-medium text-on-surface bg-surface-variant px-1.5 py-0.5 rounded border border-outline-variant mb-1">+20%</span>
+</div>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Projected Revenue</p>
+<div class="flex items-end gap-3">
+<p class="font-data-tabular text-[24px] leading-tight font-semibold text-on-surface">$6,850.00</p>
+<span class="font-data-tabular text-xs font-medium text-on-surface bg-surface-variant px-1.5 py-0.5 rounded border border-outline-variant mb-1">+$1.45k</span>
+</div>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Stockout Risk</p>
+<div class="flex items-center gap-2 mt-1">
+<div class="flex-1 h-2 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-error w-[45%]"></div>
+</div>
+<span class="font-data-tabular text-data-tabular text-error font-semibold">45%</span>
+</div>
+<p class="text-xs text-error mt-1 flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">warning</span> Warning: High probability of stockout before end of horizon.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+</body></html>

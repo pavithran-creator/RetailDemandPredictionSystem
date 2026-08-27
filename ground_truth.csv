@@ -1,0 +1,21 @@
+product_id,product_name,base_daily_demand,weekend_factor,festival_multiplier,promo_multiplier,anomaly_date,launch_date
+P01,Rice 5kg,18,1.15,1.6,1.5,,2025-01-01
+P02,Wheat Flour 5kg,15,1.1,1.4,1.5,,2025-01-01
+P03,Sunflower Oil 1L,22,1.2,2.6,1.6,,2025-01-01
+P04,Toor Dal 1kg,12,1.1,1.7,1.5,,2025-01-01
+P05,Sugar 1kg,20,1.15,3.0,1.5,,2025-01-01
+P06,Milk 500ml,65,1.3,1.8,1.5,,2025-01-01
+P07,Curd 400g,40,1.35,1.4,1.5,,2025-01-01
+P08,Paneer 200g,14,1.45,2.4,1.5,,2025-01-01
+P09,Potato Chips 52g,45,1.6,2.8,2.2,,2025-01-01
+P10,Biscuit Pack,38,1.4,1.4,2.0,2025-06-17,2025-01-01
+P11,Namkeen 200g,25,1.55,3.2,1.9,,2025-01-01
+P12,Soft Drink 750ml,30,1.7,1.4,2.3,,2025-01-01
+P13,Tea Powder 250g,16,1.1,1.4,1.5,,2025-01-01
+P14,Instant Coffee 100g,9,1.15,1.4,1.5,,2025-01-01
+P15,Detergent Powder 1kg,11,1.05,1.4,1.5,,2025-01-01
+P16,Dish Wash Bar,28,1.05,1.4,1.5,,2025-01-01
+P17,Tomato 1kg,35,1.25,1.4,1.5,,2025-01-01
+P18,Onion 1kg,33,1.2,1.4,1.5,,2025-01-01
+P19,Umbrella,3,1.1,1.4,1.5,,2025-01-01
+P20,Herbal Face Wash,10,1.15,1.4,1.5,,2025-12-06

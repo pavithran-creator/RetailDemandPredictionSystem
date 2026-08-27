@@ -1,0 +1,299 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Prediction Explanation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#054a78",
+                        "tertiary-fixed": "#ffdbce",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#386664",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#195483",
+                        "secondary": "#2c6292",
+                        "tertiary-fixed-dim": "#f5b9a2",
+                        "inverse-primary": "#a0cfcc",
+                        "on-tertiary-container": "#e2a891",
+                        "surface-dim": "#d6dae5",
+                        "secondary-fixed": "#d0e4ff",
+                        "primary-fixed-dim": "#a0cfcc",
+                        "tertiary": "#4c2617",
+                        "surface-bright": "#f8f9ff",
+                        "surface-variant": "#dee2ee",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#001d34",
+                        "background": "#f8f9ff",
+                        "surface-container-low": "#eff3ff",
+                        "inverse-surface": "#2c3139",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#96c8fe",
+                        "on-surface": "#171c24",
+                        "primary": "#003735",
+                        "outline-variant": "#c0c8c7",
+                        "on-surface-variant": "#404848",
+                        "surface-container-high": "#e4e8f3",
+                        "on-background": "#171c24",
+                        "surface-container-highest": "#dee2ee",
+                        "on-tertiary-fixed-variant": "#663c2b",
+                        "on-primary-fixed": "#00201f",
+                        "on-tertiary-fixed": "#321205",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f8f9ff",
+                        "outline": "#707978",
+                        "on-primary-container": "#8fbebb",
+                        "primary-container": "#1f4e4c",
+                        "inverse-on-surface": "#edf1fc",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#9bcbff",
+                        "surface-container": "#eaeef9",
+                        "on-primary-fixed-variant": "#1f4e4c",
+                        "tertiary-container": "#663c2b",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#bcece8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "stack-md": "16px",
+                        "container-max": "1200px",
+                        "sidebar-width": "240px",
+                        "gutter-tight": "16px",
+                        "padding-card": "20px",
+                        "gutter-default": "24px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter"],
+                        "h2": ["Inter"],
+                        "h3": ["Inter"],
+                        "data-tabular": ["JetBrains Mono"],
+                        "body-sm": ["Inter"],
+                        "h1": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "h2": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "h3": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+                        "data-tabular": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "h1": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .chart-grid {
+            background-image: linear-gradient(to right, #dee2ee 1px, transparent 1px), linear-gradient(to bottom, #dee2ee 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex font-body-md overflow-x-hidden">
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-full w-[240px] bg-surface-container-lowest border-r border-outline-variant flex flex-col py-gutter-default z-20">
+<div class="px-gutter-default mb-8 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold font-h3 overflow-hidden">
+<img alt="Store Manager Profile" class="w-full h-full object-cover" data-alt="A professional headshot of a store manager, modern, well-lit, corporate setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4QamUbdpjqaHRHdeJ-NQcpXtlQIekyPBtxuKbQxGQzOuduMcPGNKLij-IPkUQwdqxwXYHdCGc1bVwMHI2weWZzuwH4A3vzTP7G5px2xfTTKDkcu1wN5Q7jOm64L-ZamXWb7B90PrpULxQFAGCfN9Ybll3ogxYRfXhAVww7sJisXR52NNUplCqIl7LeSQXqbrrwpME9RI62TnQiOd7sg4Yofy5yhT6865BEOWIzatFvW8c4RZLWS-cfA">
+</div>
+<div>
+<h1 class="font-h3 text-h3 text-primary truncate w-full" title="GroceryStore Pro">GroceryStore Pro</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ID: #48291</p>
+</div>
+</div>
+<nav class="flex-1 px-4 space-y-1">
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span>Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span>Products</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+<span>Sales</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg border-l-4 border-primary bg-primary/10 text-primary font-semibold cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="query_stats" data-weight="fill" style="font-variation-settings: 'FILL' 1;">query_stats</span>
+<span>Demand Forecast</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="warehouse">warehouse</span>
+<span>Inventory</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="campaign">campaign</span>
+<span>Events &amp; Promotions</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="science">science</span>
+<span>What-If Simulator</span>
+</a>
+</nav>
+<div class="px-4 mt-8 mb-4">
+<button class="w-full flex items-center justify-center gap-2 bg-primary text-on-primary py-2 px-4 rounded-lg font-semibold hover:opacity-90 transition-opacity cursor-pointer active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+                New Simulation
+            </button>
+</div>
+<div class="px-4 mt-auto border-t border-outline-variant pt-4 space-y-1">
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span>Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+<span>Support</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 ml-[240px] min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="docked full-width top-0 border-b border-outline-variant bg-surface flex justify-between items-center h-16 px-gutter-default z-10 sticky">
+<div class="flex items-center gap-6">
+<h2 class="font-h3 text-h3 text-on-surface font-bold tracking-tight">Westside Organic Market</h2>
+<!-- Search bar on left logic placeholder if needed, omitted here to fit specific design intent unless requested, aligning to "on_left" logic structurally -->
+<div class="relative hidden lg:block w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant" data-icon="search">search</span>
+<input class="w-full pl-10 pr-4 py-1.5 bg-surface-container rounded-full border-none text-body-sm focus:ring-1 focus:ring-primary outline-none" placeholder="Search..." type="text">
+</div>
+</div>
+<div class="flex items-center gap-6 font-body-sm text-body-sm text-on-surface-variant">
+<div class="hidden md:flex gap-4">
+<span class="cursor-pointer duration-200 hover:text-primary transition-opacity">Last Updated: 2 mins ago</span>
+<span class="cursor-pointer duration-200 hover:text-primary transition-opacity">Oct 24, 2023</span>
+</div>
+<div class="flex items-center gap-3">
+<button class="text-primary font-semibold hover:opacity-80 transition-opacity">Refresh Data</button>
+<button class="p-1 rounded-full hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="p-1 rounded-full hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Page Content -->
+<div class="flex-1 p-gutter-default max-w-container-max mx-auto w-full flex flex-col gap-gutter-default">
+<!-- Controls Row -->
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-surface-container-lowest p-padding-card rounded-xl border border-outline-variant shadow-sm">
+<div>
+<h1 class="font-h2 text-h2 text-on-surface">Prediction Explanation</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Detailed breakdown for SKU forecasting</p>
+</div>
+<div class="flex items-center gap-3">
+<select class="bg-surface-container border border-outline-variant rounded-lg px-3 py-2 text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none cursor-pointer">
+<option>Organic Avocados (SKU-8921)</option>
+<option>Almond Milk (SKU-1029)</option>
+<option>Sourdough Loaf (SKU-3341)</option>
+</select>
+<input class="bg-surface-container border border-outline-variant rounded-lg px-3 py-2 text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none cursor-pointer" type="date" value="2023-10-25">
+</div>
+</div>
+<!-- Main Prediction Display -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-8 flex flex-col items-center justify-center text-center relative overflow-hidden shadow-sm">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none"></div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-caps text-label-caps mb-4">
+<span class="material-symbols-outlined text-[14px]" data-icon="check_circle">check_circle</span>
+                    High Confidence (92%)
+                </span>
+<h3 class="font-body-md text-body-md text-on-surface-variant uppercase tracking-wider mb-2">Predicted Demand</h3>
+<div class="font-h1 text-[64px] leading-none font-bold text-primary mb-2">
+                    1,420 <span class="text-h2 font-normal text-on-surface-variant ml-2">units</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+                    Expected to sell tomorrow. This represents a +15% increase compared to the 30-day moving average.
+                </p>
+</div>
+<!-- Explanation Breakdown -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-padding-card shadow-sm">
+<h3 class="font-h3 text-h3 text-on-surface mb-6 border-b border-outline-variant pb-2">Calculation Breakdown</h3>
+<div class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6">
+<!-- Baseline -->
+<div class="flex flex-col items-center p-4 bg-surface-container rounded-lg border border-outline-variant w-full lg:w-48 text-center relative hover:shadow-md transition-shadow">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">Baseline (Y)</span>
+<span class="font-h2 text-h2 text-on-surface font-data-tabular text-data-tabular">1,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">30-day Avg</span>
+</div>
+<span class="material-symbols-outlined text-outline lg:rotate-0 rotate-90" data-icon="close">close</span>
+<!-- Day of Week -->
+<div class="flex flex-col items-center p-4 bg-surface-container rounded-lg border border-outline-variant w-full lg:w-48 text-center relative hover:shadow-md transition-shadow">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">Day Factor (Z)</span>
+<span class="font-h2 text-h2 text-secondary font-data-tabular text-data-tabular">1.2x</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Wednesday Peak</span>
+</div>
+<span class="material-symbols-outlined text-outline lg:rotate-0 rotate-90" data-icon="close">close</span>
+<!-- Event Multiplier -->
+<div class="flex flex-col items-center p-4 bg-surface-container rounded-lg border border-outline-variant w-full lg:w-48 text-center relative hover:shadow-md transition-shadow">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">Event (W)</span>
+<span class="font-h2 text-h2 text-tertiary-container font-data-tabular text-data-tabular">1.18x</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Local Festival</span>
+</div>
+<span class="material-symbols-outlined text-outline lg:rotate-0 rotate-90" data-icon="drag_handle">drag_handle</span>
+<!-- Result -->
+<div class="flex flex-col items-center p-4 bg-primary/10 rounded-lg border-2 border-primary w-full lg:w-48 text-center relative shadow-sm">
+<span class="font-label-caps text-label-caps text-primary mb-2">Result</span>
+<span class="font-h2 text-h2 text-primary font-bold font-data-tabular text-data-tabular">1,420</span>
+<span class="font-body-sm text-body-sm text-primary mt-1">Units</span>
+</div>
+</div>
+</div>
+<!-- Historical Context Chart Area (Abstracted) -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-padding-card shadow-sm flex-1 min-h-[300px] flex flex-col">
+<div class="flex justify-between items-center mb-4 border-b border-outline-variant pb-2">
+<h3 class="font-h3 text-h3 text-on-surface">Historical Context &amp; Trajectory</h3>
+<div class="flex gap-4 font-body-sm text-body-sm">
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-outline-variant"></div> Actual Sales</div>
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-primary"></div> Predicted</div>
+</div>
+</div>
+<div class="flex-1 relative chart-grid rounded-lg border border-outline-variant/50 overflow-hidden flex items-end px-4 pt-8">
+<!-- Faux Chart implementation -->
+<div class="absolute left-0 top-0 bottom-0 w-[70%] border-r-2 border-dashed border-outline-variant bg-surface-container/20 flex flex-col justify-between p-2">
+<span class="font-label-caps text-label-caps text-outline absolute top-2 right-2">Historical</span>
+</div>
+<div class="absolute right-0 top-0 bottom-0 w-[30%] bg-primary/5 flex flex-col justify-between p-2">
+<span class="font-label-caps text-label-caps text-primary absolute top-2 left-2">Prediction Period</span>
+</div>
+<!-- Faux Line (SVG overlay would be ideal, using simple divs for layout representation) -->
+<div class="w-full h-full relative z-10 flex items-end gap-1 px-2 pb-6">
+<!-- Historical bars -->
+<div class="flex-1 bg-outline-variant/60 rounded-t-sm" style="height: 40%"></div>
+<div class="flex-1 bg-outline-variant/60 rounded-t-sm" style="height: 45%"></div>
+<div class="flex-1 bg-outline-variant/60 rounded-t-sm" style="height: 35%"></div>
+<div class="flex-1 bg-outline-variant/60 rounded-t-sm" style="height: 50%"></div>
+<div class="flex-1 bg-outline-variant/60 rounded-t-sm" style="height: 55%"></div>
+<div class="flex-1 bg-outline-variant/60 rounded-t-sm" style="height: 48%"></div>
+<div class="flex-1 bg-outline-variant/60 rounded-t-sm" style="height: 60%"></div>
+<!-- Prediction Gap -->
+<div class="w-px h-full bg-transparent mx-2"></div>
+<!-- Prediction Bars -->
+<div class="flex-1 bg-primary/80 rounded-t-sm relative group" style="height: 80%">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface text-label-caps font-label-caps px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">1,420</div>
+</div>
+<div class="flex-1 bg-primary/50 rounded-t-sm" style="height: 75%"></div>
+<div class="flex-1 bg-primary/30 rounded-t-sm" style="height: 85%"></div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>
