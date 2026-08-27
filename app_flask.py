@@ -1356,11 +1356,11 @@ def inject_common_js(html_content, active_page):
         .then(records => {{
             const tbody = document.querySelector("#tab-history tbody");
             if (!tbody) return;
-            tbody.innerHTML = "";
             
-            records.forEach((row, idx) => {{
+            const displayRecords = records.slice(0, 100);
+            const rowsHtml = displayRecords.map((row, idx) => {{
                 const bgClass = idx % 2 === 1 ? 'bg-surface-bright' : '';
-                tbody.innerHTML += `
+                return `
                     <tr class="${{bgClass}} border-b border-outline-variant hover:bg-surface-container-low/50 transition-colors h-[40px]">
                         <td class="px-4 py-2 text-on-surface-variant font-data-tabular">${{row.sale_id}}</td>
                         <td class="px-4 py-2 font-data-tabular">${{row.date}}</td>
@@ -1373,11 +1373,13 @@ def inject_common_js(html_content, active_page):
                         </td>
                     </tr>
                 `;
-            }});
+            }}).join('');
+            
+            tbody.innerHTML = rowsHtml;
             
             const paginationSpan = document.querySelector("#tab-history .p-3.border-t span");
             if (paginationSpan) {{
-                paginationSpan.textContent = `Showing 1-${{records.length}} of ${{records.length}} records`;
+                paginationSpan.textContent = `Showing 1-${{displayRecords.length}} of ${{records.length}} records`;
             }}
         }});
     }}

@@ -111,7 +111,7 @@
         .tab-content.active { display: block; }
     </style>
 </head>
-<body class="flex h-screen overflow-hidden bg-background">
+<body class="bg-[#F6F7F9] text-on-background font-body-md min-h-screen flex selection:bg-primary selection:text-on-primary">
 <!-- SideNavBar -->
 <nav class="fixed left-0 top-0 h-full w-[240px] bg-surface-container-lowest border-r border-outline-variant flex flex-col py-gutter-default z-20">
 <div class="px-gutter-default mb-8">
@@ -186,9 +186,9 @@
 </div>
 </nav>
 <!-- Main Content Area -->
-<div class="flex-1 flex flex-col ml-[240px] w-[calc(100%-240px)] h-screen overflow-hidden">
+<div class="flex-1 flex flex-col ml-[240px] w-[calc(100%-240px)] min-h-screen">
 <!-- TopAppBar -->
-<header class="flex justify-between items-center h-16 px-gutter-default bg-surface border-b border-outline-variant z-10 shrink-0">
+<header class="fixed top-0 left-[240px] right-0 flex justify-between items-center h-16 px-gutter-default bg-surface border-b border-outline-variant z-10 shrink-0">
 <div class="flex items-center gap-6">
 <span class="font-h3 text-h3 text-on-surface">Westside Organic Market</span>
 <div class="relative hidden lg:block">
@@ -215,8 +215,8 @@
 </div>
 </div>
 </header>
-<!-- Main Scrollable Content -->
-<main class="flex-1 overflow-y-auto p-gutter-default bg-background">
+<!-- Main Content -->
+<main class="flex-1 pt-20 p-gutter-default bg-background min-h-screen">
 <div class="max-w-container-max mx-auto">
 <div class="flex items-end justify-between mb-8">
 <div>
