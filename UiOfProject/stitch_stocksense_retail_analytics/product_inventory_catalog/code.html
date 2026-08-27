@@ -128,43 +128,43 @@
 <div class="flex-1 overflow-y-auto">
 <ul class="flex flex-col">
 <li class="group">
-<a class="flex items-center gap-3 px-gutter-default py-3 text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150 font-body-md text-body-md" href="#">
+<a class="flex items-center gap-3 px-gutter-default py-3 text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150 font-body-md text-body-md" href="/">
 <span class="material-symbols-outlined">dashboard</span>
                         Dashboard
                     </a>
 </li>
 <li class="group">
-<a class="flex items-center gap-3 px-gutter-default py-3 border-l-4 border-primary bg-primary/10 text-primary dark:bg-primary-container/20 dark:text-primary-fixed-dim font-semibold cursor-pointer active:scale-95 duration-150 font-body-md text-body-md" href="#">
+<a class="flex items-center gap-3 px-gutter-default py-3 border-l-4 border-primary bg-primary/10 text-primary dark:bg-primary-container/20 dark:text-primary-fixed-dim font-semibold cursor-pointer active:scale-95 duration-150 font-body-md text-body-md" href="/products">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
                         Products
                     </a>
 </li>
 <li class="group">
-<a class="flex items-center gap-3 px-gutter-default py-3 text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150 font-body-md text-body-md" href="#">
+<a class="flex items-center gap-3 px-gutter-default py-3 text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150 font-body-md text-body-md" href="/sales">
 <span class="material-symbols-outlined">trending_up</span>
                         Sales
                     </a>
 </li>
 <li class="group">
-<a class="flex items-center gap-3 px-gutter-default py-3 text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150 font-body-md text-body-md" href="#">
+<a class="flex items-center gap-3 px-gutter-default py-3 text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150 font-body-md text-body-md" href="/forecast">
 <span class="material-symbols-outlined">query_stats</span>
                         Demand Forecast
                     </a>
 </li>
 <li class="group">
-<a class="flex items-center gap-3 px-gutter-default py-3 text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150 font-body-md text-body-md" href="#">
+<a class="flex items-center gap-3 px-gutter-default py-3 text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150 font-body-md text-body-md" href="/inventory">
 <span class="material-symbols-outlined">warehouse</span>
                         Inventory
                     </a>
 </li>
 <li class="group">
-<a class="flex items-center gap-3 px-gutter-default py-3 text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150 font-body-md text-body-md" href="#">
+<a class="flex items-center gap-3 px-gutter-default py-3 text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150 font-body-md text-body-md" href="/events">
 <span class="material-symbols-outlined">campaign</span>
                         Events &amp; Promotions
                     </a>
 </li>
 <li class="group">
-<a class="flex items-center gap-3 px-gutter-default py-3 text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150 font-body-md text-body-md" href="#">
+<a class="flex items-center gap-3 px-gutter-default py-3 text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150 font-body-md text-body-md" href="/whatif">
 <span class="material-symbols-outlined">science</span>
                         What-If Simulator
                     </a>
@@ -224,7 +224,7 @@
 <button class="border border-outline-variant px-4 py-2 rounded text-on-surface font-body-md hover:bg-surface-container-low transition-colors flex items-center gap-2">
 <span class="material-symbols-outlined text-[18px]">download</span> Export
                         </button>
-<button class="bg-primary text-on-primary px-4 py-2 rounded font-body-md hover:bg-primary/90 transition-colors flex items-center gap-2">
+<button onclick="openAddProductModal()" class="bg-primary text-on-primary px-4 py-2 rounded font-body-md hover:bg-primary/90 transition-colors flex items-center gap-2">
 <span class="material-symbols-outlined text-[18px]">add</span> Add Product
                         </button>
 </div>
@@ -362,9 +362,16 @@
 <div class="p-padding-card flex flex-col gap-6">
 <!-- Info Header -->
 <div class="flex items-center gap-4">
-<div class="w-16 h-16 bg-surface-container-low rounded border border-outline-variant flex items-center justify-center text-on-surface-variant">
-<span class="material-symbols-outlined text-3xl">nutrition</span>
+<div class="relative w-16 h-16 group cursor-pointer border border-outline-variant rounded overflow-hidden shadow-sm" onclick="document.getElementById('product-image-upload').click()">
+    <img id="detail-product-img" src="" class="w-full h-full object-cover hidden" />
+    <div id="detail-product-icon-container" class="w-full h-full bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+        <span class="material-symbols-outlined text-3xl" id="detail-product-icon">nutrition</span>
+    </div>
+    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-[12px] font-semibold">
+        <span class="material-symbols-outlined text-sm">photo_camera</span>
+    </div>
 </div>
+<input type="file" id="product-image-upload" accept="image/*" class="hidden" onchange="uploadProductImage(this)" />
 <div>
 <div class="font-semibold text-lg text-on-surface">Organic Avocados</div>
 <div class="flex gap-2 mt-1">
@@ -398,12 +405,8 @@
 <h4 class="font-body-md font-semibold text-on-surface">30-Day Sales Trend</h4>
 <span class="font-body-sm text-primary">+12% vs last month</span>
 </div>
-<div class="h-24 border border-outline-variant rounded bg-surface-bright p-2 flex items-end relative overflow-hidden">
-<!-- Mock Sparkline -->
-<svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 30">
-<path class="sparkline-area" d="M0,30 L0,20 Q10,15 20,25 T40,10 T60,18 T80,5 T100,10 L100,30 Z"></path>
-<path class="sparkline" d="M0,20 Q10,15 20,25 T40,10 T60,18 T80,5 T100,10"></path>
-</svg>
+<div class="h-28 border border-outline-variant rounded bg-surface-bright p-2 flex items-center justify-center relative overflow-hidden w-full">
+    <canvas id="detailSparklineChart" class="w-full h-full"></canvas>
 </div>
 </div>
 <!-- Actions -->
@@ -414,16 +417,212 @@
 </div>
 </aside>
 </main>
+<!-- Add Product Modal Overlay -->
+<div id="add-product-modal" class="fixed inset-0 bg-black/50 z-50 items-center justify-center hidden">
+    <div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 shadow-2xl max-w-md w-full mx-4 flex flex-col gap-4">
+        <div class="flex justify-between items-center pb-3 border-b border-outline-variant">
+            <h2 class="font-h2 text-h2 text-on-surface flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">add_box</span>
+                Add New Product
+            </h2>
+            <button onclick="closeAddProductModal()" class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low p-1.5 rounded-full transition-colors flex items-center justify-center">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        
+        <form id="add-product-form" onsubmit="submitAddProduct(event)" class="flex flex-col gap-4">
+            <!-- Product Name -->
+            <div class="flex flex-col gap-1.5">
+                <label for="new-product-name" class="font-label-caps text-label-caps text-on-surface-variant">Product Name</label>
+                <input type="text" id="new-product-name" required placeholder="e.g. Organic Wheat Flour 5kg" 
+                       class="w-full border border-outline-variant rounded px-3 py-2 bg-surface-container-lowest text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none font-body-md" />
+            </div>
+            
+            <!-- Category -->
+            <div class="flex flex-col gap-1.5">
+                <label for="new-product-category" class="font-label-caps text-label-caps text-on-surface-variant">Category</label>
+                <select id="new-product-category" required 
+                        class="w-full border border-outline-variant rounded px-3 py-2 bg-surface-container-lowest text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none font-body-md">
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="Staples">Staples</option>
+                    <option value="Dairy">Dairy</option>
+                    <option value="Bakery">Bakery</option>
+                    <option value="Snacks">Snacks</option>
+                    <option value="Beverages">Beverages</option>
+                    <option value="Household">Household</option>
+                    <option value="Produce">Produce</option>
+                    <option value="Personal Care">Personal Care</option>
+                    <option value="Health Snacks">Health Snacks</option>
+                </select>
+            </div>
+            
+            <!-- Price and Stock Row -->
+            <div class="grid grid-cols-2 gap-4">
+                <div class="flex flex-col gap-1.5">
+                    <label for="new-product-price" class="font-label-caps text-label-caps text-on-surface-variant">Unit Price (₹)</label>
+                    <input type="number" id="new-product-price" required min="0.01" step="0.01" placeholder="320.00"
+                           class="w-full border border-outline-variant rounded px-3 py-2 bg-surface-container-lowest text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none font-body-md font-data-tabular" />
+                </div>
+                <div class="flex flex-col gap-1.5">
+                    <label for="new-product-stock" class="font-label-caps text-label-caps text-on-surface-variant">Initial Stock</label>
+                    <input type="number" id="new-product-stock" required min="0" step="1" placeholder="100"
+                           class="w-full border border-outline-variant rounded px-3 py-2 bg-surface-container-lowest text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none font-body-md font-data-tabular" />
+                </div>
+            </div>
+            
+            <!-- Launch Date -->
+            <div class="flex flex-col gap-1.5">
+                <label for="new-product-launch" class="font-label-caps text-label-caps text-on-surface-variant">Launch Date</label>
+                <input type="date" id="new-product-launch" required
+                       class="w-full border border-outline-variant rounded px-3 py-2 bg-surface-container-lowest text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none font-body-md font-data-tabular" />
+            </div>
+
+            <!-- Product Picture Upload -->
+            <div class="flex flex-col gap-1.5">
+                <label for="new-product-image" class="font-label-caps text-label-caps text-on-surface-variant flex items-center justify-between">
+                    <span>Product Picture</span>
+                    <span class="text-[11px] text-on-surface-variant/70">Optional Image Upload</span>
+                </label>
+                <div class="flex items-center gap-3">
+                    <div id="image-preview-box" class="w-12 h-12 rounded border border-outline-variant bg-surface-container-low overflow-hidden flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-on-surface-variant text-[24px]">image</span>
+                    </div>
+                    <input type="file" id="new-product-image" accept="image/*" onchange="previewProductImage(this)"
+                           class="w-full border border-outline-variant rounded px-3 py-1.5 bg-surface-container-lowest text-on-surface text-body-sm focus:border-primary outline-none" />
+                </div>
+            </div>
+
+            <!-- Error message display -->
+            <div id="add-product-error" class="text-error text-body-sm font-semibold hidden flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[16px]">error</span>
+                <span class="error-text"></span>
+            </div>
+            
+            <!-- Actions -->
+            <div class="flex justify-end gap-3 pt-3 border-t border-outline-variant mt-2">
+                <button type="button" onclick="closeAddProductModal()" 
+                        class="px-4 py-2 border border-outline-variant rounded text-on-surface font-body-md hover:bg-surface-container-low transition-colors active:scale-95 duration-100">
+                    Cancel
+                </button>
+                <button type="submit" 
+                        class="px-4 py-2 bg-primary text-on-primary rounded font-body-md hover:bg-primary/90 transition-colors active:scale-95 duration-100 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]">save</span>
+                    Save Product
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
 <script>
+        function previewProductImage(input) {
+            const previewBox = document.getElementById('image-preview-box');
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    previewBox.innerHTML = `<img src="${e.target.result}" class="w-full h-full object-cover" />`;
+                };
+                reader.readAsDataURL(input.files[0]);
+            } else {
+                previewBox.innerHTML = `<span class="material-symbols-outlined text-on-surface-variant text-[24px]">image</span>`;
+            }
+        }
+
         function togglePanel(sku) {
             const panel = document.getElementById('detail-panel');
             if (sku) {
-                // In a real app, populate data based on SKU here
                 panel.classList.remove('hidden');
                 panel.classList.add('flex');
             } else {
                 panel.classList.add('hidden');
                 panel.classList.remove('flex');
+            }
+        }
+        
+        function openAddProductModal() {
+            const modal = document.getElementById('add-product-modal');
+            if (modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                
+                document.getElementById('add-product-form').reset();
+                document.getElementById('add-product-error').classList.add('hidden');
+                document.getElementById('image-preview-box').innerHTML = '<span class="material-symbols-outlined text-on-surface-variant text-[24px]">image</span>';
+                
+                const today = new Date().toISOString().split('T')[0];
+                document.getElementById('new-product-launch').value = today;
+            }
+        }
+        
+        function closeAddProductModal() {
+            const modal = document.getElementById('add-product-modal');
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        }
+        
+        function submitAddProduct(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('new-product-name').value.trim();
+            const category = document.getElementById('new-product-category').value;
+            const price = parseFloat(document.getElementById('new-product-price').value);
+            const stock = parseInt(document.getElementById('new-product-stock').value, 10);
+            const launchDate = document.getElementById('new-product-launch').value;
+            const imageInput = document.getElementById('new-product-image');
+            
+            const payload = {
+                product_name: name,
+                category: category,
+                unit_price: price,
+                initial_stock: stock,
+                launch_date: launchDate
+            };
+            
+            const errorDiv = document.getElementById('add-product-error');
+            
+            fetch('/api/product/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(r => r.json())
+            .then(res => {
+                if (res.success) {
+                    const pid = res.product_id;
+                    if (imageInput && imageInput.files && imageInput.files[0]) {
+                        const formData = new FormData();
+                        formData.append('image', imageInput.files[0]);
+                        fetch(`/api/product/${pid}/upload_image`, {
+                            method: 'POST',
+                            body: formData
+                        })
+                        .then(() => finishAddProduct(pid))
+                        .catch(() => finishAddProduct(pid));
+                    } else {
+                        finishAddProduct(pid);
+                    }
+                } else {
+                    errorDiv.querySelector('.error-text').textContent = res.error || 'Failed to save product.';
+                    errorDiv.classList.remove('hidden');
+                }
+            })
+            .catch(err => {
+                errorDiv.querySelector('.error-text').textContent = 'Network or server error';
+                errorDiv.classList.remove('hidden');
+            });
+        }
+        
+        function finishAddProduct(pid) {
+            closeAddProductModal();
+            if (typeof loadProductsData === 'function') {
+                loadProductsData(pid);
+            } else {
+                window.location.hash = pid;
+                window.location.reload();
             }
         }
     </script>

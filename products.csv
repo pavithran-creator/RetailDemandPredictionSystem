@@ -1,28 +1,33 @@
 product_id,product_name,category,unit_price,launch_date
-P01,Rice 5kg,Staples,320,2026-01-01
-P02,Milk 1L,Dairy,55,2026-01-01
-P03,Bread 400g,Bakery,45,2026-01-01
-P04,Biscuits 200g,Snacks,30,2026-01-01
-P05,Cooking Oil 1L,Staples,145,2026-01-01
-P06,Sugar 1kg,Staples,55,2026-01-01
-P07,Tea 250g,Beverages,120,2026-01-01
-P08,Potato Chips 100g,Snacks,25,2026-01-01
-P09,Soft Drink 750ml,Beverages,45,2026-01-01
-P10,Wheat Flour 5kg,Staples,240,2026-01-01
-P11,Shampoo 180ml,Personal Care,110,2026-01-01
-P12,Toothpaste 150g,Personal Care,95,2026-01-01
-P13,Detergent 1kg,Household,120,2026-01-01
-P14,Eggs 12 pack,Dairy,90,2026-01-01
-P15,Coffee 200g,Beverages,180,2026-01-01
-P16,Noodles 70g,Staples,18,2026-01-01
-P17,Soap 100g,Personal Care,35,2026-01-01
-P18,Biscuits Premium 250g,Snacks,55,2026-01-01
-P19,Juice 1L,Beverages,110,2026-01-01
-P20,Herbal Face Wash,Personal Care,160,2026-01-01
-P21,Protein Millet Bar,Health Snacks,40,2026-03-15
-P22,Cold Coffee Can,Beverages,65,2026-06-20
-P23,Instant Breakfast Mix,Staples,125,2026-09-10
-P24,Natural Dishwash Liquid,Household,95,2027-02-05
-P25,Electrolyte Drink,Beverages,35,2027-05-18
-P26,Kids Fruit Cereal,Staples,260,2027-08-12
-P27,Organic Peanut Butter,Staples,190,2027-10-01
+P01,Rice 5kg,Staples,320.0,2026-01-01
+P02,Milk 1L,Dairy,55.0,2026-01-01
+P03,Bread 400g,Bakery,45.0,2026-01-01
+P04,Biscuits 200g,Snacks,30.0,2026-01-01
+P05,Cooking Oil 1L,Staples,145.0,2026-01-01
+P06,Sugar 1kg,Staples,55.0,2026-01-01
+P07,Tea 250g,Beverages,120.0,2026-01-01
+P08,Potato Chips 100g,Snacks,25.0,2026-01-01
+P09,Soft Drink 750ml,Beverages,45.0,2026-01-01
+P10,Wheat Flour 5kg,Staples,240.0,2026-01-01
+P11,Shampoo 180ml,Personal Care,110.0,2026-01-01
+P12,Toothpaste 150g,Personal Care,95.0,2026-01-01
+P13,Detergent 1kg,Household,120.0,2026-01-01
+P14,Eggs 12 pack,Dairy,90.0,2026-01-01
+P15,Coffee 200g,Beverages,180.0,2026-01-01
+P16,Noodles 70g,Staples,18.0,2026-01-01
+P17,Soap 100g,Personal Care,35.0,2026-01-01
+P18,Biscuits Premium 250g,Snacks,55.0,2026-01-01
+P19,Juice 1L,Beverages,110.0,2026-01-01
+P20,Herbal Face Wash,Personal Care,160.0,2026-01-01
+P21,Protein Millet Bar,Health Snacks,40.0,2026-03-15
+P22,Cold Coffee Can,Beverages,65.0,2026-06-20
+P23,Instant Breakfast Mix,Staples,125.0,2026-09-10
+P24,Natural Dishwash Liquid,Household,95.0,2027-02-05
+P25,Electrolyte Drink,Beverages,35.0,2027-05-18
+P26,Kids Fruit Cereal,Staples,260.0,2027-08-12
+P27,Organic Peanut Butter,Staples,190.0,2027-10-01
+P28,Premium Wheat Flour 10kg,Staples,550.0,2026-08-28
+P29,Fresh Organic Milk 1L,Dairy,4.5,2026-08-27
+P30,Organic Greek Yogurt 500g,Dairy,180.0,2026-08-27
+P31,Fresh Organic Almonds 500g,Snacks,450.0,2026-08-28
+P32,Organic Cashews 250g,Snacks,280.0,2026-08-27

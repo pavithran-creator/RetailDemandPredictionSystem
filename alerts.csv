@@ -1,28 +1,33 @@
 product_id,alert_type,current_stock,predicted_demand_over_lead_time,recommended_action,recommended_quantity,urgency_level
-P01,NORMAL,135,130.53,Stock level is healthy — covers 3.0 days of demand.,0,LOW
-P02,STOCKOUT_RISK,106,208.31,Reorder 910 units within 1 days to prevent stock-out.,910,HIGH
-P03,STOCKOUT_RISK,73,94.39,Reorder 420 units within 2 days to prevent stock-out.,420,MEDIUM
-P04,STOCKOUT_RISK,134,138.12,Reorder 560 units within 2 days to prevent stock-out.,560,MEDIUM
-P05,STOCKOUT_RISK,99,156.25,Reorder 660 units within 1 days to prevent stock-out.,660,HIGH
-P06,STOCKOUT_RISK,83,162.64,Reorder 710 units within 1 days to prevent stock-out.,710,HIGH
-P07,STOCKOUT_RISK,49,88.67,Reorder 330 units within 1 days to prevent stock-out.,330,HIGH
-P08,STOCKOUT_RISK,82,109.56,Reorder 420 units within 1 days to prevent stock-out.,420,HIGH
-P09,STOCKOUT_RISK,58,96.32,Reorder 430 units within 1 days to prevent stock-out.,430,HIGH
-P10,STOCKOUT_RISK,89,153.7,Reorder 620 units within 1 days to prevent stock-out.,620,HIGH
-P11,NORMAL,76,47.35,Stock level is healthy — covers 4.6 days of demand.,0,LOW
-P12,NORMAL,65,46.68,Stock level is healthy — covers 3.9 days of demand.,0,LOW
-P13,NORMAL,106,64.33,Stock level is healthy — covers 4.6 days of demand.,0,LOW
-P14,STOCKOUT_RISK,88,181.55,Reorder 690 units within 1 days to prevent stock-out.,690,HIGH
-P15,STOCKOUT_RISK,53,90.57,Reorder 350 units within 1 days to prevent stock-out.,350,HIGH
-P16,STOCKOUT_RISK,63,131.94,Reorder 490 units within 1 days to prevent stock-out.,490,HIGH
-P17,NORMAL,56,42.36,Stock level is healthy — covers 3.8 days of demand.,0,LOW
-P18,STOCKOUT_RISK,105,147.87,Reorder 620 units within 2 days to prevent stock-out.,620,MEDIUM
-P19,STOCKOUT_RISK,63,116.65,Reorder 520 units within 1 days to prevent stock-out.,520,HIGH
-P20,NORMAL,88,54.47,Stock level is healthy — covers 4.9 days of demand.,0,LOW
-P21,OVERSTOCK,104,26.68,Reduce next order by 45 units — 1.7 weeks of cover remaining.,45,LOW
-P22,STOCKOUT_RISK,68,111.28,Reorder 400 units within 1 days to prevent stock-out.,400,HIGH
-P23,STOCKOUT_RISK,123,146.0,Reorder 510 units within 2 days to prevent stock-out.,510,MEDIUM
-P24,STOCKOUT_RISK,55,58.85,Reorder 180 units within 2 days to prevent stock-out.,180,MEDIUM
-P25,STOCKOUT_RISK,125,144.57,Reorder 510 units within 2 days to prevent stock-out.,510,MEDIUM
-P26,STOCKOUT_RISK,64,195.72,Reorder 820 units within 1 days to prevent stock-out.,820,HIGH
-P27,STOCKOUT_RISK,117,159.94,Reorder 500 units within 2 days to prevent stock-out.,500,MEDIUM
+P01,NORMAL,135.0,130.53,Stock level is healthy — covers 3.0 days of demand.,0,LOW
+P02,STOCKOUT_RISK,106.0,208.31,Reorder 910 units within 1 days to prevent stock-out.,910,HIGH
+P03,STOCKOUT_RISK,73.0,94.39,Reorder 420 units within 2 days to prevent stock-out.,420,MEDIUM
+P04,STOCKOUT_RISK,134.0,138.12,Reorder 560 units within 2 days to prevent stock-out.,560,MEDIUM
+P05,STOCKOUT_RISK,99.0,156.25,Reorder 660 units within 1 days to prevent stock-out.,660,HIGH
+P06,STOCKOUT_RISK,83.0,162.64,Reorder 710 units within 1 days to prevent stock-out.,710,HIGH
+P07,STOCKOUT_RISK,49.0,88.67,Reorder 330 units within 1 days to prevent stock-out.,330,HIGH
+P08,STOCKOUT_RISK,82.0,109.56,Reorder 420 units within 1 days to prevent stock-out.,420,HIGH
+P09,STOCKOUT_RISK,58.0,96.32,Reorder 430 units within 1 days to prevent stock-out.,430,HIGH
+P10,STOCKOUT_RISK,89.0,153.7,Reorder 620 units within 1 days to prevent stock-out.,620,HIGH
+P11,NORMAL,76.0,47.35,Stock level is healthy — covers 4.6 days of demand.,0,LOW
+P12,NORMAL,65.0,46.68,Stock level is healthy — covers 3.9 days of demand.,0,LOW
+P13,NORMAL,106.0,64.33,Stock level is healthy — covers 4.6 days of demand.,0,LOW
+P14,STOCKOUT_RISK,88.0,181.55,Reorder 690 units within 1 days to prevent stock-out.,690,HIGH
+P15,STOCKOUT_RISK,53.0,90.57,Reorder 350 units within 1 days to prevent stock-out.,350,HIGH
+P16,STOCKOUT_RISK,63.0,131.94,Reorder 490 units within 1 days to prevent stock-out.,490,HIGH
+P17,NORMAL,56.0,42.36,Stock level is healthy — covers 3.8 days of demand.,0,LOW
+P18,STOCKOUT_RISK,105.0,147.87,Reorder 620 units within 2 days to prevent stock-out.,620,MEDIUM
+P19,STOCKOUT_RISK,63.0,116.65,Reorder 520 units within 1 days to prevent stock-out.,520,HIGH
+P20,NORMAL,88.0,54.47,Stock level is healthy — covers 4.9 days of demand.,0,LOW
+P21,OVERSTOCK,104.0,26.68,Reduce next order by 45 units — 1.7 weeks of cover remaining.,45,LOW
+P22,STOCKOUT_RISK,68.0,111.28,Reorder 400 units within 1 days to prevent stock-out.,400,HIGH
+P23,STOCKOUT_RISK,123.0,146.0,Reorder 510 units within 2 days to prevent stock-out.,510,MEDIUM
+P24,STOCKOUT_RISK,55.0,58.85,Reorder 180 units within 2 days to prevent stock-out.,180,MEDIUM
+P25,STOCKOUT_RISK,125.0,144.57,Reorder 510 units within 2 days to prevent stock-out.,510,MEDIUM
+P26,STOCKOUT_RISK,64.0,195.72,Reorder 820 units within 1 days to prevent stock-out.,820,HIGH
+P27,STOCKOUT_RISK,117.0,159.94,Reorder 500 units within 2 days to prevent stock-out.,500,MEDIUM
+P28,Normal,,0.0,No action required,0,Low
+P29,Normal,,0.0,No action required,0,Low
+P30,Normal,,0.0,No action required,0,Low
+P31,Normal,,0.0,No action required,0,Low
+P32,Normal,,0.0,No action required,0,Low
