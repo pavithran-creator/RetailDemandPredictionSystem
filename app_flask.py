@@ -686,21 +686,24 @@ def api_events():
             'current_date': '2026-08-28'
         }
     })
-
 @app.route('/api/whatif')
 def api_whatif():
     pid = request.args.get('product_id', 'P01')
-    date = request.args.get('date', '2028-01-13')
+    date = request.args.get('date', '2026-08-28')
     override = request.args.get('override_event', None)
+    discount = float(request.args.get('discount', 0.0))
+    
     if override == 'None' or override == '':
         override = None
         
+    # Calculate baseline forecast for that date (with natural events)
+    orig_demand = simulate_whatif(pid, date, override_event=None)
+    
+    # Calculate simulated forecast (with event override and discount)
     sim_demand = simulate_whatif(pid, date, override_event=override)
-    
-    # Get original forecast
-    orig_row = forecast_df[(forecast_df['product_id'] == pid) & (forecast_df['date'] == date)]
-    orig_demand = float(orig_row['predicted_demand'].iloc[0]) if len(orig_row) > 0 else 0.0
-    
+    if discount > 0:
+        sim_demand = sim_demand * (1.0 + (discount / 100.0) * 1.5)
+        
     # Calculate factors used in simulator
     profile_row = profiles_df[profiles_df['product_id'] == pid].iloc[0]
     base = float(profile_row['baseline_demand'])
@@ -721,7 +724,7 @@ def api_whatif():
     
     # Calculate simulated metrics
     original_revenue = orig_demand * unit_price
-    simulated_revenue = sim_demand * unit_price
+    simulated_revenue = sim_demand * unit_price * (1.0 - (discount / 100.0))
     
     original_stockout_risk = min(100, max(5, int((orig_demand / max(1, current_stock)) * 100)))
     simulated_stockout_risk = min(100, max(5, int((sim_demand / max(1, current_stock)) * 100)))
@@ -742,8 +745,6 @@ def api_whatif():
         'original_stockout_risk': original_stockout_risk,
         'simulated_stockout_risk': simulated_stockout_risk
     })
-
-# ----------------------------------------------------
 # PAGE SERVING ROUTES
 # ----------------------------------------------------
 @app.route('/')
@@ -844,14 +845,10 @@ def inject_common_js(html_content, active_page):
             headerTitle.textContent = "GroceryStore Pro Analytics - Westside Market";
         }}
         
-        const headerDate = document.querySelector("header span:nth-child(2)");
-        if (headerDate) {{
-            const today = new Date();
-            const options = {{ month: 'short', day: 'numeric', year: 'numeric' }};
-            headerDate.innerHTML = `<span class="material-symbols-outlined text-[16px]">calendar_today</span> ${{today.toLocaleDateString("en-US", options)}}`;
+        const headerDateSpan = Array.from(document.querySelectorAll("header span, header div span, header span:last-child")).find(s => s.textContent.includes("2023") || s.textContent.includes("2026") || s.classList.contains("header-date"));
+        if (headerDateSpan) {{
+            headerDateSpan.innerHTML = `<span class="material-symbols-outlined text-[16px] align-middle mr-1">calendar_today</span> Aug 28, 2026`;
         }}
-        
-        // 3. Load page-specific data
         loadPageData();
     }});
     
@@ -1798,7 +1795,7 @@ def inject_common_js(html_content, active_page):
             const recColor = alert.recommended_quantity > 0 ? 'text-primary font-semibold' : 'text-on-surface-variant';
             
             tbody.innerHTML += `
-                <tr class="border-b border-outline-variant/50 hover:bg-surface-container-low transition-colors h-10 group ${{bgClass}}">
+                <tr class="border-b border-outline-variant/50 hover:bg-surface-container-low transition-colors h-10 group ${{bgClass}} cursor-pointer" onclick="window.location.href='/products#' + '${{alert.product_id}}'">
                     <td class="py-2 px-4 flex items-center gap-3">
                         <div class="w-8 h-8 rounded bg-surface-variant overflow-hidden shrink-0 border border-outline-variant shadow-sm">
                             <img src="${{alert.image_url}}" class="w-full h-full object-cover" />
@@ -1943,11 +1940,17 @@ def inject_common_js(html_content, active_page):
     // WHAT-IF SIMULATOR PAGE BINDINGS
     // ----------------------------------------------------
     function loadWhatIfData() {{
-        // Setup Form Widgets
-        const selectProd = document.querySelector("select");
-        const selectEvent = document.querySelectorAll("select")[1];
-        const dateInput = document.querySelector("input[type='date']");
-        const simButton = Array.from(document.querySelectorAll("button")).find(b => b.textContent.includes("Run Simulation"));
+        const selectProd = document.getElementById("sim-product-select");
+        const dateInput = document.getElementById("sim-date-input");
+        const simButton = document.getElementById("run-sim-btn");
+        const discountSlider = document.getElementById("sim-discount-slider");
+        const discountValue = document.getElementById("sim-discount-value");
+        
+        if (discountSlider && discountValue) {{
+            discountSlider.addEventListener("input", function() {{
+                discountValue.textContent = this.value + "%";
+            }});
+        }}
         
         if (selectProd && simButton) {{
             selectProd.innerHTML = "";
@@ -1958,104 +1961,114 @@ def inject_common_js(html_content, active_page):
                     selectProd.innerHTML += `<option value="${{p.product_id}}">${{p.product_id}} - ${{p.product_name}}</option>`;
                 }});
                 
-                // Initialize default date in widget (early Jan 2028)
                 if (dateInput) {{
-                    dateInput.value = "2028-01-13";
-                    dateInput.min = "2028-01-01";
+                    dateInput.value = "2026-08-28";
+                    dateInput.min = "2026-08-28";
                     dateInput.max = "2028-01-14";
                 }}
                 
                 simButton.addEventListener("click", runWhatIfSimulation);
+                // Trigger initial simulation
+                runWhatIfSimulation();
             }});
         }}
     }}
     
     function runWhatIfSimulation() {{
-        const pid = document.querySelector("select").value;
-        const date = document.querySelector("input[type='date']").value;
-        const ev = document.querySelectorAll("select")[1].value;
+        const pid = document.getElementById("sim-product-select").value;
+        const date = document.getElementById("sim-date-input").value;
+        const ev = document.getElementById("sim-event-select").value;
+        const discountSlider = document.getElementById("sim-discount-slider");
+        const discount = discountSlider ? discountSlider.value : 0;
         
         let override = ev;
         if (ev === "None" || ev.includes("Default")) override = "None";
         if (ev.includes("Promo")) override = "promo";
         
-        fetch(`/api/whatif?product_id=${{pid}}&date=${{date}}&override_event=${{override}}`)
+        fetch(`/api/whatif?product_id=${{pid}}&date=${{date}}&override_event=${{override}}&discount=${{discount}}`)
         .then(r => r.json())
         .then(data => {{
-            // Display Results in DOM for 2-column cards layout
-            const cards = document.querySelectorAll("div.grid-cols-1.md\\\\:grid-cols-2 > div");
-            if (cards.length >= 2) {{
-                const baselineCard = cards[0];
-                const simulatedCard = cards[1];
-                
-                // 1. Update Baseline card elements
-                const baseDemandVal = Math.round(data.original_demand);
-                const baseRevVal = data.original_revenue.toFixed(2);
-                const baseRiskVal = data.original_stockout_risk;
-                
-                baselineCard.querySelectorAll("p.font-data-tabular")[0].innerHTML = `${{baseDemandVal}} <span class="text-sm font-normal text-outline">units</span>`;
-                baselineCard.querySelectorAll("p.font-data-tabular")[1].textContent = `$${{parseFloat(baseRevVal).toLocaleString('en-US', {{minimumFractionDigits: 2, maximumFractionDigits: 2}})}}`;
-                baselineCard.querySelector("span.font-data-tabular").textContent = `${{baseRiskVal}}%`;
-                
-                const baseProgressBar = baselineCard.querySelector("div.h-2 div");
-                if (baseProgressBar) {{
-                    baseProgressBar.style.width = `${{baseRiskVal}}%`;
-                    baseProgressBar.className = `h-full ${{baseRiskVal > 50 ? 'bg-error' : 'bg-outline'}}`;
-                }}
-                
-                // 2. Update Simulated card elements
-                const simDemandVal = Math.round(data.simulated_demand);
-                const simRevVal = data.simulated_revenue.toFixed(2);
-                const simRiskVal = data.simulated_stockout_risk;
-                
-                simulatedCard.querySelectorAll("p.font-data-tabular")[0].innerHTML = `${{simDemandVal}} <span class="text-sm font-normal text-outline">units</span>`;
-                
-                const demandDiffPct = data.original_demand > 0 ? Math.round(((data.simulated_demand - data.original_demand) / data.original_demand) * 100) : 0;
-                const demandBadge = simulatedCard.querySelector("div.flex.items-end span.font-data-tabular");
-                if (demandBadge) {{
-                    demandBadge.textContent = `${{demandDiffPct >= 0 ? '+' : ''}}${{demandDiffPct}}%`;
-                }}
-                
-                simulatedCard.querySelectorAll("p.font-data-tabular")[1].textContent = `₹${{parseFloat(simRevVal).toLocaleString('en-US', {{minimumFractionDigits: 2, maximumFractionDigits: 2}})}}`;
-                
-                const revDiffVal = data.simulated_revenue - data.original_revenue;
-                const revBadge = simulatedCard.querySelectorAll("div.flex.items-end span.font-data-tabular")[1];
-                if (revBadge) {{
-                    const revBadgeText = revDiffVal >= 0 ? `+₹${{Math.round(revDiffVal)}}` : `-₹${{Math.round(Math.abs(revDiffVal))}}`;
-                    revBadge.textContent = revBadgeText;
-                }}
-                
-                const simRiskSpan = simulatedCard.querySelector("span.font-data-tabular");
-                if (simRiskSpan) {{
-                    simRiskSpan.textContent = `${{simRiskVal}}%`;
-                    simRiskSpan.className = `font-data-tabular text-data-tabular font-semibold ${{simRiskVal > 50 ? 'text-error' : 'text-primary'}}`;
-                }}
-                
-                const simProgressBar = simulatedCard.querySelector("div.h-2 div");
-                if (simProgressBar) {{
-                    simProgressBar.style.width = `${{simRiskVal}}%`;
-                    simProgressBar.className = `h-full ${{simRiskVal > 50 ? 'bg-error' : 'bg-primary'}}`;
-                }}
-                
-                const warningMsg = simulatedCard.querySelector("p.text-error");
-                if (warningMsg) {{
-                    if (simRiskVal > 50) {{
-                        warningMsg.style.display = "flex";
-                        warningMsg.innerHTML = '<span class="material-symbols-outlined text-[14px]">warning</span> Warning: High probability of stockout before end of horizon.';
-                    }} else {{
-                        warningMsg.style.display = "none";
-                    }}
+            // 1. Update Baseline card elements
+            const baseDemandVal = Math.round(data.original_demand);
+            const baseRevVal = data.original_revenue.toFixed(2);
+            const baseRiskVal = data.original_stockout_risk;
+            
+            const baseDemandEl = document.getElementById("baseline-demand-text");
+            if (baseDemandEl) baseDemandEl.innerHTML = `${{baseDemandVal}} <span class="text-sm font-normal text-outline">units</span>`;
+            
+            const baseRevEl = document.getElementById("baseline-revenue-text");
+            if (baseRevEl) baseRevEl.textContent = `₹${{parseFloat(baseRevVal).toLocaleString('en-IN', {{minimumFractionDigits: 2, maximumFractionDigits: 2}})}}`;
+            
+            const baseRiskTextEl = document.getElementById("baseline-risk-text");
+            if (baseRiskTextEl) baseRiskTextEl.textContent = `${{baseRiskVal}}%`;
+            
+            const baseProgressBar = document.getElementById("baseline-risk-bar");
+            if (baseProgressBar) {{
+                baseProgressBar.style.width = `${{baseRiskVal}}%`;
+                baseProgressBar.className = `h-full ${{baseRiskVal > 50 ? 'bg-error' : 'bg-outline'}}`;
+            }}
+            
+            // 2. Update Simulated card elements
+            const simDemandVal = Math.round(data.simulated_demand);
+            const simRevVal = data.simulated_revenue.toFixed(2);
+            const simRiskVal = data.simulated_stockout_risk;
+            
+            const simDemandEl = document.getElementById("sim-demand-text");
+            if (simDemandEl) simDemandEl.innerHTML = `${{simDemandVal}} <span class="text-sm font-normal text-outline">units</span>`;
+            
+            const demandDiffPct = data.original_demand > 0 ? Math.round(((data.simulated_demand - data.original_demand) / data.original_demand) * 100) : 0;
+            const demandBadge = document.getElementById("sim-demand-lift-badge");
+            if (demandBadge) {{
+                demandBadge.textContent = `${{demandDiffPct >= 0 ? '+' : ''}}${{demandDiffPct}}%`;
+                demandBadge.className = `font-data-tabular text-xs font-semibold px-1.5 py-0.5 rounded border border-outline-variant mb-1 ${{demandDiffPct >= 0 ? 'text-primary bg-primary/10 border-primary/20' : 'text-error bg-error/10 border-error/20'}}`;
+            }}
+            
+            const simRevEl = document.getElementById("sim-revenue-text");
+            if (simRevEl) simRevEl.textContent = `₹${{parseFloat(simRevVal).toLocaleString('en-IN', {{minimumFractionDigits: 2, maximumFractionDigits: 2}})}}`;
+            
+            const revDiffVal = data.simulated_revenue - data.original_revenue;
+            const revBadge = document.getElementById("sim-revenue-lift-badge");
+            if (revBadge) {{
+                const revBadgeText = revDiffVal >= 0 ? `+₹${{Math.round(revDiffVal).toLocaleString('en-IN')}}` : `-₹${{Math.round(Math.abs(revDiffVal)).toLocaleString('en-IN')}}`;
+                revBadge.textContent = revBadgeText;
+                revBadge.className = `font-data-tabular text-xs font-semibold px-1.5 py-0.5 rounded border border-outline-variant mb-1 ${{revDiffVal >= 0 ? 'text-primary bg-primary/10 border-primary/20' : 'text-error bg-error/10 border-error/20'}}`;
+            }}
+            
+            const simRiskSpan = document.getElementById("sim-risk-text");
+            if (simRiskSpan) {{
+                simRiskSpan.textContent = `${{simRiskVal}}%`;
+                simRiskSpan.className = `font-data-tabular text-data-tabular font-semibold ${{simRiskVal > 50 ? 'text-error' : 'text-primary'}}`;
+            }}
+            
+            const simProgressBar = document.getElementById("sim-risk-bar");
+            if (simProgressBar) {{
+                simProgressBar.style.width = `${{simRiskVal}}%`;
+                simProgressBar.className = `h-full ${{simRiskVal > 50 ? 'bg-error' : 'bg-primary'}}`;
+            }}
+            
+            const warningText = document.getElementById("sim-warning-text");
+            if (warningText) {{
+                if (simRiskVal > 50) {{
+                    warningText.classList.remove("hidden");
+                }} else {{
+                    warningText.classList.add("hidden");
                 }}
             }}
             
             // 3. Update Top Highlight / Summary delta metrics
-            const highlightCards = document.querySelectorAll("div.bg-surface-variant span.font-bold");
-            if (highlightCards.length >= 2) {{
-                const demandDiff = Math.round(data.simulated_demand - data.original_demand);
-                const revDiff = data.simulated_revenue - data.original_revenue;
-                
-                highlightCards[0].textContent = `${{demandDiff >= 0 ? '+' : ''}}${{demandDiff}}`;
-                highlightCards[1].textContent = `${{revDiff >= 0 ? '+' : ''}}₹${{Math.round(revDiff).toLocaleString()}}`;
+            const impactUnitsText = document.getElementById("impact-units-text");
+            const impactRevenueText = document.getElementById("impact-revenue-text");
+            
+            const demandDiff = Math.round(data.simulated_demand - data.original_demand);
+            const revDiff = data.simulated_revenue - data.original_revenue;
+            
+            if (impactUnitsText) {{
+                impactUnitsText.textContent = `${{demandDiff >= 0 ? '+' : ''}}${{demandDiff.toLocaleString('en-IN')}}`;
+                impactUnitsText.className = `font-data-tabular text-data-tabular font-bold ${{demandDiff >= 0 ? 'text-primary' : 'text-error'}}`;
+            }}
+            if (impactRevenueText) {{
+                impactRevenueText.textContent = `${{revDiff >= 0 ? '+' : ''}}₹${{Math.round(revDiff).toLocaleString('en-IN')}}`;
+                impactRevenueText.className = `font-data-tabular text-data-tabular font-bold ${{revDiff >= 0 ? 'text-primary' : 'text-error'}}`;
             }}
         }});
     }}
