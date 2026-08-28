@@ -105,12 +105,12 @@
         body { @apply bg-background text-on-background font-body-md; }
     </style>
 </head>
-<body class="flex h-screen overflow-hidden">
+<body class="bg-[#F6F7F9] text-on-background font-body-md min-h-screen selection:bg-primary selection:text-on-primary">
 <!-- Shared Component: SideNavBar -->
-<nav class="bg-surface-container-lowest dark:bg-surface-container-low text-primary dark:text-primary-fixed font-body-md text-body-md fixed left-0 top-0 h-full w-[240px] border-r border-outline-variant dark:border-outline flex flex-col h-screen py-gutter-default z-20">
+<nav class="bg-surface-container-lowest text-primary font-body-md text-body-md fixed left-0 top-0 h-full w-[240px] border-r border-outline-variant flex flex-col py-gutter-default z-20">
 <!-- Header -->
 <div class="px-6 pb-6">
-<h2 class="font-h2 text-h2 font-bold text-primary dark:text-primary-fixed">GroceryStore Pro</h2>
+<h2 class="font-h2 text-h2 font-bold text-primary">GroceryStore Pro</h2>
 <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">ID: #48291</p>
 </div>
 <!-- Main Navigation Tabs -->
@@ -118,49 +118,49 @@
 <ul class="flex flex-col space-y-1 w-full">
 <!-- Dashboard -->
 <li>
-<a class="flex items-center px-6 py-3 w-full text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="/">
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="/">
 <span class="material-symbols-outlined mr-3">dashboard</span>
 <span>Dashboard</span>
 </a>
 </li>
 <!-- Products -->
 <li>
-<a class="flex items-center px-6 py-3 w-full text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="/products">
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="/products">
 <span class="material-symbols-outlined mr-3">inventory_2</span>
 <span>Products</span>
 </a>
 </li>
 <!-- Sales -->
 <li>
-<a class="flex items-center px-6 py-3 w-full text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="/sales">
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="/sales">
 <span class="material-symbols-outlined mr-3">trending_up</span>
 <span>Sales</span>
 </a>
 </li>
 <!-- Demand Forecast -->
 <li>
-<a class="flex items-center px-6 py-3 w-full text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="/forecast">
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="/forecast">
 <span class="material-symbols-outlined mr-3">query_stats</span>
 <span>Demand Forecast</span>
 </a>
 </li>
 <!-- Inventory (ACTIVE) -->
 <li>
-<a class="flex items-center px-6 py-3 w-full border-l-4 border-primary bg-primary/10 text-primary dark:bg-primary-container/20 dark:text-primary-fixed-dim font-semibold hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="/inventory">
+<a class="flex items-center px-6 py-3 w-full border-l-4 border-primary bg-primary/10 text-primary font-semibold hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="/inventory">
 <span class="material-symbols-outlined mr-3" style="font-variation-settings: 'FILL' 1;">warehouse</span>
 <span>Inventory</span>
 </a>
 </li>
 <!-- Events & Promotions -->
 <li>
-<a class="flex items-center px-6 py-3 w-full text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="/events">
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="/events">
 <span class="material-symbols-outlined mr-3">campaign</span>
 <span>Events &amp; Promotions</span>
 </a>
 </li>
 <!-- What-If Simulator -->
 <li>
-<a class="flex items-center px-6 py-3 w-full text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="/whatif">
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="/whatif">
 <span class="material-symbols-outlined mr-3">science</span>
 <span>What-If Simulator</span>
 </a>
@@ -178,13 +178,13 @@
 <div class="mt-auto border-t border-outline-variant pt-2">
 <ul class="flex flex-col space-y-1">
 <li>
-<a class="flex items-center px-6 py-3 w-full text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
 <span class="material-symbols-outlined mr-3">settings</span>
 <span>Settings</span>
 </a>
 </li>
 <li>
-<a class="flex items-center px-6 py-3 w-full text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
 <span class="material-symbols-outlined mr-3">help</span>
 <span>Support</span>
 </a>
@@ -193,17 +193,17 @@
 </div>
 </nav>
 <!-- Main Content Area -->
-<main class="flex-1 ml-[240px] flex flex-col relative w-[calc(100%-240px)] h-screen overflow-hidden">
-<!-- Shared Component: TopAppBar -->
-<header class="bg-surface dark:bg-background text-primary dark:text-primary-fixed font-body-sm text-body-sm docked full-width top-0 border-b border-outline-variant dark:border-outline flex justify-between items-center h-16 px-gutter-default w-full z-10 shrink-0">
+<main class="ml-[240px] min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="h-16 px-gutter-default bg-surface border-b border-outline-variant flex justify-between items-center sticky top-0 z-10">
 <!-- Brand / Product Name -->
 <div class="flex items-center gap-4">
-<h1 class="font-h3 text-h3 text-on-surface dark:text-on-surface font-bold">Westside Organic Market</h1>
+<h1 class="font-h3 text-h3 text-on-surface font-bold">Westside Organic Market</h1>
 </div>
-<!-- Navigation Links (Centered-ish) -->
+<!-- Navigation Links -->
 <div class="hidden md:flex items-center gap-6">
-<span class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-opacity cursor-pointer duration-200">Last Updated: 2 mins ago</span>
-<span class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-opacity cursor-pointer duration-200">Oct 24, 2023</span>
+<span class="text-on-surface-variant hover:text-primary transition-opacity cursor-pointer duration-200">Last Updated: 2 mins ago</span>
+<span class="text-on-surface-variant hover:text-primary transition-opacity cursor-pointer duration-200">Oct 24, 2023</span>
 </div>
 <!-- Trailing Actions -->
 <div class="flex items-center gap-4">
@@ -211,30 +211,30 @@
                     Refresh Data
                 </button>
 <div class="flex items-center gap-2 text-on-surface-variant">
-<button class="hover:text-primary dark:hover:text-primary-fixed transition-opacity cursor-pointer duration-200 p-1 rounded-full hover:bg-surface-variant">
+<button class="hover:text-primary transition-opacity cursor-pointer duration-200 p-1 rounded-full hover:bg-surface-variant">
 <span class="material-symbols-outlined">notifications</span>
 </button>
-<button class="hover:text-primary dark:hover:text-primary-fixed transition-opacity cursor-pointer duration-200 p-1 rounded-full hover:bg-surface-variant">
+<button class="hover:text-primary transition-opacity cursor-pointer duration-200 p-1 rounded-full hover:bg-surface-variant">
 <span class="material-symbols-outlined">account_circle</span>
 </button>
 </div>
 </div>
 </header>
-<!-- Page Content Canvas -->
-<div class="flex-1 overflow-y-auto p-gutter-default bg-background">
+<!-- Main Content -->
+<div class="flex-1 p-gutter-default bg-background min-h-screen">
 <div class="max-w-container-max mx-auto w-full flex flex-col gap-stack-md">
 <!-- Page Title & Actions -->
-<div class="flex justify-between items-end mb-4">
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-4">
 <div>
-<h2 class="font-h1 text-h1 text-on-surface">Inventory Status</h2>
+<h2 class="font-h1 text-h1 text-on-surface font-bold">Inventory Status</h2>
 <p class="font-body-md text-body-md text-on-surface-variant mt-1">Manage stock levels and review automated replenishment recommendations.</p>
 </div>
 <!-- Filter Chips -->
-<div class="flex gap-2">
-<button class="px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps border border-primary">All</button>
-<button class="px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface border border-outline-variant font-label-caps text-label-caps hover:bg-surface-variant transition-colors">Stock-out Risk</button>
-<button class="px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface border border-outline-variant font-label-caps text-label-caps hover:bg-surface-variant transition-colors">Overstock</button>
-<button class="px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface border border-outline-variant font-label-caps text-label-caps hover:bg-surface-variant transition-colors">Healthy</button>
+<div class="flex gap-2" id="inventory-filter-chips">
+<button type="button" class="inv-filter-chip px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps border border-primary transition-colors cursor-pointer" onclick="setInventoryFilter('All', this)">All</button>
+<button type="button" class="inv-filter-chip px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface border border-outline-variant font-label-caps text-label-caps hover:bg-surface-variant transition-colors cursor-pointer" onclick="setInventoryFilter('Stock-out Risk', this)">Stock-out Risk</button>
+<button type="button" class="inv-filter-chip px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface border border-outline-variant font-label-caps text-label-caps hover:bg-surface-variant transition-colors cursor-pointer" onclick="setInventoryFilter('Overstock', this)">Overstock</button>
+<button type="button" class="inv-filter-chip px-4 py-1.5 rounded-full bg-surface-container-lowest text-on-surface border border-outline-variant font-label-caps text-label-caps hover:bg-surface-variant transition-colors cursor-pointer" onclick="setInventoryFilter('Healthy', this)">Healthy</button>
 </div>
 </div>
 <!-- Data Table Card -->
@@ -252,92 +252,13 @@
 </tr>
 </thead>
 <tbody class="font-body-md text-body-md">
-<!-- Row 1: Stock-out Risk (Urgent) -->
-<tr class="border-b border-outline-variant/50 hover:bg-surface-container-low transition-colors h-10 group">
-<td class="py-2 px-4 flex items-center gap-3">
-<div class="w-8 h-8 rounded bg-surface-variant overflow-hidden shrink-0">
-<img class="w-full h-full object-cover" data-alt="A modern, high-quality product shot of organic avocados arranged neatly in a minimalist grocery display. Soft, natural light-mode aesthetic highlighting fresh green tones against a clean, neutral white background. Professional retail inventory photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4ceqeTv-W3daLTgJgQy0IXc8dzentl4JkA0r9Y77n9u50DKAR1kMS83c5r2LHclGKaG19wjWkbE7lMIDK0_5F_if_WS8WyklBIsr-suZnA0t1Lbo_IY4WMxaPhAJ-OG-9jpHzKNrpMRQUnS8bGhFy6kt3zWje3gc9LIqnoCp9gvYGsG6BfM5IdXAO2MlGFmAqgtV1a3KjHwI6NH3dXviHAK0w5wBY9WZu0uEfUMvhRFEfJCWmEQNY_g">
-</div>
-<div>
-<div class="font-semibold text-on-surface">Organic Avocados</div>
-<div class="text-[10px] text-on-surface-variant">SKU: 902-AVO-ORG</div>
-</div>
-</td>
-<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-error font-semibold">12</td>
-<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-on-surface">145</td>
-<td class="py-2 px-4 text-center">
-<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-caps text-label-caps">Stock-out Imminent</span>
-</td>
-<td class="py-2 px-4 text-on-surface">Expedite Order</td>
-<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-primary font-semibold">+150</td>
-</tr>
-<!-- Row 2: Stock-out Risk (Warning) -->
-<tr class="border-b border-outline-variant/50 bg-surface-bright hover:bg-surface-container-low transition-colors h-10 group">
-<td class="py-2 px-4 flex items-center gap-3">
-<div class="w-8 h-8 rounded bg-surface-variant overflow-hidden shrink-0">
-<img class="w-full h-full object-cover" data-alt="A minimalist overhead shot of artisanal sourdough bread loaves on a pristine white marble counter. Bright, airy lighting typical of a high-end corporate application. Clean composition emphasizing texture and freshness in a structured environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmT2HATaxxg2RZYkbT1rPrJVfKty5POEdjF9-ClZIu7Pal39FhEUsiww6O85EUciLsTvhX5XLhOgAbQq9gT15hcNpmGfqmdv8S4JvRK-zna9yE6V7NMnUcrkeun1Q4BSwdFnmxpcKuYBg7eZK-XPZ_lts7iP0fQMHpZL3pOHmC_4-ezyvHRwzOcxUlS8AIFeQd8AK3y1rKKjVg4Rst_Ju5g8gywGx_hxZkSFZU_XXAQFFNhdThFh-tfA">
-</div>
-<div>
-<div class="font-semibold text-on-surface">Artisan Sourdough</div>
-<div class="text-[10px] text-on-surface-variant">SKU: 441-BAK-SOU</div>
-</div>
-</td>
-<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-tertiary-container font-semibold">45</td>
-<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-on-surface">90</td>
-<td class="py-2 px-4 text-center">
-<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-caps text-label-caps">Low Stock</span>
-</td>
-<td class="py-2 px-4 text-on-surface">Standard Restock</td>
-<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-primary font-semibold">+60</td>
-</tr>
-<!-- Row 3: Overstock -->
-<tr class="border-b border-outline-variant/50 hover:bg-surface-container-low transition-colors h-10 group">
-<td class="py-2 px-4 flex items-center gap-3">
-<div class="w-8 h-8 rounded bg-surface-variant overflow-hidden shrink-0">
-<img class="w-full h-full object-cover" data-alt="Neatly stacked boxes of premium coconut water on modern warehouse shelving. High-key lighting, desaturated background colors to emphasize the product packaging. Professional supply chain and inventory management aesthetic, clean lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkA42o1XXSIItWKQMWHf3Ow7vzIHtxL55JsyAZB8mwh94WmgtJvElG68c1tm4Lpgh6MXiVPRYwIKlLcR-Pzru__x30AQMiQ9XtUQI267LH9J0C5EsK9KVQr5Ih7kSKz7vgJYNvKnP4ivhiN52GUI7oNe61PKlMyWgzR-ky-1MbPVM5GZucFsK1-7Q4EbT8OW5OK_Nid7qB4jl2kV5LTa1lOuBjEOW4bwN6DqFVaXJN5N0rbOXIkHWfJg">
-</div>
-<div>
-<div class="font-semibold text-on-surface">Premium Coconut Water</div>
-<div class="text-[10px] text-on-surface-variant">SKU: 112-BEV-COC</div>
-</div>
-</td>
-<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-secondary font-semibold">850</td>
-<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-on-surface">120</td>
-<td class="py-2 px-4 text-center">
-<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps">Overstock</span>
-</td>
-<td class="py-2 px-4 text-on-surface">Apply Discount</td>
-<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-on-surface-variant">0</td>
-</tr>
-<!-- Row 4: Healthy -->
-<tr class="border-b border-outline-variant/50 bg-surface-bright hover:bg-surface-container-low transition-colors h-10 group">
-<td class="py-2 px-4 flex items-center gap-3">
-<div class="w-8 h-8 rounded bg-surface-variant overflow-hidden shrink-0">
-<img class="w-full h-full object-cover" data-alt="A clean, isolated image of a carton of organic free-range eggs. Shot from a slight angle against a pure white background. Even, diffuse lighting creating a clinical yet appealing look suitable for a modern inventory management dashboard." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQRY2Lx_uPmFXpiXYuyVwXG5KwxLeOpi1qOeXzmbzBRG1vks9QcRTZp0S_6IOqkt4G0q0n43-tkNdMtcCCcKNp_eUZx6X0p83570ceNexWaXG_IHJ6X2i8syjj_jlu70h95gNq-sV9IdOfwO0uDXun3jY_w7u5rj7niRepNqLVPBRfUM1zAyRtwZ7ODWG2hdTDjao1MyXekqPNYkL18RHqzoLIiUh27U4JUwEG4IcrFwyapFC-8VrCRA">
-</div>
-<div>
-<div class="font-semibold text-on-surface">Free Range Eggs (Dozen)</div>
-<div class="text-[10px] text-on-surface-variant">SKU: 304-DAI-EGG</div>
-</div>
-</td>
-<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-on-surface">240</td>
-<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-on-surface">225</td>
-<td class="py-2 px-4 text-center">
-<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-label-caps text-label-caps">Healthy</span>
-</td>
-<td class="py-2 px-4 text-on-surface-variant">Monitor</td>
-<td class="py-2 px-4 text-right font-data-tabular text-data-tabular text-on-surface-variant">0</td>
-</tr>
+<tr><td colspan="6" class="py-8 text-center text-on-surface-variant font-body-md">Loading live inventory dataset...</td></tr>
 </tbody>
 </table>
 </div>
-<!-- Table Footer/Pagination placeholder -->
+<!-- Table Footer/Pagination -->
 <div class="bg-surface py-3 px-4 border-t border-outline-variant flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant">
-<span>Showing 1-4 of 1,248 items</span>
-<div class="flex gap-2">
-<button class="p-1 hover:bg-surface-variant rounded"><span class="material-symbols-outlined text-sm">chevron_left</span></button>
-<button class="p-1 hover:bg-surface-variant rounded"><span class="material-symbols-outlined text-sm">chevron_right</span></button>
-</div>
+<span id="inventory-pagination-text">Showing items...</span>
 </div>
 </div>
 </div>

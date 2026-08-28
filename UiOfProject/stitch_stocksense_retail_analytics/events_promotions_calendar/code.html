@@ -203,315 +203,168 @@
         }
     </style>
 </head>
-<body class="bg-background text-on-surface font-body-md h-screen flex overflow-hidden">
+<body class="bg-[#F6F7F9] text-on-background font-body-md min-h-screen selection:bg-primary selection:text-on-primary">
 <!-- SideNavBar -->
-<nav class="bg-surface-container-lowest dark:bg-surface-container-low font-body-md text-body-md fixed left-0 top-0 h-full w-[240px] border-r border-outline-variant dark:border-outline flex flex-col h-screen py-gutter-default z-20">
+<nav class="bg-surface-container-lowest font-body-md text-body-md fixed left-0 top-0 h-full w-[240px] border-r border-outline-variant flex flex-col py-gutter-default z-20">
 <!-- Header Info -->
-<div class="px-gutter-default mb-8 flex items-center gap-3">
-<img alt="Store Manager Profile" class="w-10 h-10 rounded-full object-cover shadow-sm bg-surface-container-high" data-alt="A small, professional headshot portrait of a store manager, modern lighting, clear focus, suitable for a web application avatar in a minimalist UI, bright light mode background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwkAaojKcpI33PtqCYqyQPEjIYeKnWZnHxWv6wS7pXslJQdC5XBB8KaZwRXdoyhQjtzU0zwDG5P_jTzUQNNUvO4CYZMBCuR_0yfz7l5ALN6ah_yYo-i1gjteKdnW8G4NziPcAxw2RK6zBo870NQUkKRoVZeFqG32JzNHNKNJ7ZYYIOnm5hPfrmD6L_adnsKZHkem-P9OYp2efqLpo4kN34WsJOMULGyGE1KACt0kuS-nhZy1uWMBJD7A">
-<div>
-<h2 class="font-h2 text-h2 font-bold text-primary dark:text-primary-fixed leading-tight">GroceryStore Pro</h2>
-<div class="font-body-sm text-body-sm text-on-surface-variant">ID: #48291</div>
-</div>
+<div class="px-6 pb-6">
+<h2 class="font-h2 text-h2 font-bold text-primary leading-tight">GroceryStore Pro</h2>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">ID: #48291</div>
 </div>
 <!-- Main Navigation -->
 <div class="flex-1 overflow-y-auto">
-<ul class="flex flex-col space-y-1 px-3">
+<ul class="flex flex-col space-y-1 w-full">
 <!-- Dashboard -->
 <li>
-<a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="/">
-<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="/">
+<span class="material-symbols-outlined mr-3">dashboard</span>
 <span>Dashboard</span>
 </a>
 </li>
 <!-- Products -->
 <li>
-<a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="/products">
-<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="/products">
+<span class="material-symbols-outlined mr-3">inventory_2</span>
 <span>Products</span>
 </a>
 </li>
 <!-- Sales -->
 <li>
-<a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="/sales">
-<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="/sales">
+<span class="material-symbols-outlined mr-3">trending_up</span>
 <span>Sales</span>
 </a>
 </li>
 <!-- Demand Forecast -->
 <li>
-<a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="/forecast">
-<span class="material-symbols-outlined" data-icon="query_stats">query_stats</span>
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="/forecast">
+<span class="material-symbols-outlined mr-3">query_stats</span>
 <span>Demand Forecast</span>
 </a>
 </li>
 <!-- Inventory -->
 <li>
-<a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="/inventory">
-<span class="material-symbols-outlined" data-icon="warehouse">warehouse</span>
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="/inventory">
+<span class="material-symbols-outlined mr-3">warehouse</span>
 <span>Inventory</span>
 </a>
 </li>
 <!-- Events & Promotions (Active) -->
 <li>
-<a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT border-l-4 border-primary bg-primary/10 text-primary dark:bg-primary-container/20 dark:text-primary-fixed-dim font-semibold cursor-pointer active:scale-95 duration-150" href="/events">
-<span class="material-symbols-outlined" data-icon="campaign" data-weight="fill">campaign</span>
+<a class="flex items-center px-6 py-3 w-full border-l-4 border-primary bg-primary/10 text-primary font-semibold hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="/events">
+<span class="material-symbols-outlined mr-3" style="font-variation-settings: 'FILL' 1;">campaign</span>
 <span>Events &amp; Promotions</span>
 </a>
 </li>
 <!-- What-If Simulator -->
 <li>
-<a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="/whatif">
-<span class="material-symbols-outlined" data-icon="science">science</span>
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="/whatif">
+<span class="material-symbols-outlined mr-3">science</span>
 <span>What-If Simulator</span>
 </a>
 </li>
 </ul>
 </div>
 <!-- Footer Actions -->
-<div class="px-gutter-default mt-auto pt-6 border-t border-outline-variant/30">
-<button class="w-full mb-4 bg-primary text-on-primary py-2 px-4 rounded-DEFAULT font-h3 text-h3 flex justify-center items-center gap-2 hover:bg-primary-container transition-colors shadow-sm hover:shadow-md cursor-pointer active:scale-95 duration-150">
-<span class="material-symbols-outlined text-sm">add</span>
+<div class="px-6 py-4">
+<button class="w-full bg-primary text-on-primary font-body-md text-body-md py-2 rounded flex justify-center items-center cursor-pointer active:scale-95 duration-150 shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined mr-2 text-sm">add</span>
                 New Simulation
             </button>
+</div>
+<!-- Footer Tabs -->
+<div class="mt-auto border-t border-outline-variant pt-2">
 <ul class="flex flex-col space-y-1">
 <li>
-<a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="#">
-<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined mr-3">settings</span>
 <span>Settings</span>
 </a>
 </li>
 <li>
-<a class="flex items-center gap-3 px-3 py-2 rounded-DEFAULT text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors cursor-pointer active:scale-95 duration-150" href="#">
-<span class="material-symbols-outlined" data-icon="help">help</span>
+<a class="flex items-center px-6 py-3 w-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined mr-3">help</span>
 <span>Support</span>
 </a>
 </li>
 </ul>
 </div>
 </nav>
-<!-- Main Content Wrapper -->
-<div class="flex-1 flex flex-col ml-[240px] min-w-0 bg-background overflow-hidden">
+<!-- Main Content Area -->
+<main class="ml-[240px] min-h-screen flex flex-col">
 <!-- TopAppBar -->
-<header class="bg-surface dark:bg-background font-body-sm text-body-sm border-b border-outline-variant dark:border-outline flex justify-between items-center h-16 px-gutter-default sticky top-0 z-10 w-full">
-<!-- Left: Brand / Title -->
+<header class="h-16 px-gutter-default bg-surface border-b border-outline-variant flex justify-between items-center sticky top-0 z-10">
+<!-- Brand / Product Name -->
 <div class="flex items-center gap-6">
-<div class="font-h3 text-h3 font-bold text-on-surface dark:text-on-surface">Westside Organic Market</div>
-<div class="flex gap-4">
-<span class="text-on-surface-variant dark:text-on-surface-variant cursor-pointer duration-200 hover:text-primary dark:hover:text-primary-fixed transition-opacity">Last Updated: 2 mins ago</span>
-<span class="text-on-surface-variant dark:text-on-surface-variant cursor-pointer duration-200 hover:text-primary dark:hover:text-primary-fixed transition-opacity">Oct 24, 2023</span>
+<h1 class="font-h3 text-h3 font-bold text-on-surface">Westside Organic Market</h1>
+<div class="flex gap-4 text-on-surface-variant font-body-sm text-body-sm border-l border-outline-variant pl-6">
+<span>Last Updated: 2 mins ago</span>
+<span>Aug 28, 2026</span>
 </div>
 </div>
 <!-- Right: Actions -->
 <div class="flex items-center gap-4">
-<button class="flex items-center gap-2 text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary dark:hover:text-primary-fixed transition-opacity cursor-pointer duration-200">
+<button class="flex items-center gap-2 text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary-container transition-colors">
 <span class="material-symbols-outlined text-lg">refresh</span>
                     Refresh Data
                 </button>
 <div class="flex gap-2">
 <button class="w-8 h-8 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">
-<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+<span class="material-symbols-outlined">notifications</span>
 </button>
 <button class="w-8 h-8 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">
-<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+<span class="material-symbols-outlined">account_circle</span>
 </button>
 </div>
 </div>
 </header>
 <!-- Scrollable Content Canvas -->
-<main class="flex-1 overflow-y-auto p-gutter-default">
+<div class="flex-1 p-gutter-default bg-background min-h-screen">
 <div class="max-w-[1200px] mx-auto space-y-gutter-default">
 <!-- Page Header -->
-<div class="flex justify-between items-end border-b border-outline-variant pb-stack-sm">
+<div class="flex justify-between items-end border-b border-outline-variant pb-stack-sm mb-4">
 <div>
-<h1 class="font-h1 text-h1 text-on-surface">Events &amp; Promotions</h1>
-<p class="font-body-md text-body-md text-on-surface-variant mt-1">Manage seasonal events and analyze their impact on sales velocity.</p>
+<h1 class="font-h1 text-h1 text-on-surface font-bold">Events &amp; Promotions</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Manage seasonal events and analyze their impact on sales velocity (2026-2027 Dataset).</p>
 </div>
 <div class="flex gap-3">
-<select class="form-select bg-surface border-outline-variant rounded-DEFAULT text-body-sm font-body-sm py-1.5 pl-3 pr-8 focus:border-primary focus:ring-primary shadow-sm">
-<option>October 2023</option>
-<option>November 2023</option>
-<option>December 2023</option>
+<select id="events-month-select" class="form-select bg-surface border border-outline-variant rounded-DEFAULT text-body-sm font-body-sm py-1.5 pl-3 pr-8 focus:border-primary focus:ring-primary shadow-sm cursor-pointer">
+<option value="2026-08">August 2026</option>
+<option value="2026-01">January 2026</option>
+<option value="2026-10">October 2026</option>
+<option value="2026-11">November 2026</option>
+<option value="2027-01">January 2027</option>
 </select>
-<button class="bg-surface border border-outline-variant text-on-surface px-4 py-1.5 rounded-DEFAULT font-h3 text-h3 hover:bg-surface-container-low transition-colors shadow-sm flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">filter_list</span>
-                            Filter
-                        </button>
 </div>
 </div>
 <!-- Main Layout Grid -->
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-default">
-<!-- Left Column: Calendar (Takes up more space) -->
+<!-- Left Column: Calendar -->
 <div class="lg:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-DEFAULT shadow-sm overflow-hidden flex flex-col">
 <div class="p-padding-card border-b border-outline-variant bg-surface flex justify-between items-center">
-<h3 class="font-h3 text-h3 text-on-surface">Event Calendar</h3>
-<div class="flex gap-2 text-label-caps font-label-caps">
-<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary"></span> Promotion</span>
-<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> Local Event</span>
-<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Holiday</span>
+<h3 class="font-h3 text-h3 text-on-surface font-semibold">Event Calendar</h3>
+<div class="flex gap-3 text-label-caps font-label-caps">
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-primary"></span> Promotion</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Local Event</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span> Festival / Holiday</span>
 </div>
 </div>
 <div class="p-4 flex-1">
-<div class="calendar-grid">
-<!-- Days Header -->
-<div class="calendar-cell header font-label-caps text-label-caps text-on-surface-variant">SUN</div>
-<div class="calendar-cell header font-label-caps text-label-caps text-on-surface-variant">MON</div>
-<div class="calendar-cell header font-label-caps text-label-caps text-on-surface-variant">TUE</div>
-<div class="calendar-cell header font-label-caps text-label-caps text-on-surface-variant">WED</div>
-<div class="calendar-cell header font-label-caps text-label-caps text-on-surface-variant">THU</div>
-<div class="calendar-cell header font-label-caps text-label-caps text-on-surface-variant">FRI</div>
-<div class="calendar-cell header font-label-caps text-label-caps text-on-surface-variant">SAT</div>
-<!-- Week 1 -->
-<div class="calendar-cell inactive"><span class="font-data-tabular text-data-tabular">24</span></div>
-<div class="calendar-cell inactive"><span class="font-data-tabular text-data-tabular">25</span></div>
-<div class="calendar-cell inactive"><span class="font-data-tabular text-data-tabular">26</span></div>
-<div class="calendar-cell inactive"><span class="font-data-tabular text-data-tabular">27</span></div>
-<div class="calendar-cell inactive"><span class="font-data-tabular text-data-tabular">28</span></div>
-<div class="calendar-cell inactive"><span class="font-data-tabular text-data-tabular">29</span></div>
-<div class="calendar-cell inactive"><span class="font-data-tabular text-data-tabular">30</span></div>
-<!-- Week 2 -->
-<div class="calendar-cell">
-<span class="font-data-tabular text-data-tabular">1</span>
-<div class="calendar-event border-secondary text-secondary bg-secondary/10 mt-2">
-                                        Downtown Farmers Market
-                                    </div>
-</div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">2</span></div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">3</span></div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">4</span></div>
-<div class="calendar-cell">
-<span class="font-data-tabular text-data-tabular">5</span>
-<div class="calendar-event border-primary text-primary bg-primary/10 mt-2">
-                                        Organic Produce Sale
-                                    </div>
-</div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">6</span></div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">7</span></div>
-<!-- Week 3 -->
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">8</span></div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">9</span></div>
-<div class="calendar-cell">
-<span class="font-data-tabular text-data-tabular">10</span>
-<div class="calendar-event border-tertiary text-tertiary bg-tertiary/10 mt-2">
-                                        City Marathon
-                                    </div>
-</div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">11</span></div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">12</span></div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">13</span></div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">14</span></div>
-<!-- Week 4 -->
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">15</span></div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">16</span></div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">17</span></div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">18</span></div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">19</span></div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">20</span></div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">21</span></div>
-<!-- Week 5 -->
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">22</span></div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">23</span></div>
-<div class="calendar-cell bg-primary/5 ring-1 ring-inset ring-primary">
-<span class="font-data-tabular text-data-tabular font-bold text-primary">24</span>
-</div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">25</span></div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">26</span></div>
-<div class="calendar-cell"><span class="font-data-tabular text-data-tabular">27</span></div>
-<div class="calendar-cell">
-<span class="font-data-tabular text-data-tabular">28</span>
-<div class="calendar-event border-tertiary text-tertiary bg-tertiary/10 mt-2">
-                                        Halloween Prep
-                                    </div>
-</div>
+<div id="events-calendar-grid" class="calendar-grid">
+<!-- Days Header & Cells injected dynamically by loadEventsData() -->
 </div>
 </div>
 </div>
 <!-- Right Column: Upcoming Events & Uplift -->
 <div class="lg:col-span-4 flex flex-col gap-gutter-default">
-<!-- Next 30 Days Summary -->
 <div class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT shadow-sm flex flex-col h-full">
 <div class="p-padding-card border-b border-outline-variant bg-surface">
-<h3 class="font-h3 text-h3 text-on-surface">Upcoming 30 Days</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Historical product uplift projections.</p>
+<h3 class="font-h3 text-h3 text-on-surface font-semibold">Dataset Events Schedule</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Historical product demand uplift multipliers.</p>
 </div>
-<div class="flex-1 overflow-y-auto p-4 space-y-4">
-<!-- Event Item 1 -->
-<div class="group border border-outline-variant rounded-DEFAULT p-3 hover:border-primary transition-colors bg-surface relative overflow-hidden">
-<div class="absolute top-0 left-0 w-1 h-full bg-secondary"></div>
-<div class="flex justify-between items-start ml-2">
-<div>
-<div class="font-label-caps text-label-caps text-secondary mb-1">Nov 1 • Local Event</div>
-<div class="font-h3 text-h3 text-on-surface">Downtown Farmers Market</div>
+<div id="upcoming-events-container" class="flex-1 overflow-y-auto p-4 space-y-4">
+<!-- Event Items injected dynamically -->
 </div>
-<span class="bg-surface-container-low text-on-surface px-2 py-1 rounded-DEFAULT font-data-tabular text-data-tabular text-xs">3 Days</span>
-</div>
-<div class="mt-3 ml-2 pt-3 border-t border-outline-variant border-dashed">
-<div class="font-body-sm text-body-sm text-on-surface-variant mb-1">Projected Category Uplift</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-sm">arrow_upward</span>
-<span class="font-data-tabular text-data-tabular font-bold text-on-surface">Fresh Produce</span>
-<span class="font-data-tabular text-data-tabular text-secondary">+15%</span>
-</div>
-<div class="flex items-center gap-2 mt-1">
-<span class="material-symbols-outlined text-secondary text-sm">arrow_upward</span>
-<span class="font-data-tabular text-data-tabular font-bold text-on-surface">Bottled Water</span>
-<span class="font-data-tabular text-data-tabular text-secondary">+8%</span>
-</div>
-</div>
-</div>
-<!-- Event Item 2 -->
-<div class="group border border-outline-variant rounded-DEFAULT p-3 hover:border-primary transition-colors bg-surface relative overflow-hidden">
-<div class="absolute top-0 left-0 w-1 h-full bg-primary"></div>
-<div class="flex justify-between items-start ml-2">
-<div>
-<div class="font-label-caps text-label-caps text-primary mb-1">Nov 5 • Promotion</div>
-<div class="font-h3 text-h3 text-on-surface">Organic Produce Sale</div>
-</div>
-<span class="bg-surface-container-low text-on-surface px-2 py-1 rounded-DEFAULT font-data-tabular text-data-tabular text-xs">7 Days</span>
-</div>
-<div class="mt-3 ml-2 pt-3 border-t border-outline-variant border-dashed">
-<div class="font-body-sm text-body-sm text-on-surface-variant mb-1">Projected Category Uplift</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-sm">arrow_upward</span>
-<span class="font-data-tabular text-data-tabular font-bold text-on-surface">Leafy Greens</span>
-<span class="font-data-tabular text-data-tabular text-primary">+22%</span>
-</div>
-<div class="flex items-center gap-2 mt-1">
-<span class="material-symbols-outlined text-primary text-sm">arrow_upward</span>
-<span class="font-data-tabular text-data-tabular font-bold text-on-surface">Citrus</span>
-<span class="font-data-tabular text-data-tabular text-primary">+12%</span>
-</div>
-</div>
-</div>
-<!-- Event Item 3 -->
-<div class="group border border-outline-variant rounded-DEFAULT p-3 hover:border-primary transition-colors bg-surface relative overflow-hidden">
-<div class="absolute top-0 left-0 w-1 h-full bg-tertiary"></div>
-<div class="flex justify-between items-start ml-2">
-<div>
-<div class="font-label-caps text-label-caps text-tertiary mb-1">Nov 10 • Holiday</div>
-<div class="font-h3 text-h3 text-on-surface">City Marathon</div>
-</div>
-<span class="bg-surface-container-low text-on-surface px-2 py-1 rounded-DEFAULT font-data-tabular text-data-tabular text-xs">1 Day</span>
-</div>
-<div class="mt-3 ml-2 pt-3 border-t border-outline-variant border-dashed">
-<div class="font-body-sm text-body-sm text-on-surface-variant mb-1">Projected Category Uplift</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-tertiary text-sm">arrow_upward</span>
-<span class="font-data-tabular text-data-tabular font-bold text-on-surface">Sports Drinks</span>
-<span class="font-data-tabular text-data-tabular text-tertiary">+45%</span>
-</div>
-<div class="flex items-center gap-2 mt-1">
-<span class="material-symbols-outlined text-tertiary text-sm">arrow_upward</span>
-<span class="font-data-tabular text-data-tabular font-bold text-on-surface">Energy Bars</span>
-<span class="font-data-tabular text-data-tabular text-tertiary">+30%</span>
-</div>
-</div>
-</div>
-</div>
-<div class="p-4 border-t border-outline-variant bg-surface-container-low">
-<button class="w-full bg-surface border border-outline-variant text-primary font-h3 text-h3 py-2 rounded-DEFAULT hover:border-primary transition-colors">
-                                    View Full Event Log
-                                </button>
 </div>
 </div>
 </div>

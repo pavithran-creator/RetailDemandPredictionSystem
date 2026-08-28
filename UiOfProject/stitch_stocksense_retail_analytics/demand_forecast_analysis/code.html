@@ -200,98 +200,71 @@
 <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Detailed breakdown for SKU forecasting</p>
 </div>
 <div class="flex items-center gap-3">
-<select class="bg-surface-container border border-outline-variant rounded-lg px-3 py-2 text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none cursor-pointer">
-<option>Organic Avocados (SKU-8921)</option>
-<option>Almond Milk (SKU-1029)</option>
-<option>Sourdough Loaf (SKU-3341)</option>
+<select id="forecast-product-select" class="bg-surface-container border border-outline-variant rounded-lg px-3 py-2 text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none cursor-pointer">
+<option value="P01">P01 - Organic Basmati Rice 5kg</option>
 </select>
-<input class="bg-surface-container border border-outline-variant rounded-lg px-3 py-2 text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none cursor-pointer" type="date" value="2023-10-25">
+<input id="forecast-date-input" class="bg-surface-container border border-outline-variant rounded-lg px-3 py-2 text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none cursor-pointer" type="date" value="2026-08-29">
 </div>
 </div>
 <!-- Main Prediction Display -->
 <div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-8 flex flex-col items-center justify-center text-center relative overflow-hidden shadow-sm">
 <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none"></div>
-<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-caps text-label-caps mb-4">
-<span class="material-symbols-outlined text-[14px]" data-icon="check_circle">check_circle</span>
-                    High Confidence (92%)
-                </span>
+<span id="forecast-confidence-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-caps text-label-caps mb-4">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span id="forecast-confidence-text">High Confidence (92%)</span>
+</span>
 <h3 class="font-body-md text-body-md text-on-surface-variant uppercase tracking-wider mb-2">Predicted Demand</h3>
-<div class="font-h1 text-[64px] leading-none font-bold text-primary mb-2">
-                    1,420 <span class="text-h2 font-normal text-on-surface-variant ml-2">units</span>
+<div id="forecast-predicted-value" class="font-h1 text-[64px] leading-none font-bold text-primary mb-2">
+                    -- <span class="text-h2 font-normal text-on-surface-variant ml-2">units</span>
 </div>
-<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
-                    Expected to sell tomorrow. This represents a +15% increase compared to the 30-day moving average.
-                </p>
+<p id="forecast-predicted-desc" class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+                    Calculating expected demand based on baseline demand, day of week factors, and promotional multipliers.
+</p>
 </div>
 <!-- Explanation Breakdown -->
 <div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-padding-card shadow-sm">
 <h3 class="font-h3 text-h3 text-on-surface mb-6 border-b border-outline-variant pb-2">Calculation Breakdown</h3>
-<div class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6">
+<div class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6" id="forecastBreakdownContainer">
 <!-- Baseline -->
 <div class="flex flex-col items-center p-4 bg-surface-container rounded-lg border border-outline-variant w-full lg:w-48 text-center relative hover:shadow-md transition-shadow">
 <span class="font-label-caps text-label-caps text-on-surface-variant mb-2">Baseline (Y)</span>
-<span class="font-h2 text-h2 text-on-surface font-data-tabular text-data-tabular">1,000</span>
+<span class="font-h2 text-h2 text-on-surface font-data-tabular text-data-tabular">--</span>
 <span class="font-body-sm text-body-sm text-on-surface-variant mt-1">30-day Avg</span>
 </div>
-<span class="material-symbols-outlined text-outline lg:rotate-0 rotate-90" data-icon="close">close</span>
+<span class="material-symbols-outlined text-outline lg:rotate-0 rotate-90">close</span>
 <!-- Day of Week -->
 <div class="flex flex-col items-center p-4 bg-surface-container rounded-lg border border-outline-variant w-full lg:w-48 text-center relative hover:shadow-md transition-shadow">
 <span class="font-label-caps text-label-caps text-on-surface-variant mb-2">Day Factor (Z)</span>
-<span class="font-h2 text-h2 text-secondary font-data-tabular text-data-tabular">1.2x</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Wednesday Peak</span>
+<span class="font-h2 text-h2 text-secondary font-data-tabular text-data-tabular">1.0x</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Weekday Multiplier</span>
 </div>
-<span class="material-symbols-outlined text-outline lg:rotate-0 rotate-90" data-icon="close">close</span>
+<span class="material-symbols-outlined text-outline lg:rotate-0 rotate-90">close</span>
 <!-- Event Multiplier -->
 <div class="flex flex-col items-center p-4 bg-surface-container rounded-lg border border-outline-variant w-full lg:w-48 text-center relative hover:shadow-md transition-shadow">
 <span class="font-label-caps text-label-caps text-on-surface-variant mb-2">Event (W)</span>
-<span class="font-h2 text-h2 text-tertiary-container font-data-tabular text-data-tabular">1.18x</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Local Festival</span>
+<span class="font-h2 text-h2 text-tertiary-container font-data-tabular text-data-tabular">1.0x</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Promo Multiplier</span>
 </div>
-<span class="material-symbols-outlined text-outline lg:rotate-0 rotate-90" data-icon="drag_handle">drag_handle</span>
+<span class="material-symbols-outlined text-outline lg:rotate-0 rotate-90">drag_handle</span>
 <!-- Result -->
 <div class="flex flex-col items-center p-4 bg-primary/10 rounded-lg border-2 border-primary w-full lg:w-48 text-center relative shadow-sm">
 <span class="font-label-caps text-label-caps text-primary mb-2">Result</span>
-<span class="font-h2 text-h2 text-primary font-bold font-data-tabular text-data-tabular">1,420</span>
+<span class="font-h2 text-h2 text-primary font-bold font-data-tabular text-data-tabular">--</span>
 <span class="font-body-sm text-body-sm text-primary mt-1">Units</span>
 </div>
 </div>
 </div>
-<!-- Historical Context Chart Area (Abstracted) -->
-<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-padding-card shadow-sm flex-1 min-h-[300px] flex flex-col">
+<!-- Historical Context Chart Area -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-padding-card shadow-sm flex-1 min-h-[350px] flex flex-col">
 <div class="flex justify-between items-center mb-4 border-b border-outline-variant pb-2">
 <h3 class="font-h3 text-h3 text-on-surface">Historical Context &amp; Trajectory</h3>
 <div class="flex gap-4 font-body-sm text-body-sm">
-<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-outline-variant"></div> Actual Sales</div>
-<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-primary"></div> Predicted</div>
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-outline"></div> Actual Sales</div>
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-primary"></div> Predicted Demand</div>
 </div>
 </div>
-<div class="flex-1 relative chart-grid rounded-lg border border-outline-variant/50 overflow-hidden flex items-end px-4 pt-8">
-<!-- Faux Chart implementation -->
-<div class="absolute left-0 top-0 bottom-0 w-[70%] border-r-2 border-dashed border-outline-variant bg-surface-container/20 flex flex-col justify-between p-2">
-<span class="font-label-caps text-label-caps text-outline absolute top-2 right-2">Historical</span>
-</div>
-<div class="absolute right-0 top-0 bottom-0 w-[30%] bg-primary/5 flex flex-col justify-between p-2">
-<span class="font-label-caps text-label-caps text-primary absolute top-2 left-2">Prediction Period</span>
-</div>
-<!-- Faux Line (SVG overlay would be ideal, using simple divs for layout representation) -->
-<div class="w-full h-full relative z-10 flex items-end gap-1 px-2 pb-6">
-<!-- Historical bars -->
-<div class="flex-1 bg-outline-variant/60 rounded-t-sm" style="height: 40%"></div>
-<div class="flex-1 bg-outline-variant/60 rounded-t-sm" style="height: 45%"></div>
-<div class="flex-1 bg-outline-variant/60 rounded-t-sm" style="height: 35%"></div>
-<div class="flex-1 bg-outline-variant/60 rounded-t-sm" style="height: 50%"></div>
-<div class="flex-1 bg-outline-variant/60 rounded-t-sm" style="height: 55%"></div>
-<div class="flex-1 bg-outline-variant/60 rounded-t-sm" style="height: 48%"></div>
-<div class="flex-1 bg-outline-variant/60 rounded-t-sm" style="height: 60%"></div>
-<!-- Prediction Gap -->
-<div class="w-px h-full bg-transparent mx-2"></div>
-<!-- Prediction Bars -->
-<div class="flex-1 bg-primary/80 rounded-t-sm relative group" style="height: 80%">
-<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface text-label-caps font-label-caps px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">1,420</div>
-</div>
-<div class="flex-1 bg-primary/50 rounded-t-sm" style="height: 75%"></div>
-<div class="flex-1 bg-primary/30 rounded-t-sm" style="height: 85%"></div>
-</div>
+<div class="flex-1 relative w-full pt-4 min-h-[300px]" id="forecastChartContainer">
+<canvas id="trajectoryChart" style="width: 100%; height: 100%;"></canvas>
 </div>
 </div>
 </div>
