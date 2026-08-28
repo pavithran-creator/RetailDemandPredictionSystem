@@ -840,9 +840,9 @@ def inject_common_js(html_content, active_page):
         }}
         
         // 2. Bind layout header info
-        const headerTitle = document.querySelector("header h2");
+        const headerTitle = document.querySelector("header h2") || document.querySelector("header h1");
         if (headerTitle) {{
-            headerTitle.textContent = "GroceryStore Pro Analytics - Westside Market";
+            headerTitle.textContent = "NextStock Analytics - Westside Market";
         }}
         
         const headerDateSpan = Array.from(document.querySelectorAll("header span, header div span, header span:last-child")).find(s => s.textContent.includes("2023") || s.textContent.includes("2026") || s.classList.contains("header-date"));
